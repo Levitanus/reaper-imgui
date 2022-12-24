@@ -1,2 +1,4 @@
 /target
 /Cargo.lock
+
+hello_world_example/target/
