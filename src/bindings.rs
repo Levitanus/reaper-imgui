@@ -21,6 +21,495 @@ pub type Viewport = *mut c_void;
 pub struct ImGui {
     pointers: FunctionPointers,
     plugin_context: Option<PluginContext>,
+    pub Dir_Down: i32,
+    pub Dir_Left: i32,
+    pub Dir_None: i32,
+    pub Dir_Right: i32,
+    pub Dir_Up: i32,
+    pub ButtonFlags_MouseButtonLeft: i32,
+    pub ButtonFlags_MouseButtonMiddle: i32,
+    pub ButtonFlags_MouseButtonRight: i32,
+    pub ButtonFlags_None: i32,
+    pub ColorEditFlags_NoAlpha: i32,
+    pub ColorEditFlags_NoBorder: i32,
+    pub ColorEditFlags_NoDragDrop: i32,
+    pub ColorEditFlags_NoInputs: i32,
+    pub ColorEditFlags_NoLabel: i32,
+    pub ColorEditFlags_NoOptions: i32,
+    pub ColorEditFlags_NoPicker: i32,
+    pub ColorEditFlags_NoSidePreview: i32,
+    pub ColorEditFlags_NoSmallPreview: i32,
+    pub ColorEditFlags_NoTooltip: i32,
+    pub ColorEditFlags_None: i32,
+    pub ColorEditFlags_AlphaBar: i32,
+    pub ColorEditFlags_AlphaPreview: i32,
+    pub ColorEditFlags_AlphaPreviewHalf: i32,
+    pub ColorEditFlags_DisplayHSV: i32,
+    pub ColorEditFlags_DisplayHex: i32,
+    pub ColorEditFlags_DisplayRGB: i32,
+    pub ColorEditFlags_Float: i32,
+    pub ColorEditFlags_InputHSV: i32,
+    pub ColorEditFlags_InputRGB: i32,
+    pub ColorEditFlags_PickerHueBar: i32,
+    pub ColorEditFlags_PickerHueWheel: i32,
+    pub ColorEditFlags_Uint8: i32,
+    pub ComboFlags_HeightLarge: i32,
+    pub ComboFlags_HeightLargest: i32,
+    pub ComboFlags_HeightRegular: i32,
+    pub ComboFlags_HeightSmall: i32,
+    pub ComboFlags_NoArrowButton: i32,
+    pub ComboFlags_NoPreview: i32,
+    pub ComboFlags_None: i32,
+    pub ComboFlags_PopupAlignLeft: i32,
+    pub SelectableFlags_AllowDoubleClick: i32,
+    pub SelectableFlags_AllowItemOverlap: i32,
+    pub SelectableFlags_Disabled: i32,
+    pub SelectableFlags_DontClosePopups: i32,
+    pub SelectableFlags_None: i32,
+    pub SelectableFlags_SpanAllColumns: i32,
+    pub ConfigFlags_DockingEnable: i32,
+    pub ConfigFlags_NavEnableKeyboard: i32,
+    pub ConfigFlags_NavEnableSetMousePos: i32,
+    pub ConfigFlags_NavNoCaptureKeyboard: i32,
+    pub ConfigFlags_NoMouse: i32,
+    pub ConfigFlags_NoMouseCursorChange: i32,
+    pub ConfigFlags_NoSavedSettings: i32,
+    pub ConfigFlags_None: i32,
+    pub ConfigVar_DockingNoSplit: i32,
+    pub ConfigVar_DockingTransparentPayload: i32,
+    pub ConfigVar_DockingWithShift: i32,
+    pub ConfigVar_DragClickToInputText: i32,
+    pub ConfigVar_Flags: i32,
+    pub ConfigVar_HoverDelayNormal: i32,
+    pub ConfigVar_HoverDelayShort: i32,
+    pub ConfigVar_InputTextCursorBlink: i32,
+    pub ConfigVar_InputTextEnterKeepActive: i32,
+    pub ConfigVar_InputTrickleEventQueue: i32,
+    pub ConfigVar_KeyRepeatDelay: i32,
+    pub ConfigVar_KeyRepeatRate: i32,
+    pub ConfigVar_MacOSXBehaviors: i32,
+    pub ConfigVar_MouseDoubleClickMaxDist: i32,
+    pub ConfigVar_MouseDoubleClickTime: i32,
+    pub ConfigVar_MouseDragThreshold: i32,
+    pub ConfigVar_ViewportsNoDecoration: i32,
+    pub ConfigVar_WindowsMoveFromTitleBarOnly: i32,
+    pub ConfigVar_WindowsResizeFromEdges: i32,
+    pub DragDropFlags_None: i32,
+    pub DragDropFlags_AcceptBeforeDelivery: i32,
+    pub DragDropFlags_AcceptNoDrawDefaultRect: i32,
+    pub DragDropFlags_AcceptNoPreviewTooltip: i32,
+    pub DragDropFlags_AcceptPeekOnly: i32,
+    pub DragDropFlags_SourceAllowNullID: i32,
+    pub DragDropFlags_SourceAutoExpirePayload: i32,
+    pub DragDropFlags_SourceExtern: i32,
+    pub DragDropFlags_SourceNoDisableHover: i32,
+    pub DragDropFlags_SourceNoHoldToOpenOthers: i32,
+    pub DragDropFlags_SourceNoPreviewTooltip: i32,
+    pub SliderFlags_AlwaysClamp: i32,
+    pub SliderFlags_Logarithmic: i32,
+    pub SliderFlags_NoInput: i32,
+    pub SliderFlags_NoRoundToFormat: i32,
+    pub SliderFlags_None: i32,
+    pub DrawFlags_Closed: i32,
+    pub DrawFlags_None: i32,
+    pub DrawFlags_RoundCornersAll: i32,
+    pub DrawFlags_RoundCornersBottom: i32,
+    pub DrawFlags_RoundCornersBottomLeft: i32,
+    pub DrawFlags_RoundCornersBottomRight: i32,
+    pub DrawFlags_RoundCornersLeft: i32,
+    pub DrawFlags_RoundCornersNone: i32,
+    pub DrawFlags_RoundCornersRight: i32,
+    pub DrawFlags_RoundCornersTop: i32,
+    pub DrawFlags_RoundCornersTopLeft: i32,
+    pub DrawFlags_RoundCornersTopRight: i32,
+    pub FontFlags_Bold: i32,
+    pub FontFlags_Italic: i32,
+    pub FontFlags_None: i32,
+    pub HoveredFlags_AllowWhenBlockedByActiveItem: i32,
+    pub HoveredFlags_AllowWhenBlockedByPopup: i32,
+    pub HoveredFlags_DelayNormal: i32,
+    pub HoveredFlags_DelayShort: i32,
+    pub HoveredFlags_NoNavOverride: i32,
+    pub HoveredFlags_NoSharedDelay: i32,
+    pub HoveredFlags_None: i32,
+    pub HoveredFlags_AllowWhenDisabled: i32,
+    pub HoveredFlags_AllowWhenOverlapped: i32,
+    pub HoveredFlags_RectOnly: i32,
+    pub HoveredFlags_AnyWindow: i32,
+    pub HoveredFlags_ChildWindows: i32,
+    pub HoveredFlags_DockHierarchy: i32,
+    pub HoveredFlags_NoPopupHierarchy: i32,
+    pub HoveredFlags_RootAndChildWindows: i32,
+    pub HoveredFlags_RootWindow: i32,
+    pub Key_0: i32,
+    pub Key_1: i32,
+    pub Key_2: i32,
+    pub Key_3: i32,
+    pub Key_4: i32,
+    pub Key_5: i32,
+    pub Key_6: i32,
+    pub Key_7: i32,
+    pub Key_8: i32,
+    pub Key_9: i32,
+    pub Key_A: i32,
+    pub Key_Apostrophe: i32,
+    pub Key_B: i32,
+    pub Key_Backslash: i32,
+    pub Key_Backspace: i32,
+    pub Key_C: i32,
+    pub Key_CapsLock: i32,
+    pub Key_Comma: i32,
+    pub Key_D: i32,
+    pub Key_Delete: i32,
+    pub Key_DownArrow: i32,
+    pub Key_E: i32,
+    pub Key_End: i32,
+    pub Key_Enter: i32,
+    pub Key_Equal: i32,
+    pub Key_Escape: i32,
+    pub Key_F: i32,
+    pub Key_F1: i32,
+    pub Key_F10: i32,
+    pub Key_F11: i32,
+    pub Key_F12: i32,
+    pub Key_F2: i32,
+    pub Key_F3: i32,
+    pub Key_F4: i32,
+    pub Key_F5: i32,
+    pub Key_F6: i32,
+    pub Key_F7: i32,
+    pub Key_F8: i32,
+    pub Key_F9: i32,
+    pub Key_G: i32,
+    pub Key_GraveAccent: i32,
+    pub Key_H: i32,
+    pub Key_Home: i32,
+    pub Key_I: i32,
+    pub Key_Insert: i32,
+    pub Key_J: i32,
+    pub Key_K: i32,
+    pub Key_Keypad0: i32,
+    pub Key_Keypad1: i32,
+    pub Key_Keypad2: i32,
+    pub Key_Keypad3: i32,
+    pub Key_Keypad4: i32,
+    pub Key_Keypad5: i32,
+    pub Key_Keypad6: i32,
+    pub Key_Keypad7: i32,
+    pub Key_Keypad8: i32,
+    pub Key_Keypad9: i32,
+    pub Key_KeypadAdd: i32,
+    pub Key_KeypadDecimal: i32,
+    pub Key_KeypadDivide: i32,
+    pub Key_KeypadEnter: i32,
+    pub Key_KeypadEqual: i32,
+    pub Key_KeypadMultiply: i32,
+    pub Key_KeypadSubtract: i32,
+    pub Key_L: i32,
+    pub Key_LeftAlt: i32,
+    pub Key_LeftArrow: i32,
+    pub Key_LeftBracket: i32,
+    pub Key_LeftCtrl: i32,
+    pub Key_LeftShift: i32,
+    pub Key_LeftSuper: i32,
+    pub Key_M: i32,
+    pub Key_Menu: i32,
+    pub Key_Minus: i32,
+    pub Key_N: i32,
+    pub Key_NumLock: i32,
+    pub Key_O: i32,
+    pub Key_P: i32,
+    pub Key_PageDown: i32,
+    pub Key_PageUp: i32,
+    pub Key_Pause: i32,
+    pub Key_Period: i32,
+    pub Key_PrintScreen: i32,
+    pub Key_Q: i32,
+    pub Key_R: i32,
+    pub Key_RightAlt: i32,
+    pub Key_RightArrow: i32,
+    pub Key_RightBracket: i32,
+    pub Key_RightCtrl: i32,
+    pub Key_RightShift: i32,
+    pub Key_RightSuper: i32,
+    pub Key_S: i32,
+    pub Key_ScrollLock: i32,
+    pub Key_Semicolon: i32,
+    pub Key_Slash: i32,
+    pub Key_Space: i32,
+    pub Key_T: i32,
+    pub Key_Tab: i32,
+    pub Key_U: i32,
+    pub Key_UpArrow: i32,
+    pub Key_V: i32,
+    pub Key_W: i32,
+    pub Key_X: i32,
+    pub Key_Y: i32,
+    pub Key_Z: i32,
+    pub Mod_Alt: i32,
+    pub Mod_Ctrl: i32,
+    pub Mod_None: i32,
+    pub Mod_Shift: i32,
+    pub Mod_Shortcut: i32,
+    pub Mod_Super: i32,
+    pub Key_MouseLeft: i32,
+    pub Key_MouseMiddle: i32,
+    pub Key_MouseRight: i32,
+    pub Key_MouseWheelX: i32,
+    pub Key_MouseWheelY: i32,
+    pub Key_MouseX1: i32,
+    pub Key_MouseX2: i32,
+    pub MouseButton_Left: i32,
+    pub MouseButton_Middle: i32,
+    pub MouseButton_Right: i32,
+    pub MouseCursor_Arrow: i32,
+    pub MouseCursor_Hand: i32,
+    pub MouseCursor_NotAllowed: i32,
+    pub MouseCursor_ResizeAll: i32,
+    pub MouseCursor_ResizeEW: i32,
+    pub MouseCursor_ResizeNESW: i32,
+    pub MouseCursor_ResizeNS: i32,
+    pub MouseCursor_ResizeNWSE: i32,
+    pub MouseCursor_TextInput: i32,
+    pub PopupFlags_NoOpenOverExistingPopup: i32,
+    pub PopupFlags_None: i32,
+    pub PopupFlags_MouseButtonLeft: i32,
+    pub PopupFlags_MouseButtonMiddle: i32,
+    pub PopupFlags_MouseButtonRight: i32,
+    pub PopupFlags_NoOpenOverItems: i32,
+    pub PopupFlags_AnyPopup: i32,
+    pub PopupFlags_AnyPopupId: i32,
+    pub PopupFlags_AnyPopupLevel: i32,
+    pub Col_Border: i32,
+    pub Col_BorderShadow: i32,
+    pub Col_Button: i32,
+    pub Col_ButtonActive: i32,
+    pub Col_ButtonHovered: i32,
+    pub Col_CheckMark: i32,
+    pub Col_ChildBg: i32,
+    pub Col_DockingEmptyBg: i32,
+    pub Col_DockingPreview: i32,
+    pub Col_DragDropTarget: i32,
+    pub Col_FrameBg: i32,
+    pub Col_FrameBgActive: i32,
+    pub Col_FrameBgHovered: i32,
+    pub Col_Header: i32,
+    pub Col_HeaderActive: i32,
+    pub Col_HeaderHovered: i32,
+    pub Col_MenuBarBg: i32,
+    pub Col_ModalWindowDimBg: i32,
+    pub Col_NavHighlight: i32,
+    pub Col_NavWindowingDimBg: i32,
+    pub Col_NavWindowingHighlight: i32,
+    pub Col_PlotHistogram: i32,
+    pub Col_PlotHistogramHovered: i32,
+    pub Col_PlotLines: i32,
+    pub Col_PlotLinesHovered: i32,
+    pub Col_PopupBg: i32,
+    pub Col_ResizeGrip: i32,
+    pub Col_ResizeGripActive: i32,
+    pub Col_ResizeGripHovered: i32,
+    pub Col_ScrollbarBg: i32,
+    pub Col_ScrollbarGrab: i32,
+    pub Col_ScrollbarGrabActive: i32,
+    pub Col_ScrollbarGrabHovered: i32,
+    pub Col_Separator: i32,
+    pub Col_SeparatorActive: i32,
+    pub Col_SeparatorHovered: i32,
+    pub Col_SliderGrab: i32,
+    pub Col_SliderGrabActive: i32,
+    pub Col_Tab: i32,
+    pub Col_TabActive: i32,
+    pub Col_TabHovered: i32,
+    pub Col_TabUnfocused: i32,
+    pub Col_TabUnfocusedActive: i32,
+    pub Col_TableBorderLight: i32,
+    pub Col_TableBorderStrong: i32,
+    pub Col_TableHeaderBg: i32,
+    pub Col_TableRowBg: i32,
+    pub Col_TableRowBgAlt: i32,
+    pub Col_Text: i32,
+    pub Col_TextDisabled: i32,
+    pub Col_TextSelectedBg: i32,
+    pub Col_TitleBg: i32,
+    pub Col_TitleBgActive: i32,
+    pub Col_TitleBgCollapsed: i32,
+    pub Col_WindowBg: i32,
+    pub StyleVar_Alpha: i32,
+    pub StyleVar_ButtonTextAlign: i32,
+    pub StyleVar_CellPadding: i32,
+    pub StyleVar_ChildBorderSize: i32,
+    pub StyleVar_ChildRounding: i32,
+    pub StyleVar_DisabledAlpha: i32,
+    pub StyleVar_FrameBorderSize: i32,
+    pub StyleVar_FramePadding: i32,
+    pub StyleVar_FrameRounding: i32,
+    pub StyleVar_GrabMinSize: i32,
+    pub StyleVar_GrabRounding: i32,
+    pub StyleVar_IndentSpacing: i32,
+    pub StyleVar_ItemInnerSpacing: i32,
+    pub StyleVar_ItemSpacing: i32,
+    pub StyleVar_PopupBorderSize: i32,
+    pub StyleVar_PopupRounding: i32,
+    pub StyleVar_ScrollbarRounding: i32,
+    pub StyleVar_ScrollbarSize: i32,
+    pub StyleVar_SelectableTextAlign: i32,
+    pub StyleVar_TabRounding: i32,
+    pub StyleVar_WindowBorderSize: i32,
+    pub StyleVar_WindowMinSize: i32,
+    pub StyleVar_WindowPadding: i32,
+    pub StyleVar_WindowRounding: i32,
+    pub StyleVar_WindowTitleAlign: i32,
+    pub TabBarFlags_AutoSelectNewTabs: i32,
+    pub TabBarFlags_FittingPolicyResizeDown: i32,
+    pub TabBarFlags_FittingPolicyScroll: i32,
+    pub TabBarFlags_NoCloseWithMiddleMouseButton: i32,
+    pub TabBarFlags_NoTabListScrollingButtons: i32,
+    pub TabBarFlags_NoTooltip: i32,
+    pub TabBarFlags_None: i32,
+    pub TabBarFlags_Reorderable: i32,
+    pub TabBarFlags_TabListPopupButton: i32,
+    pub TabItemFlags_Leading: i32,
+    pub TabItemFlags_NoCloseWithMiddleMouseButton: i32,
+    pub TabItemFlags_NoPushId: i32,
+    pub TabItemFlags_NoReorder: i32,
+    pub TabItemFlags_NoTooltip: i32,
+    pub TabItemFlags_None: i32,
+    pub TabItemFlags_SetSelected: i32,
+    pub TabItemFlags_Trailing: i32,
+    pub TabItemFlags_UnsavedDocument: i32,
+    pub TableRowFlags_Headers: i32,
+    pub TableRowFlags_None: i32,
+    pub TableBgTarget_CellBg: i32,
+    pub TableBgTarget_None: i32,
+    pub TableBgTarget_RowBg0: i32,
+    pub TableBgTarget_RowBg1: i32,
+    pub TableColumnFlags_None: i32,
+    pub TableColumnFlags_DefaultHide: i32,
+    pub TableColumnFlags_DefaultSort: i32,
+    pub TableColumnFlags_Disabled: i32,
+    pub TableColumnFlags_IndentDisable: i32,
+    pub TableColumnFlags_IndentEnable: i32,
+    pub TableColumnFlags_NoClip: i32,
+    pub TableColumnFlags_NoHeaderLabel: i32,
+    pub TableColumnFlags_NoHeaderWidth: i32,
+    pub TableColumnFlags_NoHide: i32,
+    pub TableColumnFlags_NoReorder: i32,
+    pub TableColumnFlags_NoResize: i32,
+    pub TableColumnFlags_NoSort: i32,
+    pub TableColumnFlags_NoSortAscending: i32,
+    pub TableColumnFlags_NoSortDescending: i32,
+    pub TableColumnFlags_PreferSortAscending: i32,
+    pub TableColumnFlags_PreferSortDescending: i32,
+    pub TableColumnFlags_WidthFixed: i32,
+    pub TableColumnFlags_WidthStretch: i32,
+    pub TableColumnFlags_IsEnabled: i32,
+    pub TableColumnFlags_IsHovered: i32,
+    pub TableColumnFlags_IsSorted: i32,
+    pub TableColumnFlags_IsVisible: i32,
+    pub SortDirection_Ascending: i32,
+    pub SortDirection_Descending: i32,
+    pub SortDirection_None: i32,
+    pub TableFlags_None: i32,
+    pub TableFlags_NoClip: i32,
+    pub TableFlags_Borders: i32,
+    pub TableFlags_BordersH: i32,
+    pub TableFlags_BordersInner: i32,
+    pub TableFlags_BordersInnerH: i32,
+    pub TableFlags_BordersInnerV: i32,
+    pub TableFlags_BordersOuter: i32,
+    pub TableFlags_BordersOuterH: i32,
+    pub TableFlags_BordersOuterV: i32,
+    pub TableFlags_BordersV: i32,
+    pub TableFlags_RowBg: i32,
+    pub TableFlags_ContextMenuInBody: i32,
+    pub TableFlags_Hideable: i32,
+    pub TableFlags_NoSavedSettings: i32,
+    pub TableFlags_Reorderable: i32,
+    pub TableFlags_Resizable: i32,
+    pub TableFlags_Sortable: i32,
+    pub TableFlags_NoPadInnerX: i32,
+    pub TableFlags_NoPadOuterX: i32,
+    pub TableFlags_PadOuterX: i32,
+    pub TableFlags_ScrollX: i32,
+    pub TableFlags_ScrollY: i32,
+    pub TableFlags_NoHostExtendX: i32,
+    pub TableFlags_NoHostExtendY: i32,
+    pub TableFlags_NoKeepColumnsVisible: i32,
+    pub TableFlags_PreciseWidths: i32,
+    pub TableFlags_SizingFixedFit: i32,
+    pub TableFlags_SizingFixedSame: i32,
+    pub TableFlags_SizingStretchProp: i32,
+    pub TableFlags_SizingStretchSame: i32,
+    pub TableFlags_SortMulti: i32,
+    pub TableFlags_SortTristate: i32,
+    pub InputTextFlags_AllowTabInput: i32,
+    pub InputTextFlags_AlwaysOverwrite: i32,
+    pub InputTextFlags_AutoSelectAll: i32,
+    pub InputTextFlags_CharsDecimal: i32,
+    pub InputTextFlags_CharsHexadecimal: i32,
+    pub InputTextFlags_CharsNoBlank: i32,
+    pub InputTextFlags_CharsScientific: i32,
+    pub InputTextFlags_CharsUppercase: i32,
+    pub InputTextFlags_CtrlEnterForNewLine: i32,
+    pub InputTextFlags_EnterReturnsTrue: i32,
+    pub InputTextFlags_EscapeClearsAll: i32,
+    pub InputTextFlags_NoHorizontalScroll: i32,
+    pub InputTextFlags_NoUndoRedo: i32,
+    pub InputTextFlags_None: i32,
+    pub InputTextFlags_Password: i32,
+    pub InputTextFlags_ReadOnly: i32,
+    pub TreeNodeFlags_AllowItemOverlap: i32,
+    pub TreeNodeFlags_Bullet: i32,
+    pub TreeNodeFlags_CollapsingHeader: i32,
+    pub TreeNodeFlags_DefaultOpen: i32,
+    pub TreeNodeFlags_FramePadding: i32,
+    pub TreeNodeFlags_Framed: i32,
+    pub TreeNodeFlags_Leaf: i32,
+    pub TreeNodeFlags_NoAutoOpenOnLog: i32,
+    pub TreeNodeFlags_NoTreePushOnOpen: i32,
+    pub TreeNodeFlags_None: i32,
+    pub TreeNodeFlags_OpenOnArrow: i32,
+    pub TreeNodeFlags_OpenOnDoubleClick: i32,
+    pub TreeNodeFlags_Selected: i32,
+    pub TreeNodeFlags_SpanAvailWidth: i32,
+    pub TreeNodeFlags_SpanFullWidth: i32,
+    pub Cond_Always: i32,
+    pub Cond_Appearing: i32,
+    pub Cond_FirstUseEver: i32,
+    pub Cond_Once: i32,
+    pub WindowFlags_AlwaysAutoResize: i32,
+    pub WindowFlags_AlwaysHorizontalScrollbar: i32,
+    pub WindowFlags_AlwaysUseWindowPadding: i32,
+    pub WindowFlags_AlwaysVerticalScrollbar: i32,
+    pub WindowFlags_HorizontalScrollbar: i32,
+    pub WindowFlags_MenuBar: i32,
+    pub WindowFlags_NoBackground: i32,
+    pub WindowFlags_NoCollapse: i32,
+    pub WindowFlags_NoDecoration: i32,
+    pub WindowFlags_NoDocking: i32,
+    pub WindowFlags_NoFocusOnAppearing: i32,
+    pub WindowFlags_NoInputs: i32,
+    pub WindowFlags_NoMouseInputs: i32,
+    pub WindowFlags_NoMove: i32,
+    pub WindowFlags_NoNav: i32,
+    pub WindowFlags_NoNavFocus: i32,
+    pub WindowFlags_NoNavInputs: i32,
+    pub WindowFlags_NoResize: i32,
+    pub WindowFlags_NoSavedSettings: i32,
+    pub WindowFlags_NoScrollWithMouse: i32,
+    pub WindowFlags_NoScrollbar: i32,
+    pub WindowFlags_NoTitleBar: i32,
+    pub WindowFlags_None: i32,
+    pub WindowFlags_TopMost: i32,
+    pub WindowFlags_UnsavedDocument: i32,
+    pub FocusedFlags_AnyWindow: i32,
+    pub FocusedFlags_ChildWindows: i32,
+    pub FocusedFlags_DockHierarchy: i32,
+    pub FocusedFlags_NoPopupHierarchy: i32,
+    pub FocusedFlags_None: i32,
+    pub FocusedFlags_RootAndChildWindows: i32,
+    pub FocusedFlags_RootWindow: i32,
 }
 impl std::fmt::Debug for ImGui {
     fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
@@ -2550,6 +3039,4259 @@ impl ImGui {
         Self {
             pointers,
             plugin_context: Some(plugin_context),
+            Dir_Down: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Dir_Down").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Dir_Left: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Dir_Left").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Dir_None: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Dir_None").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Dir_Right: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Dir_Right").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Dir_Up: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Dir_Up").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            ButtonFlags_MouseButtonLeft: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_ButtonFlags_MouseButtonLeft").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            ButtonFlags_MouseButtonMiddle: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_ButtonFlags_MouseButtonMiddle").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            ButtonFlags_MouseButtonRight: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_ButtonFlags_MouseButtonRight").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            ButtonFlags_None: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_ButtonFlags_None").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            ColorEditFlags_NoAlpha: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_ColorEditFlags_NoAlpha").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            ColorEditFlags_NoBorder: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_ColorEditFlags_NoBorder").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            ColorEditFlags_NoDragDrop: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(
+                            c_str_macro::c_str!("ImGui_ColorEditFlags_NoDragDrop").as_ptr(),
+                        ),
+                    ),
+                }
+                .f)()
+            },
+            ColorEditFlags_NoInputs: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_ColorEditFlags_NoInputs").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            ColorEditFlags_NoLabel: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_ColorEditFlags_NoLabel").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            ColorEditFlags_NoOptions: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(
+                            c_str_macro::c_str!("ImGui_ColorEditFlags_NoOptions").as_ptr(),
+                        ),
+                    ),
+                }
+                .f)()
+            },
+            ColorEditFlags_NoPicker: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_ColorEditFlags_NoPicker").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            ColorEditFlags_NoSidePreview: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_ColorEditFlags_NoSidePreview").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            ColorEditFlags_NoSmallPreview: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_ColorEditFlags_NoSmallPreview").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            ColorEditFlags_NoTooltip: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(
+                            c_str_macro::c_str!("ImGui_ColorEditFlags_NoTooltip").as_ptr(),
+                        ),
+                    ),
+                }
+                .f)()
+            },
+            ColorEditFlags_None: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_ColorEditFlags_None").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            ColorEditFlags_AlphaBar: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_ColorEditFlags_AlphaBar").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            ColorEditFlags_AlphaPreview: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_ColorEditFlags_AlphaPreview").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            ColorEditFlags_AlphaPreviewHalf: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_ColorEditFlags_AlphaPreviewHalf").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            ColorEditFlags_DisplayHSV: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(
+                            c_str_macro::c_str!("ImGui_ColorEditFlags_DisplayHSV").as_ptr(),
+                        ),
+                    ),
+                }
+                .f)()
+            },
+            ColorEditFlags_DisplayHex: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(
+                            c_str_macro::c_str!("ImGui_ColorEditFlags_DisplayHex").as_ptr(),
+                        ),
+                    ),
+                }
+                .f)()
+            },
+            ColorEditFlags_DisplayRGB: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(
+                            c_str_macro::c_str!("ImGui_ColorEditFlags_DisplayRGB").as_ptr(),
+                        ),
+                    ),
+                }
+                .f)()
+            },
+            ColorEditFlags_Float: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_ColorEditFlags_Float").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            ColorEditFlags_InputHSV: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_ColorEditFlags_InputHSV").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            ColorEditFlags_InputRGB: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_ColorEditFlags_InputRGB").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            ColorEditFlags_PickerHueBar: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_ColorEditFlags_PickerHueBar").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            ColorEditFlags_PickerHueWheel: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_ColorEditFlags_PickerHueWheel").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            ColorEditFlags_Uint8: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_ColorEditFlags_Uint8").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            ComboFlags_HeightLarge: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_ComboFlags_HeightLarge").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            ComboFlags_HeightLargest: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(
+                            c_str_macro::c_str!("ImGui_ComboFlags_HeightLargest").as_ptr(),
+                        ),
+                    ),
+                }
+                .f)()
+            },
+            ComboFlags_HeightRegular: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(
+                            c_str_macro::c_str!("ImGui_ComboFlags_HeightRegular").as_ptr(),
+                        ),
+                    ),
+                }
+                .f)()
+            },
+            ComboFlags_HeightSmall: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_ComboFlags_HeightSmall").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            ComboFlags_NoArrowButton: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(
+                            c_str_macro::c_str!("ImGui_ComboFlags_NoArrowButton").as_ptr(),
+                        ),
+                    ),
+                }
+                .f)()
+            },
+            ComboFlags_NoPreview: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_ComboFlags_NoPreview").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            ComboFlags_None: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_ComboFlags_None").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            ComboFlags_PopupAlignLeft: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(
+                            c_str_macro::c_str!("ImGui_ComboFlags_PopupAlignLeft").as_ptr(),
+                        ),
+                    ),
+                }
+                .f)()
+            },
+            SelectableFlags_AllowDoubleClick: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_SelectableFlags_AllowDoubleClick").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            SelectableFlags_AllowItemOverlap: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_SelectableFlags_AllowItemOverlap").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            SelectableFlags_Disabled: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(
+                            c_str_macro::c_str!("ImGui_SelectableFlags_Disabled").as_ptr(),
+                        ),
+                    ),
+                }
+                .f)()
+            },
+            SelectableFlags_DontClosePopups: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_SelectableFlags_DontClosePopups").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            SelectableFlags_None: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_SelectableFlags_None").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            SelectableFlags_SpanAllColumns: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_SelectableFlags_SpanAllColumns").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            ConfigFlags_DockingEnable: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(
+                            c_str_macro::c_str!("ImGui_ConfigFlags_DockingEnable").as_ptr(),
+                        ),
+                    ),
+                }
+                .f)()
+            },
+            ConfigFlags_NavEnableKeyboard: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_ConfigFlags_NavEnableKeyboard").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            ConfigFlags_NavEnableSetMousePos: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_ConfigFlags_NavEnableSetMousePos").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            ConfigFlags_NavNoCaptureKeyboard: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_ConfigFlags_NavNoCaptureKeyboard").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            ConfigFlags_NoMouse: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_ConfigFlags_NoMouse").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            ConfigFlags_NoMouseCursorChange: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_ConfigFlags_NoMouseCursorChange").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            ConfigFlags_NoSavedSettings: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_ConfigFlags_NoSavedSettings").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            ConfigFlags_None: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_ConfigFlags_None").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            ConfigVar_DockingNoSplit: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(
+                            c_str_macro::c_str!("ImGui_ConfigVar_DockingNoSplit").as_ptr(),
+                        ),
+                    ),
+                }
+                .f)()
+            },
+            ConfigVar_DockingTransparentPayload: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_ConfigVar_DockingTransparentPayload").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            ConfigVar_DockingWithShift: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(
+                            c_str_macro::c_str!("ImGui_ConfigVar_DockingWithShift").as_ptr(),
+                        ),
+                    ),
+                }
+                .f)()
+            },
+            ConfigVar_DragClickToInputText: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_ConfigVar_DragClickToInputText").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            ConfigVar_Flags: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_ConfigVar_Flags").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            ConfigVar_HoverDelayNormal: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(
+                            c_str_macro::c_str!("ImGui_ConfigVar_HoverDelayNormal").as_ptr(),
+                        ),
+                    ),
+                }
+                .f)()
+            },
+            ConfigVar_HoverDelayShort: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(
+                            c_str_macro::c_str!("ImGui_ConfigVar_HoverDelayShort").as_ptr(),
+                        ),
+                    ),
+                }
+                .f)()
+            },
+            ConfigVar_InputTextCursorBlink: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_ConfigVar_InputTextCursorBlink").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            ConfigVar_InputTextEnterKeepActive: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_ConfigVar_InputTextEnterKeepActive").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            ConfigVar_InputTrickleEventQueue: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_ConfigVar_InputTrickleEventQueue").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            ConfigVar_KeyRepeatDelay: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(
+                            c_str_macro::c_str!("ImGui_ConfigVar_KeyRepeatDelay").as_ptr(),
+                        ),
+                    ),
+                }
+                .f)()
+            },
+            ConfigVar_KeyRepeatRate: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_ConfigVar_KeyRepeatRate").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            ConfigVar_MacOSXBehaviors: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(
+                            c_str_macro::c_str!("ImGui_ConfigVar_MacOSXBehaviors").as_ptr(),
+                        ),
+                    ),
+                }
+                .f)()
+            },
+            ConfigVar_MouseDoubleClickMaxDist: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_ConfigVar_MouseDoubleClickMaxDist").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            ConfigVar_MouseDoubleClickTime: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_ConfigVar_MouseDoubleClickTime").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            ConfigVar_MouseDragThreshold: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_ConfigVar_MouseDragThreshold").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            ConfigVar_ViewportsNoDecoration: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_ConfigVar_ViewportsNoDecoration").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            ConfigVar_WindowsMoveFromTitleBarOnly: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_ConfigVar_WindowsMoveFromTitleBarOnly").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            ConfigVar_WindowsResizeFromEdges: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_ConfigVar_WindowsResizeFromEdges").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            DragDropFlags_None: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_DragDropFlags_None").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            DragDropFlags_AcceptBeforeDelivery: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_DragDropFlags_AcceptBeforeDelivery").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            DragDropFlags_AcceptNoDrawDefaultRect: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_DragDropFlags_AcceptNoDrawDefaultRect").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            DragDropFlags_AcceptNoPreviewTooltip: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_DragDropFlags_AcceptNoPreviewTooltip").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            DragDropFlags_AcceptPeekOnly: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_DragDropFlags_AcceptPeekOnly").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            DragDropFlags_SourceAllowNullID: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_DragDropFlags_SourceAllowNullID").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            DragDropFlags_SourceAutoExpirePayload: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_DragDropFlags_SourceAutoExpirePayload").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            DragDropFlags_SourceExtern: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(
+                            c_str_macro::c_str!("ImGui_DragDropFlags_SourceExtern").as_ptr(),
+                        ),
+                    ),
+                }
+                .f)()
+            },
+            DragDropFlags_SourceNoDisableHover: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_DragDropFlags_SourceNoDisableHover").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            DragDropFlags_SourceNoHoldToOpenOthers: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(
+                            c_str_macro::c_str!("ImGui_DragDropFlags_SourceNoHoldToOpenOthers")
+                                .as_ptr(),
+                        ),
+                    ),
+                }
+                .f)()
+            },
+            DragDropFlags_SourceNoPreviewTooltip: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_DragDropFlags_SourceNoPreviewTooltip").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            SliderFlags_AlwaysClamp: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_SliderFlags_AlwaysClamp").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            SliderFlags_Logarithmic: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_SliderFlags_Logarithmic").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            SliderFlags_NoInput: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_SliderFlags_NoInput").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            SliderFlags_NoRoundToFormat: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_SliderFlags_NoRoundToFormat").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            SliderFlags_None: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_SliderFlags_None").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            DrawFlags_Closed: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_DrawFlags_Closed").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            DrawFlags_None: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_DrawFlags_None").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            DrawFlags_RoundCornersAll: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(
+                            c_str_macro::c_str!("ImGui_DrawFlags_RoundCornersAll").as_ptr(),
+                        ),
+                    ),
+                }
+                .f)()
+            },
+            DrawFlags_RoundCornersBottom: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_DrawFlags_RoundCornersBottom").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            DrawFlags_RoundCornersBottomLeft: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_DrawFlags_RoundCornersBottomLeft").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            DrawFlags_RoundCornersBottomRight: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_DrawFlags_RoundCornersBottomRight").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            DrawFlags_RoundCornersLeft: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(
+                            c_str_macro::c_str!("ImGui_DrawFlags_RoundCornersLeft").as_ptr(),
+                        ),
+                    ),
+                }
+                .f)()
+            },
+            DrawFlags_RoundCornersNone: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(
+                            c_str_macro::c_str!("ImGui_DrawFlags_RoundCornersNone").as_ptr(),
+                        ),
+                    ),
+                }
+                .f)()
+            },
+            DrawFlags_RoundCornersRight: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_DrawFlags_RoundCornersRight").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            DrawFlags_RoundCornersTop: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(
+                            c_str_macro::c_str!("ImGui_DrawFlags_RoundCornersTop").as_ptr(),
+                        ),
+                    ),
+                }
+                .f)()
+            },
+            DrawFlags_RoundCornersTopLeft: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_DrawFlags_RoundCornersTopLeft").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            DrawFlags_RoundCornersTopRight: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_DrawFlags_RoundCornersTopRight").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            FontFlags_Bold: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_FontFlags_Bold").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            FontFlags_Italic: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_FontFlags_Italic").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            FontFlags_None: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_FontFlags_None").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            HoveredFlags_AllowWhenBlockedByActiveItem: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(
+                            c_str_macro::c_str!("ImGui_HoveredFlags_AllowWhenBlockedByActiveItem")
+                                .as_ptr(),
+                        ),
+                    ),
+                }
+                .f)()
+            },
+            HoveredFlags_AllowWhenBlockedByPopup: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_HoveredFlags_AllowWhenBlockedByPopup").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            HoveredFlags_DelayNormal: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(
+                            c_str_macro::c_str!("ImGui_HoveredFlags_DelayNormal").as_ptr(),
+                        ),
+                    ),
+                }
+                .f)()
+            },
+            HoveredFlags_DelayShort: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_HoveredFlags_DelayShort").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            HoveredFlags_NoNavOverride: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(
+                            c_str_macro::c_str!("ImGui_HoveredFlags_NoNavOverride").as_ptr(),
+                        ),
+                    ),
+                }
+                .f)()
+            },
+            HoveredFlags_NoSharedDelay: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(
+                            c_str_macro::c_str!("ImGui_HoveredFlags_NoSharedDelay").as_ptr(),
+                        ),
+                    ),
+                }
+                .f)()
+            },
+            HoveredFlags_None: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_HoveredFlags_None").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            HoveredFlags_AllowWhenDisabled: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_HoveredFlags_AllowWhenDisabled").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            HoveredFlags_AllowWhenOverlapped: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_HoveredFlags_AllowWhenOverlapped").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            HoveredFlags_RectOnly: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_HoveredFlags_RectOnly").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            HoveredFlags_AnyWindow: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_HoveredFlags_AnyWindow").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            HoveredFlags_ChildWindows: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(
+                            c_str_macro::c_str!("ImGui_HoveredFlags_ChildWindows").as_ptr(),
+                        ),
+                    ),
+                }
+                .f)()
+            },
+            HoveredFlags_DockHierarchy: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(
+                            c_str_macro::c_str!("ImGui_HoveredFlags_DockHierarchy").as_ptr(),
+                        ),
+                    ),
+                }
+                .f)()
+            },
+            HoveredFlags_NoPopupHierarchy: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_HoveredFlags_NoPopupHierarchy").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            HoveredFlags_RootAndChildWindows: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_HoveredFlags_RootAndChildWindows").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            HoveredFlags_RootWindow: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_HoveredFlags_RootWindow").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_0: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_0").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_1: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_1").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_2: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_2").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_3: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_3").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_4: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_4").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_5: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_5").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_6: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_6").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_7: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_7").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_8: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_8").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_9: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_9").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_A: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_A").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_Apostrophe: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_Key_Apostrophe").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_B: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_B").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_Backslash: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_Backslash").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_Backspace: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_Backspace").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_C: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_C").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_CapsLock: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_CapsLock").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_Comma: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_Comma").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_D: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_D").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_Delete: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_Delete").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_DownArrow: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_DownArrow").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_E: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_E").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_End: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_End").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_Enter: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_Enter").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_Equal: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_Equal").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_Escape: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_Escape").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_F: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_F").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_F1: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_F1").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_F10: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_F10").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_F11: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_F11").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_F12: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_F12").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_F2: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_F2").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_F3: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_F3").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_F4: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_F4").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_F5: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_F5").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_F6: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_F6").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_F7: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_F7").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_F8: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_F8").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_F9: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_F9").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_G: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_G").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_GraveAccent: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_Key_GraveAccent").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_H: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_H").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_Home: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_Home").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_I: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_I").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_Insert: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_Insert").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_J: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_J").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_K: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_K").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_Keypad0: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_Keypad0").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_Keypad1: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_Keypad1").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_Keypad2: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_Keypad2").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_Keypad3: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_Keypad3").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_Keypad4: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_Keypad4").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_Keypad5: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_Keypad5").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_Keypad6: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_Keypad6").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_Keypad7: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_Keypad7").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_Keypad8: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_Keypad8").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_Keypad9: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_Keypad9").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_KeypadAdd: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_KeypadAdd").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_KeypadDecimal: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_Key_KeypadDecimal").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_KeypadDivide: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_Key_KeypadDivide").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_KeypadEnter: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_Key_KeypadEnter").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_KeypadEqual: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_Key_KeypadEqual").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_KeypadMultiply: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_Key_KeypadMultiply").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_KeypadSubtract: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_Key_KeypadSubtract").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_L: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_L").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_LeftAlt: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_LeftAlt").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_LeftArrow: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_LeftArrow").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_LeftBracket: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_Key_LeftBracket").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_LeftCtrl: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_LeftCtrl").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_LeftShift: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_LeftShift").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_LeftSuper: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_LeftSuper").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_M: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_M").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_Menu: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_Menu").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_Minus: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_Minus").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_N: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_N").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_NumLock: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_NumLock").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_O: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_O").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_P: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_P").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_PageDown: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_PageDown").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_PageUp: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_PageUp").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_Pause: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_Pause").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_Period: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_Period").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_PrintScreen: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_Key_PrintScreen").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_Q: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_Q").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_R: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_R").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_RightAlt: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_RightAlt").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_RightArrow: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_Key_RightArrow").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_RightBracket: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_Key_RightBracket").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_RightCtrl: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_RightCtrl").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_RightShift: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_Key_RightShift").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_RightSuper: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_Key_RightSuper").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_S: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_S").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_ScrollLock: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_Key_ScrollLock").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_Semicolon: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_Semicolon").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_Slash: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_Slash").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_Space: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_Space").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_T: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_T").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_Tab: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_Tab").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_U: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_U").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_UpArrow: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_UpArrow").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_V: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_V").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_W: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_W").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_X: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_X").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_Y: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_Y").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_Z: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_Z").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Mod_Alt: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Mod_Alt").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Mod_Ctrl: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Mod_Ctrl").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Mod_None: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Mod_None").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Mod_Shift: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Mod_Shift").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Mod_Shortcut: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Mod_Shortcut").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Mod_Super: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Mod_Super").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_MouseLeft: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_MouseLeft").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_MouseMiddle: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_Key_MouseMiddle").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_MouseRight: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_Key_MouseRight").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_MouseWheelX: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_Key_MouseWheelX").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_MouseWheelY: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_Key_MouseWheelY").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_MouseX1: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_MouseX1").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Key_MouseX2: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_MouseX2").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            MouseButton_Left: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_MouseButton_Left").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            MouseButton_Middle: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_MouseButton_Middle").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            MouseButton_Right: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_MouseButton_Right").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            MouseCursor_Arrow: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_MouseCursor_Arrow").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            MouseCursor_Hand: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_MouseCursor_Hand").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            MouseCursor_NotAllowed: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_MouseCursor_NotAllowed").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            MouseCursor_ResizeAll: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_MouseCursor_ResizeAll").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            MouseCursor_ResizeEW: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_MouseCursor_ResizeEW").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            MouseCursor_ResizeNESW: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_MouseCursor_ResizeNESW").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            MouseCursor_ResizeNS: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_MouseCursor_ResizeNS").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            MouseCursor_ResizeNWSE: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_MouseCursor_ResizeNWSE").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            MouseCursor_TextInput: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_MouseCursor_TextInput").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            PopupFlags_NoOpenOverExistingPopup: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_PopupFlags_NoOpenOverExistingPopup").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            PopupFlags_None: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_PopupFlags_None").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            PopupFlags_MouseButtonLeft: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(
+                            c_str_macro::c_str!("ImGui_PopupFlags_MouseButtonLeft").as_ptr(),
+                        ),
+                    ),
+                }
+                .f)()
+            },
+            PopupFlags_MouseButtonMiddle: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_PopupFlags_MouseButtonMiddle").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            PopupFlags_MouseButtonRight: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_PopupFlags_MouseButtonRight").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            PopupFlags_NoOpenOverItems: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(
+                            c_str_macro::c_str!("ImGui_PopupFlags_NoOpenOverItems").as_ptr(),
+                        ),
+                    ),
+                }
+                .f)()
+            },
+            PopupFlags_AnyPopup: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_PopupFlags_AnyPopup").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            PopupFlags_AnyPopupId: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_PopupFlags_AnyPopupId").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            PopupFlags_AnyPopupLevel: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(
+                            c_str_macro::c_str!("ImGui_PopupFlags_AnyPopupLevel").as_ptr(),
+                        ),
+                    ),
+                }
+                .f)()
+            },
+            Col_Border: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Col_Border").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Col_BorderShadow: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_Col_BorderShadow").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Col_Button: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Col_Button").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Col_ButtonActive: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_Col_ButtonActive").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Col_ButtonHovered: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_Col_ButtonHovered").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Col_CheckMark: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Col_CheckMark").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Col_ChildBg: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Col_ChildBg").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Col_DockingEmptyBg: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_Col_DockingEmptyBg").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Col_DockingPreview: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_Col_DockingPreview").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Col_DragDropTarget: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_Col_DragDropTarget").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Col_FrameBg: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Col_FrameBg").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Col_FrameBgActive: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_Col_FrameBgActive").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Col_FrameBgHovered: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_Col_FrameBgHovered").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Col_Header: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Col_Header").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Col_HeaderActive: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_Col_HeaderActive").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Col_HeaderHovered: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_Col_HeaderHovered").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Col_MenuBarBg: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Col_MenuBarBg").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Col_ModalWindowDimBg: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_Col_ModalWindowDimBg").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Col_NavHighlight: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_Col_NavHighlight").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Col_NavWindowingDimBg: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_Col_NavWindowingDimBg").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Col_NavWindowingHighlight: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(
+                            c_str_macro::c_str!("ImGui_Col_NavWindowingHighlight").as_ptr(),
+                        ),
+                    ),
+                }
+                .f)()
+            },
+            Col_PlotHistogram: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_Col_PlotHistogram").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Col_PlotHistogramHovered: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(
+                            c_str_macro::c_str!("ImGui_Col_PlotHistogramHovered").as_ptr(),
+                        ),
+                    ),
+                }
+                .f)()
+            },
+            Col_PlotLines: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Col_PlotLines").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Col_PlotLinesHovered: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_Col_PlotLinesHovered").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Col_PopupBg: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Col_PopupBg").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Col_ResizeGrip: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_Col_ResizeGrip").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Col_ResizeGripActive: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_Col_ResizeGripActive").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Col_ResizeGripHovered: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_Col_ResizeGripHovered").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Col_ScrollbarBg: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_Col_ScrollbarBg").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Col_ScrollbarGrab: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_Col_ScrollbarGrab").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Col_ScrollbarGrabActive: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_Col_ScrollbarGrabActive").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Col_ScrollbarGrabHovered: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(
+                            c_str_macro::c_str!("ImGui_Col_ScrollbarGrabHovered").as_ptr(),
+                        ),
+                    ),
+                }
+                .f)()
+            },
+            Col_Separator: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Col_Separator").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Col_SeparatorActive: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_Col_SeparatorActive").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Col_SeparatorHovered: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_Col_SeparatorHovered").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Col_SliderGrab: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_Col_SliderGrab").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Col_SliderGrabActive: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_Col_SliderGrabActive").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Col_Tab: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Col_Tab").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Col_TabActive: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Col_TabActive").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Col_TabHovered: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_Col_TabHovered").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Col_TabUnfocused: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_Col_TabUnfocused").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Col_TabUnfocusedActive: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_Col_TabUnfocusedActive").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Col_TableBorderLight: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_Col_TableBorderLight").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Col_TableBorderStrong: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_Col_TableBorderStrong").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Col_TableHeaderBg: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_Col_TableHeaderBg").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Col_TableRowBg: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_Col_TableRowBg").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Col_TableRowBgAlt: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_Col_TableRowBgAlt").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Col_Text: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Col_Text").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Col_TextDisabled: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_Col_TextDisabled").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Col_TextSelectedBg: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_Col_TextSelectedBg").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Col_TitleBg: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Col_TitleBg").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Col_TitleBgActive: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_Col_TitleBgActive").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Col_TitleBgCollapsed: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_Col_TitleBgCollapsed").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Col_WindowBg: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Col_WindowBg").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            StyleVar_Alpha: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_StyleVar_Alpha").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            StyleVar_ButtonTextAlign: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(
+                            c_str_macro::c_str!("ImGui_StyleVar_ButtonTextAlign").as_ptr(),
+                        ),
+                    ),
+                }
+                .f)()
+            },
+            StyleVar_CellPadding: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_StyleVar_CellPadding").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            StyleVar_ChildBorderSize: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(
+                            c_str_macro::c_str!("ImGui_StyleVar_ChildBorderSize").as_ptr(),
+                        ),
+                    ),
+                }
+                .f)()
+            },
+            StyleVar_ChildRounding: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_StyleVar_ChildRounding").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            StyleVar_DisabledAlpha: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_StyleVar_DisabledAlpha").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            StyleVar_FrameBorderSize: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(
+                            c_str_macro::c_str!("ImGui_StyleVar_FrameBorderSize").as_ptr(),
+                        ),
+                    ),
+                }
+                .f)()
+            },
+            StyleVar_FramePadding: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_StyleVar_FramePadding").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            StyleVar_FrameRounding: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_StyleVar_FrameRounding").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            StyleVar_GrabMinSize: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_StyleVar_GrabMinSize").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            StyleVar_GrabRounding: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_StyleVar_GrabRounding").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            StyleVar_IndentSpacing: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_StyleVar_IndentSpacing").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            StyleVar_ItemInnerSpacing: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(
+                            c_str_macro::c_str!("ImGui_StyleVar_ItemInnerSpacing").as_ptr(),
+                        ),
+                    ),
+                }
+                .f)()
+            },
+            StyleVar_ItemSpacing: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_StyleVar_ItemSpacing").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            StyleVar_PopupBorderSize: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(
+                            c_str_macro::c_str!("ImGui_StyleVar_PopupBorderSize").as_ptr(),
+                        ),
+                    ),
+                }
+                .f)()
+            },
+            StyleVar_PopupRounding: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_StyleVar_PopupRounding").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            StyleVar_ScrollbarRounding: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(
+                            c_str_macro::c_str!("ImGui_StyleVar_ScrollbarRounding").as_ptr(),
+                        ),
+                    ),
+                }
+                .f)()
+            },
+            StyleVar_ScrollbarSize: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_StyleVar_ScrollbarSize").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            StyleVar_SelectableTextAlign: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_StyleVar_SelectableTextAlign").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            StyleVar_TabRounding: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_StyleVar_TabRounding").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            StyleVar_WindowBorderSize: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(
+                            c_str_macro::c_str!("ImGui_StyleVar_WindowBorderSize").as_ptr(),
+                        ),
+                    ),
+                }
+                .f)()
+            },
+            StyleVar_WindowMinSize: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_StyleVar_WindowMinSize").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            StyleVar_WindowPadding: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_StyleVar_WindowPadding").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            StyleVar_WindowRounding: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_StyleVar_WindowRounding").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            StyleVar_WindowTitleAlign: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(
+                            c_str_macro::c_str!("ImGui_StyleVar_WindowTitleAlign").as_ptr(),
+                        ),
+                    ),
+                }
+                .f)()
+            },
+            TabBarFlags_AutoSelectNewTabs: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_TabBarFlags_AutoSelectNewTabs").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            TabBarFlags_FittingPolicyResizeDown: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_TabBarFlags_FittingPolicyResizeDown").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            TabBarFlags_FittingPolicyScroll: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_TabBarFlags_FittingPolicyScroll").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            TabBarFlags_NoCloseWithMiddleMouseButton: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(
+                            c_str_macro::c_str!("ImGui_TabBarFlags_NoCloseWithMiddleMouseButton")
+                                .as_ptr(),
+                        ),
+                    ),
+                }
+                .f)()
+            },
+            TabBarFlags_NoTabListScrollingButtons: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_TabBarFlags_NoTabListScrollingButtons").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            TabBarFlags_NoTooltip: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_TabBarFlags_NoTooltip").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            TabBarFlags_None: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_TabBarFlags_None").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            TabBarFlags_Reorderable: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_TabBarFlags_Reorderable").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            TabBarFlags_TabListPopupButton: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_TabBarFlags_TabListPopupButton").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            TabItemFlags_Leading: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_TabItemFlags_Leading").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            TabItemFlags_NoCloseWithMiddleMouseButton: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(
+                            c_str_macro::c_str!("ImGui_TabItemFlags_NoCloseWithMiddleMouseButton")
+                                .as_ptr(),
+                        ),
+                    ),
+                }
+                .f)()
+            },
+            TabItemFlags_NoPushId: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_TabItemFlags_NoPushId").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            TabItemFlags_NoReorder: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_TabItemFlags_NoReorder").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            TabItemFlags_NoTooltip: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_TabItemFlags_NoTooltip").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            TabItemFlags_None: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_TabItemFlags_None").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            TabItemFlags_SetSelected: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(
+                            c_str_macro::c_str!("ImGui_TabItemFlags_SetSelected").as_ptr(),
+                        ),
+                    ),
+                }
+                .f)()
+            },
+            TabItemFlags_Trailing: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_TabItemFlags_Trailing").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            TabItemFlags_UnsavedDocument: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_TabItemFlags_UnsavedDocument").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            TableRowFlags_Headers: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_TableRowFlags_Headers").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            TableRowFlags_None: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_TableRowFlags_None").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            TableBgTarget_CellBg: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_TableBgTarget_CellBg").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            TableBgTarget_None: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_TableBgTarget_None").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            TableBgTarget_RowBg0: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_TableBgTarget_RowBg0").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            TableBgTarget_RowBg1: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_TableBgTarget_RowBg1").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            TableColumnFlags_None: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_TableColumnFlags_None").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            TableColumnFlags_DefaultHide: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_TableColumnFlags_DefaultHide").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            TableColumnFlags_DefaultSort: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_TableColumnFlags_DefaultSort").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            TableColumnFlags_Disabled: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(
+                            c_str_macro::c_str!("ImGui_TableColumnFlags_Disabled").as_ptr(),
+                        ),
+                    ),
+                }
+                .f)()
+            },
+            TableColumnFlags_IndentDisable: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_TableColumnFlags_IndentDisable").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            TableColumnFlags_IndentEnable: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_TableColumnFlags_IndentEnable").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            TableColumnFlags_NoClip: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_TableColumnFlags_NoClip").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            TableColumnFlags_NoHeaderLabel: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_TableColumnFlags_NoHeaderLabel").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            TableColumnFlags_NoHeaderWidth: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_TableColumnFlags_NoHeaderWidth").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            TableColumnFlags_NoHide: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_TableColumnFlags_NoHide").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            TableColumnFlags_NoReorder: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(
+                            c_str_macro::c_str!("ImGui_TableColumnFlags_NoReorder").as_ptr(),
+                        ),
+                    ),
+                }
+                .f)()
+            },
+            TableColumnFlags_NoResize: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(
+                            c_str_macro::c_str!("ImGui_TableColumnFlags_NoResize").as_ptr(),
+                        ),
+                    ),
+                }
+                .f)()
+            },
+            TableColumnFlags_NoSort: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_TableColumnFlags_NoSort").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            TableColumnFlags_NoSortAscending: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_TableColumnFlags_NoSortAscending").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            TableColumnFlags_NoSortDescending: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_TableColumnFlags_NoSortDescending").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            TableColumnFlags_PreferSortAscending: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_TableColumnFlags_PreferSortAscending").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            TableColumnFlags_PreferSortDescending: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_TableColumnFlags_PreferSortDescending").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            TableColumnFlags_WidthFixed: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_TableColumnFlags_WidthFixed").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            TableColumnFlags_WidthStretch: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_TableColumnFlags_WidthStretch").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            TableColumnFlags_IsEnabled: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(
+                            c_str_macro::c_str!("ImGui_TableColumnFlags_IsEnabled").as_ptr(),
+                        ),
+                    ),
+                }
+                .f)()
+            },
+            TableColumnFlags_IsHovered: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(
+                            c_str_macro::c_str!("ImGui_TableColumnFlags_IsHovered").as_ptr(),
+                        ),
+                    ),
+                }
+                .f)()
+            },
+            TableColumnFlags_IsSorted: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(
+                            c_str_macro::c_str!("ImGui_TableColumnFlags_IsSorted").as_ptr(),
+                        ),
+                    ),
+                }
+                .f)()
+            },
+            TableColumnFlags_IsVisible: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(
+                            c_str_macro::c_str!("ImGui_TableColumnFlags_IsVisible").as_ptr(),
+                        ),
+                    ),
+                }
+                .f)()
+            },
+            SortDirection_Ascending: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_SortDirection_Ascending").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            SortDirection_Descending: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(
+                            c_str_macro::c_str!("ImGui_SortDirection_Descending").as_ptr(),
+                        ),
+                    ),
+                }
+                .f)()
+            },
+            SortDirection_None: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_SortDirection_None").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            TableFlags_None: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_TableFlags_None").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            TableFlags_NoClip: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_TableFlags_NoClip").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            TableFlags_Borders: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_TableFlags_Borders").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            TableFlags_BordersH: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_TableFlags_BordersH").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            TableFlags_BordersInner: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_TableFlags_BordersInner").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            TableFlags_BordersInnerH: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(
+                            c_str_macro::c_str!("ImGui_TableFlags_BordersInnerH").as_ptr(),
+                        ),
+                    ),
+                }
+                .f)()
+            },
+            TableFlags_BordersInnerV: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(
+                            c_str_macro::c_str!("ImGui_TableFlags_BordersInnerV").as_ptr(),
+                        ),
+                    ),
+                }
+                .f)()
+            },
+            TableFlags_BordersOuter: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_TableFlags_BordersOuter").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            TableFlags_BordersOuterH: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(
+                            c_str_macro::c_str!("ImGui_TableFlags_BordersOuterH").as_ptr(),
+                        ),
+                    ),
+                }
+                .f)()
+            },
+            TableFlags_BordersOuterV: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(
+                            c_str_macro::c_str!("ImGui_TableFlags_BordersOuterV").as_ptr(),
+                        ),
+                    ),
+                }
+                .f)()
+            },
+            TableFlags_BordersV: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_TableFlags_BordersV").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            TableFlags_RowBg: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_TableFlags_RowBg").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            TableFlags_ContextMenuInBody: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_TableFlags_ContextMenuInBody").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            TableFlags_Hideable: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_TableFlags_Hideable").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            TableFlags_NoSavedSettings: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(
+                            c_str_macro::c_str!("ImGui_TableFlags_NoSavedSettings").as_ptr(),
+                        ),
+                    ),
+                }
+                .f)()
+            },
+            TableFlags_Reorderable: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_TableFlags_Reorderable").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            TableFlags_Resizable: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_TableFlags_Resizable").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            TableFlags_Sortable: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_TableFlags_Sortable").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            TableFlags_NoPadInnerX: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_TableFlags_NoPadInnerX").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            TableFlags_NoPadOuterX: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_TableFlags_NoPadOuterX").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            TableFlags_PadOuterX: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_TableFlags_PadOuterX").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            TableFlags_ScrollX: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_TableFlags_ScrollX").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            TableFlags_ScrollY: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_TableFlags_ScrollY").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            TableFlags_NoHostExtendX: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(
+                            c_str_macro::c_str!("ImGui_TableFlags_NoHostExtendX").as_ptr(),
+                        ),
+                    ),
+                }
+                .f)()
+            },
+            TableFlags_NoHostExtendY: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(
+                            c_str_macro::c_str!("ImGui_TableFlags_NoHostExtendY").as_ptr(),
+                        ),
+                    ),
+                }
+                .f)()
+            },
+            TableFlags_NoKeepColumnsVisible: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_TableFlags_NoKeepColumnsVisible").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            TableFlags_PreciseWidths: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(
+                            c_str_macro::c_str!("ImGui_TableFlags_PreciseWidths").as_ptr(),
+                        ),
+                    ),
+                }
+                .f)()
+            },
+            TableFlags_SizingFixedFit: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(
+                            c_str_macro::c_str!("ImGui_TableFlags_SizingFixedFit").as_ptr(),
+                        ),
+                    ),
+                }
+                .f)()
+            },
+            TableFlags_SizingFixedSame: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(
+                            c_str_macro::c_str!("ImGui_TableFlags_SizingFixedSame").as_ptr(),
+                        ),
+                    ),
+                }
+                .f)()
+            },
+            TableFlags_SizingStretchProp: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_TableFlags_SizingStretchProp").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            TableFlags_SizingStretchSame: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_TableFlags_SizingStretchSame").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            TableFlags_SortMulti: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_TableFlags_SortMulti").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            TableFlags_SortTristate: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_TableFlags_SortTristate").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            InputTextFlags_AllowTabInput: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_InputTextFlags_AllowTabInput").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            InputTextFlags_AlwaysOverwrite: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_InputTextFlags_AlwaysOverwrite").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            InputTextFlags_AutoSelectAll: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_InputTextFlags_AutoSelectAll").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            InputTextFlags_CharsDecimal: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_InputTextFlags_CharsDecimal").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            InputTextFlags_CharsHexadecimal: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_InputTextFlags_CharsHexadecimal").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            InputTextFlags_CharsNoBlank: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_InputTextFlags_CharsNoBlank").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            InputTextFlags_CharsScientific: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_InputTextFlags_CharsScientific").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            InputTextFlags_CharsUppercase: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_InputTextFlags_CharsUppercase").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            InputTextFlags_CtrlEnterForNewLine: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_InputTextFlags_CtrlEnterForNewLine").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            InputTextFlags_EnterReturnsTrue: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_InputTextFlags_EnterReturnsTrue").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            InputTextFlags_EscapeClearsAll: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_InputTextFlags_EscapeClearsAll").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            InputTextFlags_NoHorizontalScroll: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_InputTextFlags_NoHorizontalScroll").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            InputTextFlags_NoUndoRedo: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(
+                            c_str_macro::c_str!("ImGui_InputTextFlags_NoUndoRedo").as_ptr(),
+                        ),
+                    ),
+                }
+                .f)()
+            },
+            InputTextFlags_None: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_InputTextFlags_None").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            InputTextFlags_Password: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_InputTextFlags_Password").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            InputTextFlags_ReadOnly: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_InputTextFlags_ReadOnly").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            TreeNodeFlags_AllowItemOverlap: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_TreeNodeFlags_AllowItemOverlap").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            TreeNodeFlags_Bullet: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_TreeNodeFlags_Bullet").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            TreeNodeFlags_CollapsingHeader: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_TreeNodeFlags_CollapsingHeader").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            TreeNodeFlags_DefaultOpen: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(
+                            c_str_macro::c_str!("ImGui_TreeNodeFlags_DefaultOpen").as_ptr(),
+                        ),
+                    ),
+                }
+                .f)()
+            },
+            TreeNodeFlags_FramePadding: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(
+                            c_str_macro::c_str!("ImGui_TreeNodeFlags_FramePadding").as_ptr(),
+                        ),
+                    ),
+                }
+                .f)()
+            },
+            TreeNodeFlags_Framed: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_TreeNodeFlags_Framed").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            TreeNodeFlags_Leaf: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_TreeNodeFlags_Leaf").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            TreeNodeFlags_NoAutoOpenOnLog: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_TreeNodeFlags_NoAutoOpenOnLog").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            TreeNodeFlags_NoTreePushOnOpen: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_TreeNodeFlags_NoTreePushOnOpen").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            TreeNodeFlags_None: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_TreeNodeFlags_None").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            TreeNodeFlags_OpenOnArrow: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(
+                            c_str_macro::c_str!("ImGui_TreeNodeFlags_OpenOnArrow").as_ptr(),
+                        ),
+                    ),
+                }
+                .f)()
+            },
+            TreeNodeFlags_OpenOnDoubleClick: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_TreeNodeFlags_OpenOnDoubleClick").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            TreeNodeFlags_Selected: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_TreeNodeFlags_Selected").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            TreeNodeFlags_SpanAvailWidth: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_TreeNodeFlags_SpanAvailWidth").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            TreeNodeFlags_SpanFullWidth: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_TreeNodeFlags_SpanFullWidth").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            Cond_Always: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Cond_Always").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Cond_Appearing: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_Cond_Appearing").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Cond_FirstUseEver: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_Cond_FirstUseEver").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            Cond_Once: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Cond_Once").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            WindowFlags_AlwaysAutoResize: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_WindowFlags_AlwaysAutoResize").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            WindowFlags_AlwaysHorizontalScrollbar: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_WindowFlags_AlwaysHorizontalScrollbar").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            WindowFlags_AlwaysUseWindowPadding: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_WindowFlags_AlwaysUseWindowPadding").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            WindowFlags_AlwaysVerticalScrollbar: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_WindowFlags_AlwaysVerticalScrollbar").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            WindowFlags_HorizontalScrollbar: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_WindowFlags_HorizontalScrollbar").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            WindowFlags_MenuBar: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_WindowFlags_MenuBar").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            WindowFlags_NoBackground: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(
+                            c_str_macro::c_str!("ImGui_WindowFlags_NoBackground").as_ptr(),
+                        ),
+                    ),
+                }
+                .f)()
+            },
+            WindowFlags_NoCollapse: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_WindowFlags_NoCollapse").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            WindowFlags_NoDecoration: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(
+                            c_str_macro::c_str!("ImGui_WindowFlags_NoDecoration").as_ptr(),
+                        ),
+                    ),
+                }
+                .f)()
+            },
+            WindowFlags_NoDocking: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_WindowFlags_NoDocking").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            WindowFlags_NoFocusOnAppearing: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_WindowFlags_NoFocusOnAppearing").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            WindowFlags_NoInputs: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_WindowFlags_NoInputs").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            WindowFlags_NoMouseInputs: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(
+                            c_str_macro::c_str!("ImGui_WindowFlags_NoMouseInputs").as_ptr(),
+                        ),
+                    ),
+                }
+                .f)()
+            },
+            WindowFlags_NoMove: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_WindowFlags_NoMove").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            WindowFlags_NoNav: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_WindowFlags_NoNav").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            WindowFlags_NoNavFocus: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_WindowFlags_NoNavFocus").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            WindowFlags_NoNavInputs: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_WindowFlags_NoNavInputs").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            WindowFlags_NoResize: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_WindowFlags_NoResize").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            WindowFlags_NoSavedSettings: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_WindowFlags_NoSavedSettings").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            WindowFlags_NoScrollWithMouse: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_WindowFlags_NoScrollWithMouse").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            WindowFlags_NoScrollbar: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_WindowFlags_NoScrollbar").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            WindowFlags_NoTitleBar: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_WindowFlags_NoTitleBar").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            WindowFlags_None: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_WindowFlags_None").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            WindowFlags_TopMost: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_WindowFlags_TopMost").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            WindowFlags_UnsavedDocument: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_WindowFlags_UnsavedDocument").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            FocusedFlags_AnyWindow: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_FocusedFlags_AnyWindow").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            FocusedFlags_ChildWindows: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(
+                            c_str_macro::c_str!("ImGui_FocusedFlags_ChildWindows").as_ptr(),
+                        ),
+                    ),
+                }
+                .f)()
+            },
+            FocusedFlags_DockHierarchy: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context.GetFunc(
+                            c_str_macro::c_str!("ImGui_FocusedFlags_DockHierarchy").as_ptr(),
+                        ),
+                    ),
+                }
+                .f)()
+            },
+            FocusedFlags_NoPopupHierarchy: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_FocusedFlags_NoPopupHierarchy").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            FocusedFlags_None: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_FocusedFlags_None").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
+            FocusedFlags_RootAndChildWindows: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(plugin_context.GetFunc(
+                        c_str_macro::c_str!("ImGui_FocusedFlags_RootAndChildWindows").as_ptr(),
+                    )),
+                }
+                .f)()
+            },
+            FocusedFlags_RootWindow: unsafe {
+                (ConstLoader {
+                    f: std::mem::transmute(
+                        plugin_context
+                            .GetFunc(c_str_macro::c_str!("ImGui_FocusedFlags_RootWindow").as_ptr()),
+                    ),
+                }
+                .f)()
+            },
         }
     }
     pub unsafe fn ArrowButton(
@@ -9040,6 +13782,6 @@ impl std::fmt::Debug for FunctionPointers {
             .finish()
     }
 }
-impl FunctionPointers {
-    const TOTAL_COUNT: u32 = 362u32;
+struct ConstLoader {
+    f: fn() -> i32,
 }
