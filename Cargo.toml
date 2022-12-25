@@ -1,5 +1,7 @@
 [package]
+authors = ["Timofei Kazantsev aka Levitanus <pianoist@ya.ru>"]
 edition = "2021"
+license = "LGPL-3.0"
 name = "reaper-imgui"
 version = "0.1.0"
 
@@ -7,14 +9,16 @@ version = "0.1.0"
 
 [dependencies]
 c_str_macro = "1.0"
-# stringify = "1"
-once_cell = "1.16"
-quote = "1.0"
 reaper-low = "0.1.0"
-regex = "1.7"
 
 [patch.crates-io]
 reaper-low = {git = "https://github.com/Levitanus/reaper-rs", branch = "stable_for_rea-rs"}
+
+[build-dependencies]
+once_cell = "1.16"
+quote = "1.0"
+regex = "1.7"
+reqwest = {version = "0.11", features = ["blocking", "json"]}
 
 [lib]
 crate-type = ["lib"]

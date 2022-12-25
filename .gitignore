@@ -1,4 +1,4 @@
 /target
 /Cargo.lock
-
-hello_world_example/target/
+/hello_world_example/target/
+/reaper_imgui_functions.h

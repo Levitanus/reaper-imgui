@@ -1,9 +1,10 @@
 use std::{
     collections::HashMap,
-    fmt::{format, Display},
+    fmt::Display,
     fs::File,
-    io::{BufRead, BufReader},
+    io::{BufRead, BufReader, Read, Write},
     path::PathBuf,
+    process::Command,
 };
 
 use once_cell::sync::Lazy;
@@ -347,28 +348,31 @@ pub fn build_bindings(headers: Headers) -> String {
     bindings.to_token_stream().to_string()
 }
 
-#[cfg(test)]
-mod tests {
-    use std::{fs::File, io::Write, path::PathBuf, process::Command};
+fn main() {
+    let mut res = reqwest::blocking::get(
+        "https://github.com/cfillion/reaimgui/releases/latest/download/reaper_imgui_functions.h",
+    )
+    .expect("Can not get release");
+    let mut body = String::new();
+    res.read_to_string(&mut body)
+        .expect("Can not read to string");
+    let h_path = PathBuf::from("./src/reaper_imgui_functions.h");
+    File::create(&h_path)
+        .expect("Can not create headers file")
+        .write_all(body.as_bytes())
+        .expect("Can not write header to file.");
+    let headers = walk_header(h_path).expect("Can not walk header");
+    let bindings = build_bindings(headers);
+    let path = PathBuf::from("./src/bindings.rs");
+    let mut f = File::create(path.clone()).expect("Can not create file");
+    f.write_all(bindings.as_bytes())
+        .expect("Can not write bindings");
 
-    use super::{build_bindings, walk_header};
-
-    #[test]
-    fn test() {
-        let headers = walk_header("./src/reaper_imgui_functions.h").expect("Can not walk header");
-        let bindings = build_bindings(headers);
-        // println!("{}", bindings);
-        let path = PathBuf::from("./src/bindings.rs");
-        let mut f = File::create(path.clone()).expect("Can not create file");
-        f.write_all(bindings.as_bytes())
-            .expect("Can not write bindings");
-
-        Command::new("rustfmt")
-            .arg(format!(
-                "{}",
-                path.to_str().expect("Can not convert out path to string")
-            ))
-            .output()
-            .expect("Error while formatting");
-    }
+    Command::new("rustfmt")
+        .arg(format!(
+            "{}",
+            path.to_str().expect("Can not convert out path to string")
+        ))
+        .output()
+        .expect("Error while formatting");
 }

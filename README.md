@@ -4,7 +4,7 @@ Bindings for cfillion [ReaImGui](https://github.com/cfillion/reaimgui) Reaper Ex
 
 Currently, this is work in progress, that requires a lot of hand-work. From the generation (which currently is made from unit test) to usage.
 
-But, at least, it makes possible to run native Reaper imgui window in Reaper with `reaper-rs`, or with `rea-rs` crates.
+But, at least, it makes possible to run native Reaper imgui window in Reaper with `reaper-rs`, or with `rea-rs` crates. Note, that ReaImGui has to be installed in Raper first.
 
 Minimal example in 1hello_world_example` folder:
 
