@@ -283,7 +283,7 @@ pub fn build_bindings(headers: Headers) -> String {
         #![allow(non_camel_case_types)]
         #![allow(non_snake_case)]
         use std::ffi::c_void;
-        use reaper_low::PluginContext;
+        use rea_rs_low::PluginContext;
         use std::fmt;
 
         #(
@@ -294,7 +294,7 @@ pub fn build_bindings(headers: Headers) -> String {
         pub struct ImGui{
             pointers: FunctionPointers,
             plugin_context: Option<PluginContext>,
-            #(pub #const_names1: i32,)*
+            #(pub #const_names1: Option<i32>,)*
         }
         impl std::fmt::Debug for ImGui {
             fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
@@ -328,7 +328,12 @@ pub fn build_bindings(headers: Headers) -> String {
                     pointers,
                     plugin_context: Some(plugin_context),
                     #(
-                        #const_names: unsafe{(ConstLoader{f: std::mem::transmute(plugin_context.GetFunc(c_str_macro::c_str!(#const_init_names).as_ptr()))}.f)()},
+                        #const_names: unsafe{
+                            match plugin_context.GetFunc(c_str_macro::c_str!(#const_init_names).as_ptr()).is_null(){
+                                true => None,
+                                false => Some((ConstLoader{f: std::mem::transmute(plugin_context.GetFunc(c_str_macro::c_str!(#const_init_names).as_ptr()))}.f)())
+                            }
+                        },
                     )*
                 }
             }
