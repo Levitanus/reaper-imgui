@@ -4,7 +4,9 @@ description = "Unsafe bindings to ReaImGui Reaper extension."
 edition = "2021"
 license = "LGPL-3.0"
 name = "reaper-imgui"
-version = "0.1.1"
+readme = "README.md"
+repository = "https://github.com/Levitanus/reaper-imgui"
+version = "0.1.2"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
