@@ -1,9 +1,6 @@
 use rea_rs::{PluginContext, Reaper, Timer};
 use rea_rs_macros::reaper_extension_plugin;
-use reaper_imgui::{
-    Context, DrawList, DrawListSplitter, Font, ImGui, Image, ImageSet, ListClipper, Resource,
-    TextFilter, Viewport,
-};
+use reaper_imgui::{Context, ImGui};
 use std::{error::Error, mem::MaybeUninit};
 
 use c_str_macro::c_str;

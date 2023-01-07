@@ -3044,7 +3044,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Dir_Down").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Dir_Down");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Dir_Down").as_ptr()),
@@ -3058,7 +3061,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Dir_Left").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Dir_Left");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Dir_Left").as_ptr()),
@@ -3072,7 +3078,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Dir_None").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Dir_None");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Dir_None").as_ptr()),
@@ -3086,7 +3095,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Dir_Right").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Dir_Right");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Dir_Right").as_ptr()),
@@ -3100,7 +3112,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Dir_Up").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Dir_Up");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Dir_Up").as_ptr()),
@@ -3114,7 +3129,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_ButtonFlags_MouseButtonLeft").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_ButtonFlags_MouseButtonLeft"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_ButtonFlags_MouseButtonLeft").as_ptr(),
@@ -3128,7 +3149,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_ButtonFlags_MouseButtonMiddle").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_ButtonFlags_MouseButtonMiddle"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_ButtonFlags_MouseButtonMiddle").as_ptr(),
@@ -3142,7 +3169,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_ButtonFlags_MouseButtonRight").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_ButtonFlags_MouseButtonRight"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_ButtonFlags_MouseButtonRight").as_ptr(),
@@ -3156,7 +3189,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_ButtonFlags_None").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_ButtonFlags_None");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -3171,7 +3207,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_ColorEditFlags_NoAlpha").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_ColorEditFlags_NoAlpha");
+                        None
+                    }
                     false => {
                         Some((ConstLoader {
                             f: std::mem::transmute(plugin_context.GetFunc(
@@ -3187,7 +3226,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_ColorEditFlags_NoBorder").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_ColorEditFlags_NoBorder");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_ColorEditFlags_NoBorder").as_ptr(),
@@ -3201,7 +3243,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_ColorEditFlags_NoDragDrop").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_ColorEditFlags_NoDragDrop"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_ColorEditFlags_NoDragDrop").as_ptr(),
@@ -3215,7 +3263,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_ColorEditFlags_NoInputs").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_ColorEditFlags_NoInputs");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_ColorEditFlags_NoInputs").as_ptr(),
@@ -3229,7 +3280,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_ColorEditFlags_NoLabel").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_ColorEditFlags_NoLabel");
+                        None
+                    }
                     false => {
                         Some((ConstLoader {
                             f: std::mem::transmute(plugin_context.GetFunc(
@@ -3245,7 +3299,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_ColorEditFlags_NoOptions").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_ColorEditFlags_NoOptions"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_ColorEditFlags_NoOptions").as_ptr(),
@@ -3259,7 +3319,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_ColorEditFlags_NoPicker").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_ColorEditFlags_NoPicker");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_ColorEditFlags_NoPicker").as_ptr(),
@@ -3273,7 +3336,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_ColorEditFlags_NoSidePreview").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_ColorEditFlags_NoSidePreview"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_ColorEditFlags_NoSidePreview").as_ptr(),
@@ -3287,7 +3356,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_ColorEditFlags_NoSmallPreview").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_ColorEditFlags_NoSmallPreview"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_ColorEditFlags_NoSmallPreview").as_ptr(),
@@ -3301,7 +3376,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_ColorEditFlags_NoTooltip").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_ColorEditFlags_NoTooltip"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_ColorEditFlags_NoTooltip").as_ptr(),
@@ -3315,7 +3396,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_ColorEditFlags_None").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_ColorEditFlags_None");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -3330,7 +3414,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_ColorEditFlags_AlphaBar").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_ColorEditFlags_AlphaBar");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_ColorEditFlags_AlphaBar").as_ptr(),
@@ -3344,7 +3431,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_ColorEditFlags_AlphaPreview").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_ColorEditFlags_AlphaPreview"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_ColorEditFlags_AlphaPreview").as_ptr(),
@@ -3358,7 +3451,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_ColorEditFlags_AlphaPreviewHalf").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_ColorEditFlags_AlphaPreviewHalf"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_ColorEditFlags_AlphaPreviewHalf").as_ptr(),
@@ -3372,7 +3471,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_ColorEditFlags_DisplayHSV").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_ColorEditFlags_DisplayHSV"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_ColorEditFlags_DisplayHSV").as_ptr(),
@@ -3386,7 +3491,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_ColorEditFlags_DisplayHex").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_ColorEditFlags_DisplayHex"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_ColorEditFlags_DisplayHex").as_ptr(),
@@ -3400,7 +3511,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_ColorEditFlags_DisplayRGB").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_ColorEditFlags_DisplayRGB"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_ColorEditFlags_DisplayRGB").as_ptr(),
@@ -3414,7 +3531,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_ColorEditFlags_Float").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_ColorEditFlags_Float");
+                        None
+                    }
                     false => {
                         Some((ConstLoader {
                             f: std::mem::transmute(plugin_context.GetFunc(
@@ -3430,7 +3550,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_ColorEditFlags_InputHSV").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_ColorEditFlags_InputHSV");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_ColorEditFlags_InputHSV").as_ptr(),
@@ -3444,7 +3567,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_ColorEditFlags_InputRGB").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_ColorEditFlags_InputRGB");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_ColorEditFlags_InputRGB").as_ptr(),
@@ -3458,7 +3584,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_ColorEditFlags_PickerHueBar").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_ColorEditFlags_PickerHueBar"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_ColorEditFlags_PickerHueBar").as_ptr(),
@@ -3472,7 +3604,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_ColorEditFlags_PickerHueWheel").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_ColorEditFlags_PickerHueWheel"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_ColorEditFlags_PickerHueWheel").as_ptr(),
@@ -3486,7 +3624,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_ColorEditFlags_Uint8").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_ColorEditFlags_Uint8");
+                        None
+                    }
                     false => {
                         Some((ConstLoader {
                             f: std::mem::transmute(plugin_context.GetFunc(
@@ -3502,7 +3643,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_ComboFlags_HeightLarge").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_ComboFlags_HeightLarge");
+                        None
+                    }
                     false => {
                         Some((ConstLoader {
                             f: std::mem::transmute(plugin_context.GetFunc(
@@ -3518,7 +3662,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_ComboFlags_HeightLargest").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_ComboFlags_HeightLargest"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_ComboFlags_HeightLargest").as_ptr(),
@@ -3532,7 +3682,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_ComboFlags_HeightRegular").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_ComboFlags_HeightRegular"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_ComboFlags_HeightRegular").as_ptr(),
@@ -3546,7 +3702,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_ComboFlags_HeightSmall").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_ComboFlags_HeightSmall");
+                        None
+                    }
                     false => {
                         Some((ConstLoader {
                             f: std::mem::transmute(plugin_context.GetFunc(
@@ -3562,7 +3721,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_ComboFlags_NoArrowButton").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_ComboFlags_NoArrowButton"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_ComboFlags_NoArrowButton").as_ptr(),
@@ -3576,7 +3741,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_ComboFlags_NoPreview").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_ComboFlags_NoPreview");
+                        None
+                    }
                     false => {
                         Some((ConstLoader {
                             f: std::mem::transmute(plugin_context.GetFunc(
@@ -3592,7 +3760,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_ComboFlags_None").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_ComboFlags_None");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -3607,7 +3778,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_ComboFlags_PopupAlignLeft").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_ComboFlags_PopupAlignLeft"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_ComboFlags_PopupAlignLeft").as_ptr(),
@@ -3621,7 +3798,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_SelectableFlags_AllowDoubleClick").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_SelectableFlags_AllowDoubleClick"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_SelectableFlags_AllowDoubleClick").as_ptr(),
@@ -3635,7 +3818,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_SelectableFlags_AllowItemOverlap").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_SelectableFlags_AllowItemOverlap"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_SelectableFlags_AllowItemOverlap").as_ptr(),
@@ -3649,7 +3838,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_SelectableFlags_Disabled").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_SelectableFlags_Disabled"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_SelectableFlags_Disabled").as_ptr(),
@@ -3663,7 +3858,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_SelectableFlags_DontClosePopups").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_SelectableFlags_DontClosePopups"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_SelectableFlags_DontClosePopups").as_ptr(),
@@ -3677,7 +3878,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_SelectableFlags_None").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_SelectableFlags_None");
+                        None
+                    }
                     false => {
                         Some((ConstLoader {
                             f: std::mem::transmute(plugin_context.GetFunc(
@@ -3693,7 +3897,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_SelectableFlags_SpanAllColumns").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_SelectableFlags_SpanAllColumns"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_SelectableFlags_SpanAllColumns").as_ptr(),
@@ -3707,7 +3917,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_ConfigFlags_DockingEnable").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_ConfigFlags_DockingEnable"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_ConfigFlags_DockingEnable").as_ptr(),
@@ -3721,7 +3937,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_ConfigFlags_NavEnableKeyboard").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_ConfigFlags_NavEnableKeyboard"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_ConfigFlags_NavEnableKeyboard").as_ptr(),
@@ -3735,7 +3957,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_ConfigFlags_NavEnableSetMousePos").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_ConfigFlags_NavEnableSetMousePos"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_ConfigFlags_NavEnableSetMousePos").as_ptr(),
@@ -3749,7 +3977,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_ConfigFlags_NavNoCaptureKeyboard").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_ConfigFlags_NavNoCaptureKeyboard"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_ConfigFlags_NavNoCaptureKeyboard").as_ptr(),
@@ -3763,7 +3997,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_ConfigFlags_NoMouse").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_ConfigFlags_NoMouse");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -3778,7 +4015,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_ConfigFlags_NoMouseCursorChange").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_ConfigFlags_NoMouseCursorChange"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_ConfigFlags_NoMouseCursorChange").as_ptr(),
@@ -3792,7 +4035,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_ConfigFlags_NoSavedSettings").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_ConfigFlags_NoSavedSettings"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_ConfigFlags_NoSavedSettings").as_ptr(),
@@ -3806,7 +4055,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_ConfigFlags_None").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_ConfigFlags_None");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -3821,7 +4073,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_ConfigVar_DockingNoSplit").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_ConfigVar_DockingNoSplit"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_ConfigVar_DockingNoSplit").as_ptr(),
@@ -3837,7 +4095,13 @@ impl ImGui {
                     )
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_ConfigVar_DockingTransparentPayload"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context.GetFunc(
@@ -3854,7 +4118,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_ConfigVar_DockingWithShift").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_ConfigVar_DockingWithShift"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_ConfigVar_DockingWithShift").as_ptr(),
@@ -3868,7 +4138,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_ConfigVar_DragClickToInputText").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_ConfigVar_DragClickToInputText"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_ConfigVar_DragClickToInputText").as_ptr(),
@@ -3882,7 +4158,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_ConfigVar_Flags").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_ConfigVar_Flags");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -3897,7 +4176,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_ConfigVar_HoverDelayNormal").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_ConfigVar_HoverDelayNormal"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_ConfigVar_HoverDelayNormal").as_ptr(),
@@ -3911,7 +4196,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_ConfigVar_HoverDelayShort").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_ConfigVar_HoverDelayShort"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_ConfigVar_HoverDelayShort").as_ptr(),
@@ -3925,7 +4216,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_ConfigVar_InputTextCursorBlink").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_ConfigVar_InputTextCursorBlink"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_ConfigVar_InputTextCursorBlink").as_ptr(),
@@ -3941,7 +4238,13 @@ impl ImGui {
                     )
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_ConfigVar_InputTextEnterKeepActive"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context.GetFunc(
@@ -3958,7 +4261,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_ConfigVar_InputTrickleEventQueue").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_ConfigVar_InputTrickleEventQueue"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_ConfigVar_InputTrickleEventQueue").as_ptr(),
@@ -3972,7 +4281,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_ConfigVar_KeyRepeatDelay").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_ConfigVar_KeyRepeatDelay"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_ConfigVar_KeyRepeatDelay").as_ptr(),
@@ -3986,7 +4301,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_ConfigVar_KeyRepeatRate").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_ConfigVar_KeyRepeatRate");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_ConfigVar_KeyRepeatRate").as_ptr(),
@@ -4000,7 +4318,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_ConfigVar_MacOSXBehaviors").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_ConfigVar_MacOSXBehaviors"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_ConfigVar_MacOSXBehaviors").as_ptr(),
@@ -4016,7 +4340,13 @@ impl ImGui {
                     )
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_ConfigVar_MouseDoubleClickMaxDist"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_ConfigVar_MouseDoubleClickMaxDist").as_ptr(),
@@ -4030,7 +4360,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_ConfigVar_MouseDoubleClickTime").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_ConfigVar_MouseDoubleClickTime"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_ConfigVar_MouseDoubleClickTime").as_ptr(),
@@ -4044,7 +4380,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_ConfigVar_MouseDragThreshold").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_ConfigVar_MouseDragThreshold"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_ConfigVar_MouseDragThreshold").as_ptr(),
@@ -4058,7 +4400,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_ConfigVar_ViewportsNoDecoration").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_ConfigVar_ViewportsNoDecoration"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_ConfigVar_ViewportsNoDecoration").as_ptr(),
@@ -4074,7 +4422,13 @@ impl ImGui {
                     )
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_ConfigVar_WindowsMoveFromTitleBarOnly"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context.GetFunc(
@@ -4091,7 +4445,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_ConfigVar_WindowsResizeFromEdges").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_ConfigVar_WindowsResizeFromEdges"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_ConfigVar_WindowsResizeFromEdges").as_ptr(),
@@ -4105,7 +4465,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_DragDropFlags_None").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_DragDropFlags_None");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -4122,7 +4485,13 @@ impl ImGui {
                     )
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_DragDropFlags_AcceptBeforeDelivery"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context.GetFunc(
@@ -4141,7 +4510,13 @@ impl ImGui {
                     )
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_DragDropFlags_AcceptNoDrawDefaultRect"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context.GetFunc(
@@ -4160,7 +4535,13 @@ impl ImGui {
                     )
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_DragDropFlags_AcceptNoPreviewTooltip"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context.GetFunc(
@@ -4177,7 +4558,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_DragDropFlags_AcceptPeekOnly").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_DragDropFlags_AcceptPeekOnly"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_DragDropFlags_AcceptPeekOnly").as_ptr(),
@@ -4191,7 +4578,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_DragDropFlags_SourceAllowNullID").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_DragDropFlags_SourceAllowNullID"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_DragDropFlags_SourceAllowNullID").as_ptr(),
@@ -4207,7 +4600,13 @@ impl ImGui {
                     )
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_DragDropFlags_SourceAutoExpirePayload"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context.GetFunc(
@@ -4224,7 +4623,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_DragDropFlags_SourceExtern").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_DragDropFlags_SourceExtern"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_DragDropFlags_SourceExtern").as_ptr(),
@@ -4240,7 +4645,13 @@ impl ImGui {
                     )
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_DragDropFlags_SourceNoDisableHover"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context.GetFunc(
@@ -4260,7 +4671,13 @@ impl ImGui {
                     )
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_DragDropFlags_SourceNoHoldToOpenOthers"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context.GetFunc(
@@ -4279,7 +4696,13 @@ impl ImGui {
                     )
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_DragDropFlags_SourceNoPreviewTooltip"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context.GetFunc(
@@ -4296,7 +4719,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_SliderFlags_AlwaysClamp").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_SliderFlags_AlwaysClamp");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_SliderFlags_AlwaysClamp").as_ptr(),
@@ -4310,7 +4736,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_SliderFlags_Logarithmic").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_SliderFlags_Logarithmic");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_SliderFlags_Logarithmic").as_ptr(),
@@ -4324,7 +4753,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_SliderFlags_NoInput").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_SliderFlags_NoInput");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -4339,7 +4771,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_SliderFlags_NoRoundToFormat").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_SliderFlags_NoRoundToFormat"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_SliderFlags_NoRoundToFormat").as_ptr(),
@@ -4353,7 +4791,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_SliderFlags_None").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_SliderFlags_None");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -4368,7 +4809,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_DrawFlags_Closed").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_DrawFlags_Closed");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -4383,7 +4827,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_DrawFlags_None").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_DrawFlags_None");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -4398,7 +4845,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_DrawFlags_RoundCornersAll").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_DrawFlags_RoundCornersAll"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_DrawFlags_RoundCornersAll").as_ptr(),
@@ -4412,7 +4865,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_DrawFlags_RoundCornersBottom").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_DrawFlags_RoundCornersBottom"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_DrawFlags_RoundCornersBottom").as_ptr(),
@@ -4426,7 +4885,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_DrawFlags_RoundCornersBottomLeft").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_DrawFlags_RoundCornersBottomLeft"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_DrawFlags_RoundCornersBottomLeft").as_ptr(),
@@ -4442,7 +4907,13 @@ impl ImGui {
                     )
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_DrawFlags_RoundCornersBottomRight"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_DrawFlags_RoundCornersBottomRight").as_ptr(),
@@ -4456,7 +4927,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_DrawFlags_RoundCornersLeft").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_DrawFlags_RoundCornersLeft"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_DrawFlags_RoundCornersLeft").as_ptr(),
@@ -4470,7 +4947,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_DrawFlags_RoundCornersNone").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_DrawFlags_RoundCornersNone"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_DrawFlags_RoundCornersNone").as_ptr(),
@@ -4484,7 +4967,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_DrawFlags_RoundCornersRight").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_DrawFlags_RoundCornersRight"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_DrawFlags_RoundCornersRight").as_ptr(),
@@ -4498,7 +4987,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_DrawFlags_RoundCornersTop").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_DrawFlags_RoundCornersTop"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_DrawFlags_RoundCornersTop").as_ptr(),
@@ -4512,7 +5007,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_DrawFlags_RoundCornersTopLeft").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_DrawFlags_RoundCornersTopLeft"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_DrawFlags_RoundCornersTopLeft").as_ptr(),
@@ -4526,7 +5027,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_DrawFlags_RoundCornersTopRight").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_DrawFlags_RoundCornersTopRight"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_DrawFlags_RoundCornersTopRight").as_ptr(),
@@ -4540,7 +5047,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_FontFlags_Bold").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_FontFlags_Bold");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -4555,7 +5065,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_FontFlags_Italic").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_FontFlags_Italic");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -4570,7 +5083,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_FontFlags_None").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_FontFlags_None");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -4588,7 +5104,13 @@ impl ImGui {
                     )
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_HoveredFlags_AllowWhenBlockedByActiveItem"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context.GetFunc(
@@ -4609,7 +5131,13 @@ impl ImGui {
                     )
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_HoveredFlags_AllowWhenBlockedByPopup"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context.GetFunc(
@@ -4626,7 +5154,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_HoveredFlags_DelayNormal").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_HoveredFlags_DelayNormal"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_HoveredFlags_DelayNormal").as_ptr(),
@@ -4640,7 +5174,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_HoveredFlags_DelayShort").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_HoveredFlags_DelayShort");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_HoveredFlags_DelayShort").as_ptr(),
@@ -4654,7 +5191,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_HoveredFlags_NoNavOverride").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_HoveredFlags_NoNavOverride"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_HoveredFlags_NoNavOverride").as_ptr(),
@@ -4668,7 +5211,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_HoveredFlags_NoSharedDelay").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_HoveredFlags_NoSharedDelay"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_HoveredFlags_NoSharedDelay").as_ptr(),
@@ -4682,7 +5231,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_HoveredFlags_None").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_HoveredFlags_None");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -4697,7 +5249,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_HoveredFlags_AllowWhenDisabled").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_HoveredFlags_AllowWhenDisabled"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_HoveredFlags_AllowWhenDisabled").as_ptr(),
@@ -4711,7 +5269,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_HoveredFlags_AllowWhenOverlapped").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_HoveredFlags_AllowWhenOverlapped"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_HoveredFlags_AllowWhenOverlapped").as_ptr(),
@@ -4725,7 +5289,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_HoveredFlags_RectOnly").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_HoveredFlags_RectOnly");
+                        None
+                    }
                     false => {
                         Some((ConstLoader {
                             f: std::mem::transmute(plugin_context.GetFunc(
@@ -4741,7 +5308,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_HoveredFlags_AnyWindow").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_HoveredFlags_AnyWindow");
+                        None
+                    }
                     false => {
                         Some((ConstLoader {
                             f: std::mem::transmute(plugin_context.GetFunc(
@@ -4757,7 +5327,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_HoveredFlags_ChildWindows").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_HoveredFlags_ChildWindows"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_HoveredFlags_ChildWindows").as_ptr(),
@@ -4771,7 +5347,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_HoveredFlags_DockHierarchy").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_HoveredFlags_DockHierarchy"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_HoveredFlags_DockHierarchy").as_ptr(),
@@ -4785,7 +5367,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_HoveredFlags_NoPopupHierarchy").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_HoveredFlags_NoPopupHierarchy"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_HoveredFlags_NoPopupHierarchy").as_ptr(),
@@ -4799,7 +5387,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_HoveredFlags_RootAndChildWindows").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_HoveredFlags_RootAndChildWindows"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_HoveredFlags_RootAndChildWindows").as_ptr(),
@@ -4813,7 +5407,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_HoveredFlags_RootWindow").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_HoveredFlags_RootWindow");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_HoveredFlags_RootWindow").as_ptr(),
@@ -4827,7 +5424,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_0").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_0");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_0").as_ptr()),
@@ -4841,7 +5441,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_1").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_1");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_1").as_ptr()),
@@ -4855,7 +5458,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_2").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_2");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_2").as_ptr()),
@@ -4869,7 +5475,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_3").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_3");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_3").as_ptr()),
@@ -4883,7 +5492,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_4").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_4");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_4").as_ptr()),
@@ -4897,7 +5509,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_5").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_5");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_5").as_ptr()),
@@ -4911,7 +5526,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_6").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_6");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_6").as_ptr()),
@@ -4925,7 +5543,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_7").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_7");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_7").as_ptr()),
@@ -4939,7 +5560,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_8").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_8");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_8").as_ptr()),
@@ -4953,7 +5577,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_9").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_9");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_9").as_ptr()),
@@ -4967,7 +5594,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_A").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_A");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_A").as_ptr()),
@@ -4981,7 +5611,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_Apostrophe").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_Apostrophe");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -4996,7 +5629,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_B").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_B");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_B").as_ptr()),
@@ -5010,7 +5646,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_Backslash").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_Backslash");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -5025,7 +5664,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_Backspace").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_Backspace");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -5040,7 +5682,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_C").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_C");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_C").as_ptr()),
@@ -5054,7 +5699,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_CapsLock").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_CapsLock");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -5069,7 +5717,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_Comma").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_Comma");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_Comma").as_ptr()),
@@ -5083,7 +5734,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_D").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_D");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_D").as_ptr()),
@@ -5097,7 +5751,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_Delete").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_Delete");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -5112,7 +5769,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_DownArrow").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_DownArrow");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -5127,7 +5787,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_E").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_E");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_E").as_ptr()),
@@ -5141,7 +5804,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_End").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_End");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_End").as_ptr()),
@@ -5155,7 +5821,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_Enter").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_Enter");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_Enter").as_ptr()),
@@ -5169,7 +5838,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_Equal").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_Equal");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_Equal").as_ptr()),
@@ -5183,7 +5855,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_Escape").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_Escape");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -5198,7 +5873,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_F").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_F");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_F").as_ptr()),
@@ -5212,7 +5890,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_F1").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_F1");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_F1").as_ptr()),
@@ -5226,7 +5907,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_F10").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_F10");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_F10").as_ptr()),
@@ -5240,7 +5924,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_F11").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_F11");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_F11").as_ptr()),
@@ -5254,7 +5941,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_F12").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_F12");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_F12").as_ptr()),
@@ -5268,7 +5958,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_F2").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_F2");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_F2").as_ptr()),
@@ -5282,7 +5975,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_F3").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_F3");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_F3").as_ptr()),
@@ -5296,7 +5992,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_F4").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_F4");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_F4").as_ptr()),
@@ -5310,7 +6009,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_F5").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_F5");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_F5").as_ptr()),
@@ -5324,7 +6026,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_F6").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_F6");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_F6").as_ptr()),
@@ -5338,7 +6043,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_F7").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_F7");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_F7").as_ptr()),
@@ -5352,7 +6060,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_F8").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_F8");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_F8").as_ptr()),
@@ -5366,7 +6077,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_F9").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_F9");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_F9").as_ptr()),
@@ -5380,7 +6094,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_G").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_G");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_G").as_ptr()),
@@ -5394,7 +6111,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_GraveAccent").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_GraveAccent");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -5409,7 +6129,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_H").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_H");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_H").as_ptr()),
@@ -5423,7 +6146,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_Home").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_Home");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_Home").as_ptr()),
@@ -5437,7 +6163,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_I").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_I");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_I").as_ptr()),
@@ -5451,7 +6180,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_Insert").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_Insert");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -5466,7 +6198,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_J").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_J");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_J").as_ptr()),
@@ -5480,7 +6215,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_K").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_K");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_K").as_ptr()),
@@ -5494,7 +6232,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_Keypad0").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_Keypad0");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -5509,7 +6250,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_Keypad1").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_Keypad1");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -5524,7 +6268,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_Keypad2").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_Keypad2");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -5539,7 +6286,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_Keypad3").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_Keypad3");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -5554,7 +6304,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_Keypad4").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_Keypad4");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -5569,7 +6322,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_Keypad5").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_Keypad5");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -5584,7 +6340,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_Keypad6").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_Keypad6");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -5599,7 +6358,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_Keypad7").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_Keypad7");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -5614,7 +6376,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_Keypad8").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_Keypad8");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -5629,7 +6394,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_Keypad9").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_Keypad9");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -5644,7 +6412,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_KeypadAdd").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_KeypadAdd");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -5659,7 +6430,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_KeypadDecimal").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_KeypadDecimal");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -5674,7 +6448,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_KeypadDivide").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_KeypadDivide");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -5689,7 +6466,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_KeypadEnter").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_KeypadEnter");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -5704,7 +6484,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_KeypadEqual").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_KeypadEqual");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -5719,7 +6502,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_KeypadMultiply").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_KeypadMultiply");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -5734,7 +6520,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_KeypadSubtract").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_KeypadSubtract");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -5749,7 +6538,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_L").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_L");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_L").as_ptr()),
@@ -5763,7 +6555,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_LeftAlt").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_LeftAlt");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -5778,7 +6573,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_LeftArrow").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_LeftArrow");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -5793,7 +6591,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_LeftBracket").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_LeftBracket");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -5808,7 +6609,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_LeftCtrl").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_LeftCtrl");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -5823,7 +6627,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_LeftShift").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_LeftShift");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -5838,7 +6645,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_LeftSuper").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_LeftSuper");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -5853,7 +6663,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_M").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_M");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_M").as_ptr()),
@@ -5867,7 +6680,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_Menu").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_Menu");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_Menu").as_ptr()),
@@ -5881,7 +6697,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_Minus").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_Minus");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_Minus").as_ptr()),
@@ -5895,7 +6714,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_N").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_N");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_N").as_ptr()),
@@ -5909,7 +6731,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_NumLock").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_NumLock");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -5924,7 +6749,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_O").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_O");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_O").as_ptr()),
@@ -5938,7 +6766,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_P").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_P");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_P").as_ptr()),
@@ -5952,7 +6783,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_PageDown").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_PageDown");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -5967,7 +6801,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_PageUp").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_PageUp");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -5982,7 +6819,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_Pause").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_Pause");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_Pause").as_ptr()),
@@ -5996,7 +6836,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_Period").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_Period");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -6011,7 +6854,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_PrintScreen").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_PrintScreen");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -6026,7 +6872,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_Q").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_Q");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_Q").as_ptr()),
@@ -6040,7 +6889,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_R").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_R");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_R").as_ptr()),
@@ -6054,7 +6906,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_RightAlt").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_RightAlt");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -6069,7 +6924,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_RightArrow").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_RightArrow");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -6084,7 +6942,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_RightBracket").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_RightBracket");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -6099,7 +6960,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_RightCtrl").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_RightCtrl");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -6114,7 +6978,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_RightShift").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_RightShift");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -6129,7 +6996,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_RightSuper").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_RightSuper");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -6144,7 +7014,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_S").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_S");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_S").as_ptr()),
@@ -6158,7 +7031,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_ScrollLock").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_ScrollLock");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -6173,7 +7049,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_Semicolon").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_Semicolon");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -6188,7 +7067,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_Slash").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_Slash");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_Slash").as_ptr()),
@@ -6202,7 +7084,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_Space").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_Space");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_Space").as_ptr()),
@@ -6216,7 +7101,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_T").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_T");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_T").as_ptr()),
@@ -6230,7 +7118,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_Tab").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_Tab");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_Tab").as_ptr()),
@@ -6244,7 +7135,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_U").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_U");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_U").as_ptr()),
@@ -6258,7 +7152,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_UpArrow").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_UpArrow");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -6273,7 +7170,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_V").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_V");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_V").as_ptr()),
@@ -6287,7 +7187,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_W").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_W");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_W").as_ptr()),
@@ -6301,7 +7204,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_X").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_X");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_X").as_ptr()),
@@ -6315,7 +7221,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_Y").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_Y");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_Y").as_ptr()),
@@ -6329,7 +7238,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_Z").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_Z");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Key_Z").as_ptr()),
@@ -6343,7 +7255,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Mod_Alt").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Mod_Alt");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Mod_Alt").as_ptr()),
@@ -6357,7 +7272,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Mod_Ctrl").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Mod_Ctrl");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Mod_Ctrl").as_ptr()),
@@ -6371,7 +7289,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Mod_None").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Mod_None");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Mod_None").as_ptr()),
@@ -6385,7 +7306,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Mod_Shift").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Mod_Shift");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Mod_Shift").as_ptr()),
@@ -6399,7 +7323,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Mod_Shortcut").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Mod_Shortcut");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -6414,7 +7341,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Mod_Super").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Mod_Super");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Mod_Super").as_ptr()),
@@ -6428,7 +7358,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_MouseLeft").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_MouseLeft");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -6443,7 +7376,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_MouseMiddle").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_MouseMiddle");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -6458,7 +7394,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_MouseRight").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_MouseRight");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -6473,7 +7412,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_MouseWheelX").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_MouseWheelX");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -6488,7 +7430,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_MouseWheelY").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_MouseWheelY");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -6503,7 +7448,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_MouseX1").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_MouseX1");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -6518,7 +7466,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Key_MouseX2").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Key_MouseX2");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -6533,7 +7484,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_MouseButton_Left").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_MouseButton_Left");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -6548,7 +7502,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_MouseButton_Middle").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_MouseButton_Middle");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -6563,7 +7520,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_MouseButton_Right").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_MouseButton_Right");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -6578,7 +7538,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_MouseCursor_Arrow").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_MouseCursor_Arrow");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -6593,7 +7556,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_MouseCursor_Hand").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_MouseCursor_Hand");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -6608,7 +7574,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_MouseCursor_NotAllowed").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_MouseCursor_NotAllowed");
+                        None
+                    }
                     false => {
                         Some((ConstLoader {
                             f: std::mem::transmute(plugin_context.GetFunc(
@@ -6624,7 +7593,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_MouseCursor_ResizeAll").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_MouseCursor_ResizeAll");
+                        None
+                    }
                     false => {
                         Some((ConstLoader {
                             f: std::mem::transmute(plugin_context.GetFunc(
@@ -6640,7 +7612,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_MouseCursor_ResizeEW").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_MouseCursor_ResizeEW");
+                        None
+                    }
                     false => {
                         Some((ConstLoader {
                             f: std::mem::transmute(plugin_context.GetFunc(
@@ -6656,7 +7631,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_MouseCursor_ResizeNESW").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_MouseCursor_ResizeNESW");
+                        None
+                    }
                     false => {
                         Some((ConstLoader {
                             f: std::mem::transmute(plugin_context.GetFunc(
@@ -6672,7 +7650,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_MouseCursor_ResizeNS").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_MouseCursor_ResizeNS");
+                        None
+                    }
                     false => {
                         Some((ConstLoader {
                             f: std::mem::transmute(plugin_context.GetFunc(
@@ -6688,7 +7669,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_MouseCursor_ResizeNWSE").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_MouseCursor_ResizeNWSE");
+                        None
+                    }
                     false => {
                         Some((ConstLoader {
                             f: std::mem::transmute(plugin_context.GetFunc(
@@ -6704,7 +7688,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_MouseCursor_TextInput").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_MouseCursor_TextInput");
+                        None
+                    }
                     false => {
                         Some((ConstLoader {
                             f: std::mem::transmute(plugin_context.GetFunc(
@@ -6722,7 +7709,13 @@ impl ImGui {
                     )
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_PopupFlags_NoOpenOverExistingPopup"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context.GetFunc(
@@ -6739,7 +7732,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_PopupFlags_None").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_PopupFlags_None");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -6754,7 +7750,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_PopupFlags_MouseButtonLeft").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_PopupFlags_MouseButtonLeft"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_PopupFlags_MouseButtonLeft").as_ptr(),
@@ -6768,7 +7770,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_PopupFlags_MouseButtonMiddle").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_PopupFlags_MouseButtonMiddle"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_PopupFlags_MouseButtonMiddle").as_ptr(),
@@ -6782,7 +7790,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_PopupFlags_MouseButtonRight").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_PopupFlags_MouseButtonRight"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_PopupFlags_MouseButtonRight").as_ptr(),
@@ -6796,7 +7810,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_PopupFlags_NoOpenOverItems").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_PopupFlags_NoOpenOverItems"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_PopupFlags_NoOpenOverItems").as_ptr(),
@@ -6810,7 +7830,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_PopupFlags_AnyPopup").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_PopupFlags_AnyPopup");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -6825,7 +7848,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_PopupFlags_AnyPopupId").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_PopupFlags_AnyPopupId");
+                        None
+                    }
                     false => {
                         Some((ConstLoader {
                             f: std::mem::transmute(plugin_context.GetFunc(
@@ -6841,7 +7867,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_PopupFlags_AnyPopupLevel").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_PopupFlags_AnyPopupLevel"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_PopupFlags_AnyPopupLevel").as_ptr(),
@@ -6855,7 +7887,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Col_Border").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Col_Border");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -6870,7 +7905,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Col_BorderShadow").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Col_BorderShadow");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -6885,7 +7923,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Col_Button").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Col_Button");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -6900,7 +7941,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Col_ButtonActive").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Col_ButtonActive");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -6915,7 +7959,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Col_ButtonHovered").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Col_ButtonHovered");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -6930,7 +7977,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Col_CheckMark").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Col_CheckMark");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -6945,7 +7995,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Col_ChildBg").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Col_ChildBg");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -6960,7 +8013,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Col_DockingEmptyBg").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Col_DockingEmptyBg");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -6975,7 +8031,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Col_DockingPreview").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Col_DockingPreview");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -6990,7 +8049,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Col_DragDropTarget").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Col_DragDropTarget");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -7005,7 +8067,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Col_FrameBg").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Col_FrameBg");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -7020,7 +8085,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Col_FrameBgActive").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Col_FrameBgActive");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -7035,7 +8103,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Col_FrameBgHovered").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Col_FrameBgHovered");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -7050,7 +8121,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Col_Header").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Col_Header");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -7065,7 +8139,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Col_HeaderActive").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Col_HeaderActive");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -7080,7 +8157,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Col_HeaderHovered").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Col_HeaderHovered");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -7095,7 +8175,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Col_MenuBarBg").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Col_MenuBarBg");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -7110,7 +8193,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Col_ModalWindowDimBg").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Col_ModalWindowDimBg");
+                        None
+                    }
                     false => {
                         Some((ConstLoader {
                             f: std::mem::transmute(plugin_context.GetFunc(
@@ -7126,7 +8212,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Col_NavHighlight").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Col_NavHighlight");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -7141,7 +8230,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Col_NavWindowingDimBg").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Col_NavWindowingDimBg");
+                        None
+                    }
                     false => {
                         Some((ConstLoader {
                             f: std::mem::transmute(plugin_context.GetFunc(
@@ -7157,7 +8249,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Col_NavWindowingHighlight").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_Col_NavWindowingHighlight"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_Col_NavWindowingHighlight").as_ptr(),
@@ -7171,7 +8269,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Col_PlotHistogram").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Col_PlotHistogram");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -7186,7 +8287,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Col_PlotHistogramHovered").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_Col_PlotHistogramHovered"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_Col_PlotHistogramHovered").as_ptr(),
@@ -7200,7 +8307,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Col_PlotLines").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Col_PlotLines");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -7215,7 +8325,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Col_PlotLinesHovered").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Col_PlotLinesHovered");
+                        None
+                    }
                     false => {
                         Some((ConstLoader {
                             f: std::mem::transmute(plugin_context.GetFunc(
@@ -7231,7 +8344,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Col_PopupBg").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Col_PopupBg");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -7246,7 +8362,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Col_ResizeGrip").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Col_ResizeGrip");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -7261,7 +8380,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Col_ResizeGripActive").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Col_ResizeGripActive");
+                        None
+                    }
                     false => {
                         Some((ConstLoader {
                             f: std::mem::transmute(plugin_context.GetFunc(
@@ -7277,7 +8399,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Col_ResizeGripHovered").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Col_ResizeGripHovered");
+                        None
+                    }
                     false => {
                         Some((ConstLoader {
                             f: std::mem::transmute(plugin_context.GetFunc(
@@ -7293,7 +8418,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Col_ScrollbarBg").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Col_ScrollbarBg");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -7308,7 +8436,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Col_ScrollbarGrab").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Col_ScrollbarGrab");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -7323,7 +8454,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Col_ScrollbarGrabActive").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Col_ScrollbarGrabActive");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_Col_ScrollbarGrabActive").as_ptr(),
@@ -7337,7 +8471,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Col_ScrollbarGrabHovered").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_Col_ScrollbarGrabHovered"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_Col_ScrollbarGrabHovered").as_ptr(),
@@ -7351,7 +8491,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Col_Separator").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Col_Separator");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -7366,7 +8509,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Col_SeparatorActive").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Col_SeparatorActive");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -7381,7 +8527,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Col_SeparatorHovered").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Col_SeparatorHovered");
+                        None
+                    }
                     false => {
                         Some((ConstLoader {
                             f: std::mem::transmute(plugin_context.GetFunc(
@@ -7397,7 +8546,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Col_SliderGrab").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Col_SliderGrab");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -7412,7 +8564,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Col_SliderGrabActive").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Col_SliderGrabActive");
+                        None
+                    }
                     false => {
                         Some((ConstLoader {
                             f: std::mem::transmute(plugin_context.GetFunc(
@@ -7428,7 +8583,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Col_Tab").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Col_Tab");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Col_Tab").as_ptr()),
@@ -7442,7 +8600,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Col_TabActive").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Col_TabActive");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -7457,7 +8618,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Col_TabHovered").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Col_TabHovered");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -7472,7 +8636,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Col_TabUnfocused").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Col_TabUnfocused");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -7487,7 +8654,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Col_TabUnfocusedActive").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Col_TabUnfocusedActive");
+                        None
+                    }
                     false => {
                         Some((ConstLoader {
                             f: std::mem::transmute(plugin_context.GetFunc(
@@ -7503,7 +8673,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Col_TableBorderLight").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Col_TableBorderLight");
+                        None
+                    }
                     false => {
                         Some((ConstLoader {
                             f: std::mem::transmute(plugin_context.GetFunc(
@@ -7519,7 +8692,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Col_TableBorderStrong").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Col_TableBorderStrong");
+                        None
+                    }
                     false => {
                         Some((ConstLoader {
                             f: std::mem::transmute(plugin_context.GetFunc(
@@ -7535,7 +8711,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Col_TableHeaderBg").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Col_TableHeaderBg");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -7550,7 +8729,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Col_TableRowBg").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Col_TableRowBg");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -7565,7 +8747,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Col_TableRowBgAlt").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Col_TableRowBgAlt");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -7580,7 +8765,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Col_Text").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Col_Text");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Col_Text").as_ptr()),
@@ -7594,7 +8782,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Col_TextDisabled").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Col_TextDisabled");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -7609,7 +8800,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Col_TextSelectedBg").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Col_TextSelectedBg");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -7624,7 +8818,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Col_TitleBg").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Col_TitleBg");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -7639,7 +8836,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Col_TitleBgActive").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Col_TitleBgActive");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -7654,7 +8854,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Col_TitleBgCollapsed").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Col_TitleBgCollapsed");
+                        None
+                    }
                     false => {
                         Some((ConstLoader {
                             f: std::mem::transmute(plugin_context.GetFunc(
@@ -7670,7 +8873,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Col_WindowBg").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Col_WindowBg");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -7685,7 +8891,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_StyleVar_Alpha").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_StyleVar_Alpha");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -7700,7 +8909,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_StyleVar_ButtonTextAlign").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_StyleVar_ButtonTextAlign"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_StyleVar_ButtonTextAlign").as_ptr(),
@@ -7714,7 +8929,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_StyleVar_CellPadding").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_StyleVar_CellPadding");
+                        None
+                    }
                     false => {
                         Some((ConstLoader {
                             f: std::mem::transmute(plugin_context.GetFunc(
@@ -7730,7 +8948,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_StyleVar_ChildBorderSize").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_StyleVar_ChildBorderSize"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_StyleVar_ChildBorderSize").as_ptr(),
@@ -7744,7 +8968,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_StyleVar_ChildRounding").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_StyleVar_ChildRounding");
+                        None
+                    }
                     false => {
                         Some((ConstLoader {
                             f: std::mem::transmute(plugin_context.GetFunc(
@@ -7760,7 +8987,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_StyleVar_DisabledAlpha").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_StyleVar_DisabledAlpha");
+                        None
+                    }
                     false => {
                         Some((ConstLoader {
                             f: std::mem::transmute(plugin_context.GetFunc(
@@ -7776,7 +9006,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_StyleVar_FrameBorderSize").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_StyleVar_FrameBorderSize"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_StyleVar_FrameBorderSize").as_ptr(),
@@ -7790,7 +9026,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_StyleVar_FramePadding").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_StyleVar_FramePadding");
+                        None
+                    }
                     false => {
                         Some((ConstLoader {
                             f: std::mem::transmute(plugin_context.GetFunc(
@@ -7806,7 +9045,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_StyleVar_FrameRounding").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_StyleVar_FrameRounding");
+                        None
+                    }
                     false => {
                         Some((ConstLoader {
                             f: std::mem::transmute(plugin_context.GetFunc(
@@ -7822,7 +9064,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_StyleVar_GrabMinSize").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_StyleVar_GrabMinSize");
+                        None
+                    }
                     false => {
                         Some((ConstLoader {
                             f: std::mem::transmute(plugin_context.GetFunc(
@@ -7838,7 +9083,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_StyleVar_GrabRounding").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_StyleVar_GrabRounding");
+                        None
+                    }
                     false => {
                         Some((ConstLoader {
                             f: std::mem::transmute(plugin_context.GetFunc(
@@ -7854,7 +9102,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_StyleVar_IndentSpacing").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_StyleVar_IndentSpacing");
+                        None
+                    }
                     false => {
                         Some((ConstLoader {
                             f: std::mem::transmute(plugin_context.GetFunc(
@@ -7870,7 +9121,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_StyleVar_ItemInnerSpacing").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_StyleVar_ItemInnerSpacing"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_StyleVar_ItemInnerSpacing").as_ptr(),
@@ -7884,7 +9141,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_StyleVar_ItemSpacing").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_StyleVar_ItemSpacing");
+                        None
+                    }
                     false => {
                         Some((ConstLoader {
                             f: std::mem::transmute(plugin_context.GetFunc(
@@ -7900,7 +9160,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_StyleVar_PopupBorderSize").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_StyleVar_PopupBorderSize"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_StyleVar_PopupBorderSize").as_ptr(),
@@ -7914,7 +9180,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_StyleVar_PopupRounding").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_StyleVar_PopupRounding");
+                        None
+                    }
                     false => {
                         Some((ConstLoader {
                             f: std::mem::transmute(plugin_context.GetFunc(
@@ -7930,7 +9199,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_StyleVar_ScrollbarRounding").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_StyleVar_ScrollbarRounding"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_StyleVar_ScrollbarRounding").as_ptr(),
@@ -7944,7 +9219,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_StyleVar_ScrollbarSize").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_StyleVar_ScrollbarSize");
+                        None
+                    }
                     false => {
                         Some((ConstLoader {
                             f: std::mem::transmute(plugin_context.GetFunc(
@@ -7960,7 +9238,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_StyleVar_SelectableTextAlign").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_StyleVar_SelectableTextAlign"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_StyleVar_SelectableTextAlign").as_ptr(),
@@ -7974,7 +9258,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_StyleVar_TabRounding").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_StyleVar_TabRounding");
+                        None
+                    }
                     false => {
                         Some((ConstLoader {
                             f: std::mem::transmute(plugin_context.GetFunc(
@@ -7990,7 +9277,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_StyleVar_WindowBorderSize").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_StyleVar_WindowBorderSize"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_StyleVar_WindowBorderSize").as_ptr(),
@@ -8004,7 +9297,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_StyleVar_WindowMinSize").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_StyleVar_WindowMinSize");
+                        None
+                    }
                     false => {
                         Some((ConstLoader {
                             f: std::mem::transmute(plugin_context.GetFunc(
@@ -8020,7 +9316,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_StyleVar_WindowPadding").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_StyleVar_WindowPadding");
+                        None
+                    }
                     false => {
                         Some((ConstLoader {
                             f: std::mem::transmute(plugin_context.GetFunc(
@@ -8036,7 +9335,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_StyleVar_WindowRounding").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_StyleVar_WindowRounding");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_StyleVar_WindowRounding").as_ptr(),
@@ -8050,7 +9352,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_StyleVar_WindowTitleAlign").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_StyleVar_WindowTitleAlign"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_StyleVar_WindowTitleAlign").as_ptr(),
@@ -8064,7 +9372,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_TabBarFlags_AutoSelectNewTabs").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_TabBarFlags_AutoSelectNewTabs"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_TabBarFlags_AutoSelectNewTabs").as_ptr(),
@@ -8080,7 +9394,13 @@ impl ImGui {
                     )
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_TabBarFlags_FittingPolicyResizeDown"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context.GetFunc(
@@ -8097,7 +9417,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_TabBarFlags_FittingPolicyScroll").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_TabBarFlags_FittingPolicyScroll"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_TabBarFlags_FittingPolicyScroll").as_ptr(),
@@ -8114,7 +9440,13 @@ impl ImGui {
                     )
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_TabBarFlags_NoCloseWithMiddleMouseButton"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context.GetFunc(
@@ -8135,7 +9467,13 @@ impl ImGui {
                     )
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_TabBarFlags_NoTabListScrollingButtons"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context.GetFunc(
@@ -8152,7 +9490,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_TabBarFlags_NoTooltip").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_TabBarFlags_NoTooltip");
+                        None
+                    }
                     false => {
                         Some((ConstLoader {
                             f: std::mem::transmute(plugin_context.GetFunc(
@@ -8168,7 +9509,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_TabBarFlags_None").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_TabBarFlags_None");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -8183,7 +9527,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_TabBarFlags_Reorderable").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_TabBarFlags_Reorderable");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_TabBarFlags_Reorderable").as_ptr(),
@@ -8197,7 +9544,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_TabBarFlags_TabListPopupButton").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_TabBarFlags_TabListPopupButton"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_TabBarFlags_TabListPopupButton").as_ptr(),
@@ -8211,7 +9564,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_TabItemFlags_Leading").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_TabItemFlags_Leading");
+                        None
+                    }
                     false => {
                         Some((ConstLoader {
                             f: std::mem::transmute(plugin_context.GetFunc(
@@ -8230,7 +9586,13 @@ impl ImGui {
                     )
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_TabItemFlags_NoCloseWithMiddleMouseButton"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context.GetFunc(
@@ -8249,7 +9611,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_TabItemFlags_NoPushId").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_TabItemFlags_NoPushId");
+                        None
+                    }
                     false => {
                         Some((ConstLoader {
                             f: std::mem::transmute(plugin_context.GetFunc(
@@ -8265,7 +9630,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_TabItemFlags_NoReorder").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_TabItemFlags_NoReorder");
+                        None
+                    }
                     false => {
                         Some((ConstLoader {
                             f: std::mem::transmute(plugin_context.GetFunc(
@@ -8281,7 +9649,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_TabItemFlags_NoTooltip").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_TabItemFlags_NoTooltip");
+                        None
+                    }
                     false => {
                         Some((ConstLoader {
                             f: std::mem::transmute(plugin_context.GetFunc(
@@ -8297,7 +9668,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_TabItemFlags_None").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_TabItemFlags_None");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -8312,7 +9686,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_TabItemFlags_SetSelected").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_TabItemFlags_SetSelected"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_TabItemFlags_SetSelected").as_ptr(),
@@ -8326,7 +9706,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_TabItemFlags_Trailing").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_TabItemFlags_Trailing");
+                        None
+                    }
                     false => {
                         Some((ConstLoader {
                             f: std::mem::transmute(plugin_context.GetFunc(
@@ -8342,7 +9725,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_TabItemFlags_UnsavedDocument").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_TabItemFlags_UnsavedDocument"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_TabItemFlags_UnsavedDocument").as_ptr(),
@@ -8356,7 +9745,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_TableRowFlags_Headers").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_TableRowFlags_Headers");
+                        None
+                    }
                     false => {
                         Some((ConstLoader {
                             f: std::mem::transmute(plugin_context.GetFunc(
@@ -8372,7 +9764,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_TableRowFlags_None").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_TableRowFlags_None");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -8387,7 +9782,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_TableBgTarget_CellBg").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_TableBgTarget_CellBg");
+                        None
+                    }
                     false => {
                         Some((ConstLoader {
                             f: std::mem::transmute(plugin_context.GetFunc(
@@ -8403,7 +9801,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_TableBgTarget_None").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_TableBgTarget_None");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -8418,7 +9819,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_TableBgTarget_RowBg0").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_TableBgTarget_RowBg0");
+                        None
+                    }
                     false => {
                         Some((ConstLoader {
                             f: std::mem::transmute(plugin_context.GetFunc(
@@ -8434,7 +9838,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_TableBgTarget_RowBg1").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_TableBgTarget_RowBg1");
+                        None
+                    }
                     false => {
                         Some((ConstLoader {
                             f: std::mem::transmute(plugin_context.GetFunc(
@@ -8450,7 +9857,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_TableColumnFlags_None").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_TableColumnFlags_None");
+                        None
+                    }
                     false => {
                         Some((ConstLoader {
                             f: std::mem::transmute(plugin_context.GetFunc(
@@ -8466,7 +9876,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_TableColumnFlags_DefaultHide").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_TableColumnFlags_DefaultHide"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_TableColumnFlags_DefaultHide").as_ptr(),
@@ -8480,7 +9896,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_TableColumnFlags_DefaultSort").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_TableColumnFlags_DefaultSort"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_TableColumnFlags_DefaultSort").as_ptr(),
@@ -8494,7 +9916,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_TableColumnFlags_Disabled").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_TableColumnFlags_Disabled"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_TableColumnFlags_Disabled").as_ptr(),
@@ -8508,7 +9936,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_TableColumnFlags_IndentDisable").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_TableColumnFlags_IndentDisable"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_TableColumnFlags_IndentDisable").as_ptr(),
@@ -8522,7 +9956,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_TableColumnFlags_IndentEnable").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_TableColumnFlags_IndentEnable"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_TableColumnFlags_IndentEnable").as_ptr(),
@@ -8536,7 +9976,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_TableColumnFlags_NoClip").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_TableColumnFlags_NoClip");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_TableColumnFlags_NoClip").as_ptr(),
@@ -8550,7 +9993,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_TableColumnFlags_NoHeaderLabel").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_TableColumnFlags_NoHeaderLabel"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_TableColumnFlags_NoHeaderLabel").as_ptr(),
@@ -8564,7 +10013,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_TableColumnFlags_NoHeaderWidth").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_TableColumnFlags_NoHeaderWidth"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_TableColumnFlags_NoHeaderWidth").as_ptr(),
@@ -8578,7 +10033,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_TableColumnFlags_NoHide").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_TableColumnFlags_NoHide");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_TableColumnFlags_NoHide").as_ptr(),
@@ -8592,7 +10050,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_TableColumnFlags_NoReorder").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_TableColumnFlags_NoReorder"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_TableColumnFlags_NoReorder").as_ptr(),
@@ -8606,7 +10070,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_TableColumnFlags_NoResize").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_TableColumnFlags_NoResize"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_TableColumnFlags_NoResize").as_ptr(),
@@ -8620,7 +10090,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_TableColumnFlags_NoSort").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_TableColumnFlags_NoSort");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_TableColumnFlags_NoSort").as_ptr(),
@@ -8634,7 +10107,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_TableColumnFlags_NoSortAscending").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_TableColumnFlags_NoSortAscending"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_TableColumnFlags_NoSortAscending").as_ptr(),
@@ -8650,7 +10129,13 @@ impl ImGui {
                     )
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_TableColumnFlags_NoSortDescending"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_TableColumnFlags_NoSortDescending").as_ptr(),
@@ -8666,7 +10151,13 @@ impl ImGui {
                     )
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_TableColumnFlags_PreferSortAscending"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context.GetFunc(
@@ -8685,7 +10176,13 @@ impl ImGui {
                     )
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_TableColumnFlags_PreferSortDescending"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context.GetFunc(
@@ -8702,7 +10199,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_TableColumnFlags_WidthFixed").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_TableColumnFlags_WidthFixed"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_TableColumnFlags_WidthFixed").as_ptr(),
@@ -8716,7 +10219,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_TableColumnFlags_WidthStretch").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_TableColumnFlags_WidthStretch"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_TableColumnFlags_WidthStretch").as_ptr(),
@@ -8730,7 +10239,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_TableColumnFlags_IsEnabled").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_TableColumnFlags_IsEnabled"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_TableColumnFlags_IsEnabled").as_ptr(),
@@ -8744,7 +10259,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_TableColumnFlags_IsHovered").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_TableColumnFlags_IsHovered"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_TableColumnFlags_IsHovered").as_ptr(),
@@ -8758,7 +10279,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_TableColumnFlags_IsSorted").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_TableColumnFlags_IsSorted"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_TableColumnFlags_IsSorted").as_ptr(),
@@ -8772,7 +10299,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_TableColumnFlags_IsVisible").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_TableColumnFlags_IsVisible"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_TableColumnFlags_IsVisible").as_ptr(),
@@ -8786,7 +10319,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_SortDirection_Ascending").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_SortDirection_Ascending");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_SortDirection_Ascending").as_ptr(),
@@ -8800,7 +10336,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_SortDirection_Descending").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_SortDirection_Descending"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_SortDirection_Descending").as_ptr(),
@@ -8814,7 +10356,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_SortDirection_None").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_SortDirection_None");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -8829,7 +10374,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_TableFlags_None").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_TableFlags_None");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -8844,7 +10392,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_TableFlags_NoClip").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_TableFlags_NoClip");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -8859,7 +10410,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_TableFlags_Borders").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_TableFlags_Borders");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -8874,7 +10428,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_TableFlags_BordersH").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_TableFlags_BordersH");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -8889,7 +10446,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_TableFlags_BordersInner").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_TableFlags_BordersInner");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_TableFlags_BordersInner").as_ptr(),
@@ -8903,7 +10463,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_TableFlags_BordersInnerH").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_TableFlags_BordersInnerH"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_TableFlags_BordersInnerH").as_ptr(),
@@ -8917,7 +10483,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_TableFlags_BordersInnerV").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_TableFlags_BordersInnerV"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_TableFlags_BordersInnerV").as_ptr(),
@@ -8931,7 +10503,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_TableFlags_BordersOuter").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_TableFlags_BordersOuter");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_TableFlags_BordersOuter").as_ptr(),
@@ -8945,7 +10520,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_TableFlags_BordersOuterH").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_TableFlags_BordersOuterH"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_TableFlags_BordersOuterH").as_ptr(),
@@ -8959,7 +10540,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_TableFlags_BordersOuterV").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_TableFlags_BordersOuterV"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_TableFlags_BordersOuterV").as_ptr(),
@@ -8973,7 +10560,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_TableFlags_BordersV").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_TableFlags_BordersV");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -8988,7 +10578,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_TableFlags_RowBg").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_TableFlags_RowBg");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -9003,7 +10596,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_TableFlags_ContextMenuInBody").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_TableFlags_ContextMenuInBody"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_TableFlags_ContextMenuInBody").as_ptr(),
@@ -9017,7 +10616,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_TableFlags_Hideable").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_TableFlags_Hideable");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -9032,7 +10634,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_TableFlags_NoSavedSettings").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_TableFlags_NoSavedSettings"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_TableFlags_NoSavedSettings").as_ptr(),
@@ -9046,7 +10654,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_TableFlags_Reorderable").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_TableFlags_Reorderable");
+                        None
+                    }
                     false => {
                         Some((ConstLoader {
                             f: std::mem::transmute(plugin_context.GetFunc(
@@ -9062,7 +10673,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_TableFlags_Resizable").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_TableFlags_Resizable");
+                        None
+                    }
                     false => {
                         Some((ConstLoader {
                             f: std::mem::transmute(plugin_context.GetFunc(
@@ -9078,7 +10692,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_TableFlags_Sortable").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_TableFlags_Sortable");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -9093,7 +10710,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_TableFlags_NoPadInnerX").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_TableFlags_NoPadInnerX");
+                        None
+                    }
                     false => {
                         Some((ConstLoader {
                             f: std::mem::transmute(plugin_context.GetFunc(
@@ -9109,7 +10729,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_TableFlags_NoPadOuterX").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_TableFlags_NoPadOuterX");
+                        None
+                    }
                     false => {
                         Some((ConstLoader {
                             f: std::mem::transmute(plugin_context.GetFunc(
@@ -9125,7 +10748,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_TableFlags_PadOuterX").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_TableFlags_PadOuterX");
+                        None
+                    }
                     false => {
                         Some((ConstLoader {
                             f: std::mem::transmute(plugin_context.GetFunc(
@@ -9141,7 +10767,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_TableFlags_ScrollX").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_TableFlags_ScrollX");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -9156,7 +10785,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_TableFlags_ScrollY").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_TableFlags_ScrollY");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -9171,7 +10803,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_TableFlags_NoHostExtendX").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_TableFlags_NoHostExtendX"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_TableFlags_NoHostExtendX").as_ptr(),
@@ -9185,7 +10823,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_TableFlags_NoHostExtendY").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_TableFlags_NoHostExtendY"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_TableFlags_NoHostExtendY").as_ptr(),
@@ -9199,7 +10843,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_TableFlags_NoKeepColumnsVisible").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_TableFlags_NoKeepColumnsVisible"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_TableFlags_NoKeepColumnsVisible").as_ptr(),
@@ -9213,7 +10863,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_TableFlags_PreciseWidths").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_TableFlags_PreciseWidths"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_TableFlags_PreciseWidths").as_ptr(),
@@ -9227,7 +10883,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_TableFlags_SizingFixedFit").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_TableFlags_SizingFixedFit"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_TableFlags_SizingFixedFit").as_ptr(),
@@ -9241,7 +10903,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_TableFlags_SizingFixedSame").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_TableFlags_SizingFixedSame"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_TableFlags_SizingFixedSame").as_ptr(),
@@ -9255,7 +10923,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_TableFlags_SizingStretchProp").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_TableFlags_SizingStretchProp"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_TableFlags_SizingStretchProp").as_ptr(),
@@ -9269,7 +10943,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_TableFlags_SizingStretchSame").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_TableFlags_SizingStretchSame"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_TableFlags_SizingStretchSame").as_ptr(),
@@ -9283,7 +10963,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_TableFlags_SortMulti").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_TableFlags_SortMulti");
+                        None
+                    }
                     false => {
                         Some((ConstLoader {
                             f: std::mem::transmute(plugin_context.GetFunc(
@@ -9299,7 +10982,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_TableFlags_SortTristate").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_TableFlags_SortTristate");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_TableFlags_SortTristate").as_ptr(),
@@ -9313,7 +10999,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_InputTextFlags_AllowTabInput").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_InputTextFlags_AllowTabInput"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_InputTextFlags_AllowTabInput").as_ptr(),
@@ -9327,7 +11019,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_InputTextFlags_AlwaysOverwrite").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_InputTextFlags_AlwaysOverwrite"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_InputTextFlags_AlwaysOverwrite").as_ptr(),
@@ -9341,7 +11039,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_InputTextFlags_AutoSelectAll").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_InputTextFlags_AutoSelectAll"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_InputTextFlags_AutoSelectAll").as_ptr(),
@@ -9355,7 +11059,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_InputTextFlags_CharsDecimal").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_InputTextFlags_CharsDecimal"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_InputTextFlags_CharsDecimal").as_ptr(),
@@ -9369,7 +11079,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_InputTextFlags_CharsHexadecimal").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_InputTextFlags_CharsHexadecimal"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_InputTextFlags_CharsHexadecimal").as_ptr(),
@@ -9383,7 +11099,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_InputTextFlags_CharsNoBlank").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_InputTextFlags_CharsNoBlank"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_InputTextFlags_CharsNoBlank").as_ptr(),
@@ -9397,7 +11119,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_InputTextFlags_CharsScientific").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_InputTextFlags_CharsScientific"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_InputTextFlags_CharsScientific").as_ptr(),
@@ -9411,7 +11139,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_InputTextFlags_CharsUppercase").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_InputTextFlags_CharsUppercase"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_InputTextFlags_CharsUppercase").as_ptr(),
@@ -9427,7 +11161,13 @@ impl ImGui {
                     )
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_InputTextFlags_CtrlEnterForNewLine"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context.GetFunc(
@@ -9444,7 +11184,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_InputTextFlags_EnterReturnsTrue").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_InputTextFlags_EnterReturnsTrue"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_InputTextFlags_EnterReturnsTrue").as_ptr(),
@@ -9458,7 +11204,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_InputTextFlags_EscapeClearsAll").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_InputTextFlags_EscapeClearsAll"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_InputTextFlags_EscapeClearsAll").as_ptr(),
@@ -9474,7 +11226,13 @@ impl ImGui {
                     )
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_InputTextFlags_NoHorizontalScroll"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_InputTextFlags_NoHorizontalScroll").as_ptr(),
@@ -9488,7 +11246,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_InputTextFlags_NoUndoRedo").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_InputTextFlags_NoUndoRedo"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_InputTextFlags_NoUndoRedo").as_ptr(),
@@ -9502,7 +11266,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_InputTextFlags_None").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_InputTextFlags_None");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -9517,7 +11284,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_InputTextFlags_Password").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_InputTextFlags_Password");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_InputTextFlags_Password").as_ptr(),
@@ -9531,7 +11301,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_InputTextFlags_ReadOnly").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_InputTextFlags_ReadOnly");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_InputTextFlags_ReadOnly").as_ptr(),
@@ -9545,7 +11318,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_TreeNodeFlags_AllowItemOverlap").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_TreeNodeFlags_AllowItemOverlap"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_TreeNodeFlags_AllowItemOverlap").as_ptr(),
@@ -9559,7 +11338,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_TreeNodeFlags_Bullet").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_TreeNodeFlags_Bullet");
+                        None
+                    }
                     false => {
                         Some((ConstLoader {
                             f: std::mem::transmute(plugin_context.GetFunc(
@@ -9575,7 +11357,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_TreeNodeFlags_CollapsingHeader").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_TreeNodeFlags_CollapsingHeader"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_TreeNodeFlags_CollapsingHeader").as_ptr(),
@@ -9589,7 +11377,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_TreeNodeFlags_DefaultOpen").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_TreeNodeFlags_DefaultOpen"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_TreeNodeFlags_DefaultOpen").as_ptr(),
@@ -9603,7 +11397,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_TreeNodeFlags_FramePadding").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_TreeNodeFlags_FramePadding"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_TreeNodeFlags_FramePadding").as_ptr(),
@@ -9617,7 +11417,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_TreeNodeFlags_Framed").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_TreeNodeFlags_Framed");
+                        None
+                    }
                     false => {
                         Some((ConstLoader {
                             f: std::mem::transmute(plugin_context.GetFunc(
@@ -9633,7 +11436,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_TreeNodeFlags_Leaf").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_TreeNodeFlags_Leaf");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -9648,7 +11454,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_TreeNodeFlags_NoAutoOpenOnLog").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_TreeNodeFlags_NoAutoOpenOnLog"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_TreeNodeFlags_NoAutoOpenOnLog").as_ptr(),
@@ -9662,7 +11474,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_TreeNodeFlags_NoTreePushOnOpen").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_TreeNodeFlags_NoTreePushOnOpen"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_TreeNodeFlags_NoTreePushOnOpen").as_ptr(),
@@ -9676,7 +11494,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_TreeNodeFlags_None").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_TreeNodeFlags_None");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -9691,7 +11512,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_TreeNodeFlags_OpenOnArrow").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_TreeNodeFlags_OpenOnArrow"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_TreeNodeFlags_OpenOnArrow").as_ptr(),
@@ -9705,7 +11532,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_TreeNodeFlags_OpenOnDoubleClick").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_TreeNodeFlags_OpenOnDoubleClick"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_TreeNodeFlags_OpenOnDoubleClick").as_ptr(),
@@ -9719,7 +11552,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_TreeNodeFlags_Selected").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_TreeNodeFlags_Selected");
+                        None
+                    }
                     false => {
                         Some((ConstLoader {
                             f: std::mem::transmute(plugin_context.GetFunc(
@@ -9735,7 +11571,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_TreeNodeFlags_SpanAvailWidth").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_TreeNodeFlags_SpanAvailWidth"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_TreeNodeFlags_SpanAvailWidth").as_ptr(),
@@ -9749,7 +11591,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_TreeNodeFlags_SpanFullWidth").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_TreeNodeFlags_SpanFullWidth"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_TreeNodeFlags_SpanFullWidth").as_ptr(),
@@ -9763,7 +11611,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Cond_Always").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Cond_Always");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -9778,7 +11629,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Cond_Appearing").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Cond_Appearing");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -9793,7 +11647,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Cond_FirstUseEver").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Cond_FirstUseEver");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -9808,7 +11665,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_Cond_Once").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_Cond_Once");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context.GetFunc(c_str_macro::c_str!("ImGui_Cond_Once").as_ptr()),
@@ -9822,7 +11682,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_WindowFlags_AlwaysAutoResize").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_WindowFlags_AlwaysAutoResize"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_WindowFlags_AlwaysAutoResize").as_ptr(),
@@ -9838,7 +11704,13 @@ impl ImGui {
                     )
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_WindowFlags_AlwaysHorizontalScrollbar"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context.GetFunc(
@@ -9857,7 +11729,13 @@ impl ImGui {
                     )
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_WindowFlags_AlwaysUseWindowPadding"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context.GetFunc(
@@ -9876,7 +11754,13 @@ impl ImGui {
                     )
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_WindowFlags_AlwaysVerticalScrollbar"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context.GetFunc(
@@ -9893,7 +11777,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_WindowFlags_HorizontalScrollbar").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_WindowFlags_HorizontalScrollbar"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_WindowFlags_HorizontalScrollbar").as_ptr(),
@@ -9907,7 +11797,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_WindowFlags_MenuBar").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_WindowFlags_MenuBar");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -9922,7 +11815,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_WindowFlags_NoBackground").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_WindowFlags_NoBackground"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_WindowFlags_NoBackground").as_ptr(),
@@ -9936,7 +11835,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_WindowFlags_NoCollapse").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_WindowFlags_NoCollapse");
+                        None
+                    }
                     false => {
                         Some((ConstLoader {
                             f: std::mem::transmute(plugin_context.GetFunc(
@@ -9952,7 +11854,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_WindowFlags_NoDecoration").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_WindowFlags_NoDecoration"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_WindowFlags_NoDecoration").as_ptr(),
@@ -9966,7 +11874,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_WindowFlags_NoDocking").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_WindowFlags_NoDocking");
+                        None
+                    }
                     false => {
                         Some((ConstLoader {
                             f: std::mem::transmute(plugin_context.GetFunc(
@@ -9982,7 +11893,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_WindowFlags_NoFocusOnAppearing").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_WindowFlags_NoFocusOnAppearing"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_WindowFlags_NoFocusOnAppearing").as_ptr(),
@@ -9996,7 +11913,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_WindowFlags_NoInputs").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_WindowFlags_NoInputs");
+                        None
+                    }
                     false => {
                         Some((ConstLoader {
                             f: std::mem::transmute(plugin_context.GetFunc(
@@ -10012,7 +11932,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_WindowFlags_NoMouseInputs").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_WindowFlags_NoMouseInputs"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_WindowFlags_NoMouseInputs").as_ptr(),
@@ -10026,7 +11952,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_WindowFlags_NoMove").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_WindowFlags_NoMove");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -10041,7 +11970,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_WindowFlags_NoNav").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_WindowFlags_NoNav");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -10056,7 +11988,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_WindowFlags_NoNavFocus").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_WindowFlags_NoNavFocus");
+                        None
+                    }
                     false => {
                         Some((ConstLoader {
                             f: std::mem::transmute(plugin_context.GetFunc(
@@ -10072,7 +12007,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_WindowFlags_NoNavInputs").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_WindowFlags_NoNavInputs");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_WindowFlags_NoNavInputs").as_ptr(),
@@ -10086,7 +12024,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_WindowFlags_NoResize").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_WindowFlags_NoResize");
+                        None
+                    }
                     false => {
                         Some((ConstLoader {
                             f: std::mem::transmute(plugin_context.GetFunc(
@@ -10102,7 +12043,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_WindowFlags_NoSavedSettings").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_WindowFlags_NoSavedSettings"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_WindowFlags_NoSavedSettings").as_ptr(),
@@ -10116,7 +12063,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_WindowFlags_NoScrollWithMouse").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_WindowFlags_NoScrollWithMouse"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_WindowFlags_NoScrollWithMouse").as_ptr(),
@@ -10130,7 +12083,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_WindowFlags_NoScrollbar").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_WindowFlags_NoScrollbar");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_WindowFlags_NoScrollbar").as_ptr(),
@@ -10144,7 +12100,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_WindowFlags_NoTitleBar").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_WindowFlags_NoTitleBar");
+                        None
+                    }
                     false => {
                         Some((ConstLoader {
                             f: std::mem::transmute(plugin_context.GetFunc(
@@ -10160,7 +12119,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_WindowFlags_None").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_WindowFlags_None");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -10175,7 +12137,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_WindowFlags_TopMost").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_WindowFlags_TopMost");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -10190,7 +12155,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_WindowFlags_UnsavedDocument").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_WindowFlags_UnsavedDocument"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_WindowFlags_UnsavedDocument").as_ptr(),
@@ -10204,7 +12175,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_FocusedFlags_AnyWindow").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_FocusedFlags_AnyWindow");
+                        None
+                    }
                     false => {
                         Some((ConstLoader {
                             f: std::mem::transmute(plugin_context.GetFunc(
@@ -10220,7 +12194,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_FocusedFlags_ChildWindows").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_FocusedFlags_ChildWindows"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_FocusedFlags_ChildWindows").as_ptr(),
@@ -10234,7 +12214,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_FocusedFlags_DockHierarchy").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_FocusedFlags_DockHierarchy"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_FocusedFlags_DockHierarchy").as_ptr(),
@@ -10248,7 +12234,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_FocusedFlags_NoPopupHierarchy").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_FocusedFlags_NoPopupHierarchy"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_FocusedFlags_NoPopupHierarchy").as_ptr(),
@@ -10262,7 +12254,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_FocusedFlags_None").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_FocusedFlags_None");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(
                             plugin_context
@@ -10277,7 +12272,13 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_FocusedFlags_RootAndChildWindows").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!(
+                            "Can not load constant: {}",
+                            "ImGui_FocusedFlags_RootAndChildWindows"
+                        );
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_FocusedFlags_RootAndChildWindows").as_ptr(),
@@ -10291,7 +12292,10 @@ impl ImGui {
                     .GetFunc(c_str_macro::c_str!("ImGui_FocusedFlags_RootWindow").as_ptr())
                     .is_null()
                 {
-                    true => None,
+                    true => {
+                        eprintln!("Can not load constant: {}", "ImGui_FocusedFlags_RootWindow");
+                        None
+                    }
                     false => Some((ConstLoader {
                         f: std::mem::transmute(plugin_context.GetFunc(
                             c_str_macro::c_str!("ImGui_FocusedFlags_RootWindow").as_ptr(),
@@ -16791,5 +18795,5 @@ impl std::fmt::Debug for FunctionPointers {
     }
 }
 struct ConstLoader {
-    f: fn() -> i32,
+    f: extern "C" fn() -> i32,
 }

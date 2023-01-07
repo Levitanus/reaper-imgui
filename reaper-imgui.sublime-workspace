@@ -1,0 +1,2299 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"key",
+				"key_binding"
+			],
+			[
+				"print",
+				"println!(…)"
+			],
+			[
+				"into",
+				"into_iter (as IntoIterator)"
+			],
+			[
+				"Into",
+				"IntoIterator"
+			],
+			[
+				"co",
+				"contains(…)"
+			],
+			[
+				"i",
+				"iter()"
+			],
+			[
+				"Has",
+				"HashMap<…> (use std::collections::HashMap)"
+			],
+			[
+				"asse",
+				"assert_eq!(…)"
+			],
+			[
+				"MNo",
+				"MNotation::Note{}"
+			],
+			[
+				"rep",
+				"replace(…)"
+			],
+			[
+				"Notati",
+				"NotationType"
+			],
+			[
+				"Nota",
+				"NotationMessage"
+			],
+			[
+				"repla",
+				"replace_given_notations(…)"
+			],
+			[
+				"ex",
+				"extend(…) (as Extend)"
+			],
+			[
+				"sw",
+				"swap_remove(…)"
+			],
+			[
+				"rea",
+				"reascore_string"
+			],
+			[
+				"sta",
+				"starts_with(…)"
+			],
+			[
+				"iter",
+				"iter_mut()"
+			],
+			[
+				"MN",
+				"MNotation::Note{}"
+			],
+			[
+				"st",
+				"starts_with(…)"
+			],
+			[
+				"enu",
+				"enumerate() (as Iterator)"
+			],
+			[
+				"reasc",
+				"reascore_notation_string(…)"
+			],
+			[
+				"for",
+				"format!(…)"
+			],
+			[
+				"to",
+				"to_string() (as ToString)"
+			],
+			[
+				"IP",
+				"IPv4Address"
+			],
+			[
+				"api",
+				"test_api"
+			],
+			[
+				"LO",
+				"LOCALHOST"
+			],
+			[
+				"Ip",
+				"IPv4Address"
+			],
+			[
+				"con",
+				"connect"
+			],
+			[
+				"ma",
+				"map"
+			],
+			[
+				"get_",
+				"get_info_value"
+			],
+			[
+				"set",
+				"set_info_value"
+			],
+			[
+				"in",
+				"index"
+			],
+			[
+				"region",
+				"region_states"
+			],
+			[
+				"track",
+				"track.items"
+			],
+			[
+				"is_",
+				"is_online"
+			],
+			[
+				"fx",
+				"fxs"
+			],
+			[
+				"selected_trac",
+				"get_selected_track"
+			],
+			[
+				"pp",
+				"pprint"
+			],
+			[
+				"undo",
+				"undo_block"
+			],
+			[
+				"fro",
+				"from_GUID"
+			],
+			[
+				"add",
+				"add_rendered_tracks"
+			],
+			[
+				"rem",
+				"remove_rendered_tracks"
+			],
+			[
+				"rendere",
+				"rendered_stems"
+			],
+			[
+				"rende",
+				"rendered_stems"
+			],
+			[
+				"mu",
+				"is_muted"
+			],
+			[
+				"from",
+				"from_GUID"
+			],
+			[
+				"stem_st",
+				"stem_states"
+			],
+			[
+				"region_s",
+				"region_states"
+			],
+			[
+				"region_State",
+				"region_state"
+			],
+			[
+				"inst",
+				"instrument"
+			],
+			[
+				"ins",
+				"instrument"
+			],
+			[
+				"__",
+				"__iter__"
+			],
+			[
+				"ye",
+				"yield"
+			],
+			[
+				"Itera",
+				"Iterator"
+			],
+			[
+				"fxs",
+				"fxs"
+			],
+			[
+				"set_in",
+				"set_info_value"
+			],
+			[
+				"gui",
+				"GUID"
+			],
+			[
+				"Type",
+				"TypedDict"
+			],
+			[
+				"Dic",
+				"Dict"
+			],
+			[
+				"render",
+				"rendered_stems"
+			],
+			[
+				"not_e",
+				"not_empty(stem."
+			],
+			[
+				"sour",
+				"source_track"
+			],
+			[
+				"recie",
+				"receives"
+			],
+			[
+				"sou",
+				"source_track"
+			],
+			[
+				"re",
+				"receives"
+			],
+			[
+				"item",
+				"items"
+			],
+			[
+				"ren",
+				"rendered_tracks"
+			],
+			[
+				"regi",
+				"regions"
+			],
+			[
+				"Eve",
+				"EventsDictType"
+			],
+			[
+				"Musi",
+				"MusicList"
+			],
+			[
+				"Voic",
+				"VoiceSplit"
+			],
+			[
+				"Clef",
+				"ClefChange"
+			],
+			[
+				"c",
+				"clef"
+			],
+			[
+				"Cle",
+				"ClefChange"
+			],
+			[
+				"__repr_",
+				"__repr__(self):"
+			],
+			[
+				"appe",
+				"append(self, event):"
+			],
+			[
+				"length",
+				"length.for_ly()"
+			],
+			[
+				"pro",
+				"property"
+			],
+			[
+				"num",
+				"numerator"
+			],
+			[
+				"staff",
+				"staff_expr"
+			],
+			[
+				"eve",
+				"events"
+			],
+			[
+				"sup",
+				"super"
+			],
+			[
+				"_ly",
+				"_ly_duration"
+			],
+			[
+				"nor",
+				"normalized_duration"
+			],
+			[
+				"Mus",
+				"MusicList':"
+			],
+			[
+				"extend",
+				"extend(self, event: Event) ->"
+			],
+			[
+				"__re",
+				"__repr__(self) -> str:"
+			],
+			[
+				"_",
+				"_music"
+			],
+			[
+				"for_ly",
+				"for_ly(self,"
+			],
+			[
+				"Mu",
+				"Music"
+			],
+			[
+				"for_",
+				"for_ly(self) -> str:"
+			],
+			[
+				"bi",
+				"big=big"
+			],
+			[
+				"le",
+				"length=length"
+			],
+			[
+				"po",
+				"position"
+			],
+			[
+				"__geti",
+				"__getitem__(self, other: object"
+			],
+			[
+				"Ch",
+				"Chord"
+			],
+			[
+				"Fra",
+				"Fraction"
+			],
+			[
+				"dur",
+				"duration"
+			],
+			[
+				"last",
+				"last_length"
+			],
+			[
+				"no",
+				"normalize_alteration"
+			],
+			[
+				"normali",
+				"normalized_duration"
+			],
+			[
+				"fo",
+				"for_ly"
+			],
+			[
+				"la",
+				"last_pos"
+			],
+			[
+				"ppq",
+				"ppq_to_time"
+			],
+			[
+				"voi",
+				"voice_m"
+			],
+			[
+				"dura",
+				"duration"
+			],
+			[
+				"Len",
+				"Length(0, take)"
+			],
+			[
+				"las",
+				"last_pos"
+			],
+			[
+				"Ta",
+				"Take"
+			],
+			[
+				"Po",
+				"Position"
+			],
+			[
+				"Du",
+				"Duration"
+			],
+			[
+				"F",
+				"Fraction"
+			],
+			[
+				"remain",
+				"remainder"
+			],
+			[
+				"frac",
+				"fractions"
+			],
+			[
+				"nu",
+				"number"
+			],
+			[
+				"bar",
+				"bar_position"
+			],
+			[
+				"Re",
+				"Rest"
+			],
+			[
+				"app",
+				"append("
+			],
+			[
+				"fir",
+				"first_pos = pos"
+			],
+			[
+				"firs",
+				"first_pos"
+			],
+			[
+				"ke",
+				"keys())"
+			],
+			[
+				"musicLi",
+				"MusicList"
+			],
+			[
+				"mus",
+				"music"
+			],
+			[
+				"staf",
+				"staffs_music"
+			],
+			[
+				"Sta",
+				"StaffType"
+			],
+			[
+				"No",
+				"Notation"
+			],
+			[
+				"rou",
+				"round"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "reaper-imgui/src/context.rs",
+			"settings":
+			{
+				"buffer_size": 12518,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+				[
+					7,
+					1,
+					"insert",
+					{
+						"characters": "\nprintls"
+					},
+					"CQAAAG8QAAAAAAAAcBAAAAAAAAAAAAAAcBAAAAAAAAB4EAAAAAAAAAAAAAB4EAAAAAAAAHkQAAAAAAAAAAAAAHkQAAAAAAAAehAAAAAAAAAAAAAAehAAAAAAAAB7EAAAAAAAAAAAAAB7EAAAAAAAAHwQAAAAAAAAAAAAAHwQAAAAAAAAfRAAAAAAAAAAAAAAfRAAAAAAAAB+EAAAAAAAAAAAAAB+EAAAAAAAAH8QAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAbxAAAAAAAABvEAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					8,
+					1,
+					"left_delete",
+					null,
+					"AQAAAH4QAAAAAAAAfhAAAAAAAAABAAAAcw",
+					"AQAAAAAAAAABAAAAfxAAAAAAAAB/EAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					9,
+					1,
+					"insert",
+					{
+						"characters": "n!"
+					},
+					"AgAAAH4QAAAAAAAAfxAAAAAAAAAAAAAAfxAAAAAAAACAEAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAfhAAAAAAAAB+EAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					10,
+					1,
+					"insert_snippet",
+					{
+						"contents": "($0)"
+					},
+					"AQAAAIAQAAAAAAAAghAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAgBAAAAAAAACAEAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					11,
+					1,
+					"insert_snippet",
+					{
+						"contents": "\"$0\""
+					},
+					"AQAAAIEQAAAAAAAAgxAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAgRAAAAAAAACBEAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					12,
+					1,
+					"insert",
+					{
+						"characters": "Mo"
+					},
+					"AgAAAIIQAAAAAAAAgxAAAAAAAAAAAAAAgxAAAAAAAACEEAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAghAAAAAAAACCEAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					13,
+					2,
+					"left_delete",
+					null,
+					"AgAAAIMQAAAAAAAAgxAAAAAAAAABAAAAb4IQAAAAAAAAghAAAAAAAAABAAAATQ",
+					"AQAAAAAAAAABAAAAhBAAAAAAAACEEAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					14,
+					1,
+					"insert",
+					{
+						"characters": "modfi"
+					},
+					"BQAAAIIQAAAAAAAAgxAAAAAAAAAAAAAAgxAAAAAAAACEEAAAAAAAAAAAAACEEAAAAAAAAIUQAAAAAAAAAAAAAIUQAAAAAAAAhhAAAAAAAAAAAAAAhhAAAAAAAACHEAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAghAAAAAAAACCEAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					15,
+					1,
+					"insert",
+					{
+						"characters": "ers:"
+					},
+					"BAAAAIcQAAAAAAAAiBAAAAAAAAAAAAAAiBAAAAAAAACJEAAAAAAAAAAAAACJEAAAAAAAAIoQAAAAAAAAAAAAAIoQAAAAAAAAixAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAhxAAAAAAAACHEAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					16,
+					1,
+					"insert",
+					{
+						"characters": " {}"
+					},
+					"AwAAAIsQAAAAAAAAjBAAAAAAAAAAAAAAjBAAAAAAAACNEAAAAAAAAAAAAACNEAAAAAAAAI4QAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAixAAAAAAAACLEAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					18,
+					1,
+					"insert",
+					{
+						"characters": ":?"
+					},
+					"AgAAAI0QAAAAAAAAjhAAAAAAAAAAAAAAjhAAAAAAAACPEAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAjRAAAAAAAACNEAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					20,
+					1,
+					"insert",
+					{
+						"characters": ","
+					},
+					"AQAAAJEQAAAAAAAAkhAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAkRAAAAAAAACREAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					21,
+					1,
+					"insert",
+					{
+						"characters": " modifiers"
+					},
+					"CgAAAJIQAAAAAAAAkxAAAAAAAAAAAAAAkxAAAAAAAACUEAAAAAAAAAAAAACUEAAAAAAAAJUQAAAAAAAAAAAAAJUQAAAAAAAAlhAAAAAAAAAAAAAAlhAAAAAAAACXEAAAAAAAAAAAAACXEAAAAAAAAJgQAAAAAAAAAAAAAJgQAAAAAAAAmRAAAAAAAAAAAAAAmRAAAAAAAACaEAAAAAAAAAAAAACaEAAAAAAAAJsQAAAAAAAAAAAAAJsQAAAAAAAAnBAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAkhAAAAAAAACSEAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					23,
+					1,
+					"insert",
+					{
+						"characters": ";"
+					},
+					"AQAAAJ0QAAAAAAAAnhAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAnRAAAAAAAACdEAAAAAAAAP///////+9/"
+				],
+				[
+					48,
+					1,
+					"insert",
+					{
+						"characters": ".iter"
+					},
+					"BQAAAMAQAAAAAAAAwRAAAAAAAAAAAAAAwRAAAAAAAADCEAAAAAAAAAAAAADCEAAAAAAAAMMQAAAAAAAAAAAAAMMQAAAAAAAAxBAAAAAAAAAAAAAAxBAAAAAAAADFEAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAwBAAAAAAAADAEAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					49,
+					1,
+					"insert_snippet",
+					{
+						"contents": "($0)"
+					},
+					"AQAAAMUQAAAAAAAAxxAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAxRAAAAAAAADFEAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					53,
+					1,
+					"insert",
+					{
+						"characters": "\nprint"
+					},
+					"CAAAAAURAAAAAAAABhEAAAAAAAAAAAAABhEAAAAAAAASEQAAAAAAAAAAAAASEQAAAAAAABYRAAAAAAAAAAAAABYRAAAAAAAAFxEAAAAAAAAAAAAAFxEAAAAAAAAYEQAAAAAAAAAAAAAYEQAAAAAAABkRAAAAAAAAAAAAABkRAAAAAAAAGhEAAAAAAAAAAAAAGhEAAAAAAAAbEQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAABREAAAAAAAAFEQAAAAAAAP///////+9/"
+				],
+				[
+					56,
+					1,
+					"insert_completion",
+					{
+						"completion": "lsp_select_completion_item {\"session_name\":\"rust-analyzer\",\"item\":{\"filterText\":\"println!\",\"sortText\":\"ffffffef\",\"additionalTextEdits\":[],\"label\":\"println!(…)\",\"labelDetails\":{\"description\":\"macro_rules! println\"},\"textEdit\":{\"replace\":{\"start\":{\"line\":138,\"character\":16},\"end\":{\"line\":138,\"character\":21}},\"newText\":\"println!($0)\",\"insert\":{\"start\":{\"line\":138,\"character\":16},\"end\":{\"line\":138,\"character\":21}}},\"kind\":3,\"documentation\":{\"kind\":\"markdown\",\"value\":\"Prints to the standard output, with a newline.\\n\\nOn all platforms, the newline is the LINE FEED character (`\\\\n`/`U+000A`) alone\\n(no additional CARRIAGE RETURN (`\\\\r`/`U+000D`)).\\n\\nThis macro uses the same syntax as [`format!`], but writes to the standard output instead.\\nSee [`std::fmt`] for more information.\\n\\nThe `println!` macro will lock the standard output on each call. If you call\\n`println!` within a hot loop, this behavior may be the bottleneck of the loop.\\nTo avoid this, lock stdout with [`io::stdout().lock()`][lock]:\\n```rust\\nuse std::io::{stdout, Write};\\n\\nlet mut lock = stdout().lock();\\nwriteln!(lock, \\\"hello world\\\").unwrap();\\n```\\n\\nUse `println!` only for the primary output of your program. Use\\n[`eprintln!`] instead to print error and progress messages.\\n\\n[`std::fmt`]: crate::fmt\\n[`eprintln!`]: crate::eprintln\\n[lock]: crate::io::Stdout\\n\\n# Panics\\n\\nPanics if writing to [`io::stdout`] fails.\\n\\nWriting to non-blocking stdout can cause an error, which will lead\\nthis macro to panic.\\n\\n[`io::stdout`]: crate::io::stdout\\n\\n# Examples\\n\\n```rust\\nprintln!(); // prints just a newline\\nprintln!(\\\"hello there!\\\");\\nprintln!(\\\"format {} arguments\\\", \\\"some\\\");\\nlet local_variable = \\\"some\\\";\\nprintln!(\\\"format {local_variable} arguments\\\");\\n```\"},\"deprecated\":false,\"insertTextFormat\":2,\"detail\":\"macro_rules! println\"}}",
+						"format": "command",
+						"keep_prefix": true,
+						"must_insert": false,
+						"query_change_id":
+						[
+							40,
+							53,
+							8
+						],
+						"trigger": "println!(…)"
+					},
+					"AgAAABYRAAAAAAAAFhEAAAAAAAAFAAAAcHJpbnQWEQAAAAAAACARAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAGxEAAAAAAAAbEQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					57,
+					1,
+					"insert_snippet",
+					{
+						"contents": "\"$0\""
+					},
+					"AQAAAB8RAAAAAAAAIREAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAHxEAAAAAAAAfEQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					58,
+					1,
+					"insert",
+					{
+						"characters": "modifier"
+					},
+					"CAAAACARAAAAAAAAIREAAAAAAAAAAAAAIREAAAAAAAAiEQAAAAAAAAAAAAAiEQAAAAAAACMRAAAAAAAAAAAAACMRAAAAAAAAJBEAAAAAAAAAAAAAJBEAAAAAAAAlEQAAAAAAAAAAAAAlEQAAAAAAACYRAAAAAAAAAAAAACYRAAAAAAAAJxEAAAAAAAAAAAAAJxEAAAAAAAAoEQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAIBEAAAAAAAAgEQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					59,
+					1,
+					"insert",
+					{
+						"characters": " {}"
+					},
+					"AwAAACgRAAAAAAAAKREAAAAAAAAAAAAAKREAAAAAAAAqEQAAAAAAAAAAAAAqEQAAAAAAACsRAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAKBEAAAAAAAAoEQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					61,
+					1,
+					"insert",
+					{
+						"characters": "modifi"
+					},
+					"BgAAACoRAAAAAAAAKxEAAAAAAAAAAAAAKxEAAAAAAAAsEQAAAAAAAAAAAAAsEQAAAAAAAC0RAAAAAAAAAAAAAC0RAAAAAAAALhEAAAAAAAAAAAAALhEAAAAAAAAvEQAAAAAAAAAAAAAvEQAAAAAAADARAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAKhEAAAAAAAAqEQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					63,
+					1,
+					"left_delete",
+					null,
+					"AQAAACoRAAAAAAAAKhEAAAAAAAAGAAAAbW9kaWZp",
+					"AQAAAAAAAAABAAAAMBEAAAAAAAAqEQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					64,
+					1,
+					"insert",
+					{
+						"characters": ":?"
+					},
+					"AgAAACoRAAAAAAAAKxEAAAAAAAAAAAAAKxEAAAAAAAAsEQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAKhEAAAAAAAAqEQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					66,
+					1,
+					"insert",
+					{
+						"characters": " "
+					},
+					"AQAAAC4RAAAAAAAALxEAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAALhEAAAAAAAAuEQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					67,
+					2,
+					"left_delete",
+					null,
+					"AgAAAC4RAAAAAAAALhEAAAAAAAABAAAAIC0RAAAAAAAALREAAAAAAAABAAAAIg",
+					"AQAAAAAAAAABAAAALxEAAAAAAAAvEQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					68,
+					1,
+					"insert",
+					{
+						"characters": "\""
+					},
+					"AQAAAC0RAAAAAAAALhEAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAALREAAAAAAAAtEQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					70,
+					1,
+					"insert",
+					{
+						"characters": " n"
+					},
+					"AgAAAC0RAAAAAAAALhEAAAAAAAAAAAAALhEAAAAAAAAvEQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAALREAAAAAAAAtEQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					71,
+					1,
+					"left_delete",
+					null,
+					"AQAAAC4RAAAAAAAALhEAAAAAAAABAAAAbg",
+					"AQAAAAAAAAABAAAALxEAAAAAAAAvEQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					72,
+					1,
+					"insert",
+					{
+						"characters": "not"
+					},
+					"AwAAAC4RAAAAAAAALxEAAAAAAAAAAAAALxEAAAAAAAAwEQAAAAAAAAAAAAAwEQAAAAAAADERAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAALhEAAAAAAAAuEQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					73,
+					1,
+					"insert",
+					{
+						"characters": " e"
+					},
+					"AgAAADERAAAAAAAAMhEAAAAAAAAAAAAAMhEAAAAAAAAzEQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAMREAAAAAAAAxEQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					74,
+					1,
+					"left_delete",
+					null,
+					"AQAAADIRAAAAAAAAMhEAAAAAAAABAAAAZQ",
+					"AQAAAAAAAAABAAAAMxEAAAAAAAAzEQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					75,
+					1,
+					"insert",
+					{
+						"characters": "present"
+					},
+					"BwAAADIRAAAAAAAAMxEAAAAAAAAAAAAAMxEAAAAAAAA0EQAAAAAAAAAAAAA0EQAAAAAAADURAAAAAAAAAAAAADURAAAAAAAANhEAAAAAAAAAAAAANhEAAAAAAAA3EQAAAAAAAAAAAAA3EQAAAAAAADgRAAAAAAAAAAAAADgRAAAAAAAAOREAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAMhEAAAAAAAAyEQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					76,
+					1,
+					"insert",
+					{
+						"characters": " in"
+					},
+					"AwAAADkRAAAAAAAAOhEAAAAAAAAAAAAAOhEAAAAAAAA7EQAAAAAAAAAAAAA7EQAAAAAAADwRAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAOREAAAAAAAA5EQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					77,
+					1,
+					"insert",
+					{
+						"characters": " keybindin"
+					},
+					"CgAAADwRAAAAAAAAPREAAAAAAAAAAAAAPREAAAAAAAA+EQAAAAAAAAAAAAA+EQAAAAAAAD8RAAAAAAAAAAAAAD8RAAAAAAAAQBEAAAAAAAAAAAAAQBEAAAAAAABBEQAAAAAAAAAAAABBEQAAAAAAAEIRAAAAAAAAAAAAAEIRAAAAAAAAQxEAAAAAAAAAAAAAQxEAAAAAAABEEQAAAAAAAAAAAABEEQAAAAAAAEURAAAAAAAAAAAAAEURAAAAAAAARhEAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAPBEAAAAAAAA8EQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					78,
+					1,
+					"insert",
+					{
+						"characters": "gs:"
+					},
+					"AwAAAEYRAAAAAAAARxEAAAAAAAAAAAAARxEAAAAAAABIEQAAAAAAAAAAAABIEQAAAAAAAEkRAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAARhEAAAAAAABGEQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					79,
+					1,
+					"left_delete",
+					null,
+					"AQAAAEgRAAAAAAAASBEAAAAAAAABAAAAOg",
+					"AQAAAAAAAAABAAAASREAAAAAAABJEQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					80,
+					1,
+					"insert",
+					{
+						"characters": ":"
+					},
+					"AQAAAEgRAAAAAAAASREAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAASBEAAAAAAABIEQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					81,
+					1,
+					"insert",
+					{
+						"characters": " "
+					},
+					"AQAAAEkRAAAAAAAAShEAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAASREAAAAAAABJEQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					82,
+					2,
+					"left_delete",
+					null,
+					"AgAAAEkRAAAAAAAASREAAAAAAAABAAAAIEgRAAAAAAAASBEAAAAAAAABAAAAOg",
+					"AQAAAAAAAAABAAAAShEAAAAAAABKEQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					84,
+					1,
+					"insert",
+					{
+						"characters": ","
+					},
+					"AQAAAEkRAAAAAAAAShEAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAASREAAAAAAABJEQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					85,
+					1,
+					"insert",
+					{
+						"characters": " modifi"
+					},
+					"BwAAAEoRAAAAAAAASxEAAAAAAAAAAAAASxEAAAAAAABMEQAAAAAAAAAAAABMEQAAAAAAAE0RAAAAAAAAAAAAAE0RAAAAAAAAThEAAAAAAAAAAAAAThEAAAAAAABPEQAAAAAAAAAAAABPEQAAAAAAAFARAAAAAAAAAAAAAFARAAAAAAAAUREAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAShEAAAAAAABKEQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					86,
+					1,
+					"insert",
+					{
+						"characters": "er"
+					},
+					"AgAAAFERAAAAAAAAUhEAAAAAAAAAAAAAUhEAAAAAAABTEQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAUREAAAAAAABREQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					88,
+					1,
+					"insert",
+					{
+						"characters": ";"
+					},
+					"AQAAAFQRAAAAAAAAVREAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAVBEAAAAAAABUEQAAAAAAAP///////+9/"
+				],
+				[
+					98,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AgAAAIsRAAAAAAAAjBEAAAAAAAAAAAAAjBEAAAAAAACUEQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAixEAAAAAAACLEQAAAAAAAAAAAAAAgE9A"
+				],
+				[
+					99,
+					1,
+					"paste",
+					null,
+					"AQAAAJQRAAAAAAAAeBIAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAlBEAAAAAAACUEQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					106,
+					1,
+					"insert",
+					{
+						"characters": "key"
+					},
+					"BAAAAKQRAAAAAAAApREAAAAAAAAAAAAApREAAAAAAAClEQAAAAAAAAkAAABtb2RpZmllcnOlEQAAAAAAAKYRAAAAAAAAAAAAAKYRAAAAAAAApxEAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAApBEAAAAAAACtEQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					108,
+					1,
+					"insert_completion",
+					{
+						"completion": "lsp_select_completion_item {\"session_name\":\"rust-analyzer\",\"item\":{\"preselect\":true,\"sortText\":\"ffffffee\",\"label\":\"key_binding\",\"labelDetails\":{\"description\":\"&KeyBinding\"},\"textEdit\":{\"replace\":{\"start\":{\"line\":142,\"character\":24},\"end\":{\"line\":142,\"character\":26}},\"newText\":\"key_binding\",\"insert\":{\"start\":{\"line\":142,\"character\":24},\"end\":{\"line\":142,\"character\":26}}},\"kind\":6,\"filterText\":\"key_binding\",\"deprecated\":false,\"additionalTextEdits\":[],\"detail\":\"&KeyBinding\"}}",
+						"format": "command",
+						"keep_prefix": true,
+						"must_insert": false,
+						"query_change_id":
+						[
+							90,
+							106,
+							3
+						],
+						"trigger": "key_binding"
+					},
+					"AwAAAKYRAAAAAAAAphEAAAAAAAABAAAAeaQRAAAAAAAApBEAAAAAAAACAAAAa2WkEQAAAAAAAK8RAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAApxEAAAAAAACnEQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					109,
+					1,
+					"insert",
+					{
+						"characters": ".m"
+					},
+					"AgAAAK8RAAAAAAAAsBEAAAAAAAAAAAAAsBEAAAAAAACxEQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAArxEAAAAAAACvEQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					110,
+					1,
+					"insert_completion",
+					{
+						"completion": "lsp_select_completion_item {\"session_name\":\"rust-analyzer\",\"item\":{\"preselect\":true,\"sortText\":\"ffffffef\",\"label\":\"modifiers\",\"labelDetails\":{\"description\":\"Vec<KeyModifier, Global>\"},\"textEdit\":{\"replace\":{\"start\":{\"line\":142,\"character\":36},\"end\":{\"line\":142,\"character\":37}},\"newText\":\"modifiers\",\"insert\":{\"start\":{\"line\":142,\"character\":36},\"end\":{\"line\":142,\"character\":37}}},\"kind\":5,\"filterText\":\"modifiers\",\"deprecated\":false,\"additionalTextEdits\":[],\"detail\":\"Vec<KeyModifier, Global>\"}}",
+						"format": "command",
+						"keep_prefix": true,
+						"must_insert": false,
+						"query_change_id":
+						[
+							92,
+							109,
+							2
+						],
+						"trigger": "modifiers"
+					},
+					"AgAAALARAAAAAAAAsBEAAAAAAAABAAAAbbARAAAAAAAAuREAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAsREAAAAAAACxEQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					116,
+					2,
+					"right_delete",
+					null,
+					"AgAAANMRAAAAAAAA0xEAAAAAAAALAAAAa2V5X2JpbmRpbmfTEQAAAAAAANMRAAAAAAAAAQAAAC4",
+					"AQAAAAAAAAABAAAA0xEAAAAAAADeEQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					120,
+					1,
+					"insert",
+					{
+						"characters": "KB"
+					},
+					"AgAAAA0SAAAAAAAADhIAAAAAAAAAAAAADhIAAAAAAAAPEgAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAADRIAAAAAAAANEgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					121,
+					1,
+					"insert",
+					{
+						"characters": " "
+					},
+					"AQAAAA8SAAAAAAAAEBIAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAADxIAAAAAAAAPEgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					125,
+					1,
+					"insert",
+					{
+						"characters": "pressed"
+					},
+					"CAAAAC0SAAAAAAAALhIAAAAAAAAAAAAALhIAAAAAAAAuEgAAAAAAAAsAAABrZXliaW5kaW5ncy4SAAAAAAAALxIAAAAAAAAAAAAALxIAAAAAAAAwEgAAAAAAAAAAAAAwEgAAAAAAADESAAAAAAAAAAAAADESAAAAAAAAMhIAAAAAAAAAAAAAMhIAAAAAAAAzEgAAAAAAAAAAAAAzEgAAAAAAADQSAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAALRIAAAAAAAA4EgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					126,
+					1,
+					"insert",
+					{
+						"characters": " modifier"
+					},
+					"CQAAADQSAAAAAAAANRIAAAAAAAAAAAAANRIAAAAAAAA2EgAAAAAAAAAAAAA2EgAAAAAAADcSAAAAAAAAAAAAADcSAAAAAAAAOBIAAAAAAAAAAAAAOBIAAAAAAAA5EgAAAAAAAAAAAAA5EgAAAAAAADoSAAAAAAAAAAAAADoSAAAAAAAAOxIAAAAAAAAAAAAAOxIAAAAAAAA8EgAAAAAAAAAAAAA8EgAAAAAAAD0SAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAANBIAAAAAAAA0EgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					127,
+					1,
+					"insert",
+					{
+						"characters": "s"
+					},
+					"AQAAAD0SAAAAAAAAPhIAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAPRIAAAAAAAA9EgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					129,
+					1,
+					"lsp_apply_document_edit",
+					{
+						"changes":
+						[
+							[
+								[
+									144,
+									25
+								],
+								[
+									144,
+									25
+								],
+								"\n                    ",
+								null
+							],
+							[
+								[
+									144,
+									77
+								],
+								[
+									144,
+									86
+								],
+								"\n                    modifier\n                ",
+								null
+							]
+						]
+					},
+					"AgAAAEASAAAAAAAAbhIAAAAAAAAJAAAAIG1vZGlmaWVyDBIAAAAAAAAhEgAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAPhIAAAAAAAA+EgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					149,
+					1,
+					"left_delete",
+					null,
+					"AwAAAAMSAAAAAAAAAxIAAAAAAACCAAAAcHJpbnRsbiEoCiAgICAgICAgICAgICAgICAgICAgIktCIG1vZGlmaWVyIHs6P30gbm90IHByZXNlbnQgaW4gcHJlc3NlZCBtb2RpZmllcnMiLAogICAgICAgICAgICAgICAgICAgIG1vZGlmaWVyCiAgICAgICAgICAgICAgICApOxYRAAAAAAAAFhEAAAAAAAA/AAAAcHJpbnRsbiEoIm1vZGlmaWVyIHs6P30gbm90IHByZXNlbnQgaW4ga2V5YmluZGluZ3MiLCBtb2RpZmllcik7dxAAAAAAAAB3EAAAAAAAACcAAAAgcHJpbnRsbiEoIm1vZGZpZXJzOiB7Oj99IiwgbW9kaWZpZXJzKTs",
+					"AQAAAAAAAAADAAAAnhAAAAAAAAB3EAAAAAAAAAAAAAAAAPC/FhEAAAAAAABVEQAAAAAAAAAAAAAAAPC/hRIAAAAAAAADEgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					151,
+					1,
+					"lsp_apply_document_edit",
+					{
+						"changes":
+						[
+							[
+								[
+									135,
+									0
+								],
+								[
+									135,
+									7
+								],
+								"",
+								null
+							],
+							[
+								[
+									138,
+									0
+								],
+								[
+									139,
+									0
+								],
+								"",
+								null
+							],
+							[
+								[
+									144,
+									0
+								],
+								[
+									145,
+									0
+								],
+								"",
+								null
+							]
+						]
+					},
+					"AwAAAI0RAAAAAAAAjREAAAAAAAARAAAAICAgICAgICAgICAgICAgIArfEAAAAAAAAN8QAAAAAAAAEQAAACAgICAgICAgICAgICAgICAKcBAAAAAAAABwEAAAAAAAAAcAAAAgICAgICAg",
+					"AQAAAAAAAAADAAAAdxAAAAAAAAB3EAAAAAAAAAAAAAAAAPC/7xAAAAAAAADvEAAAAAAAAAAAAAAAAPC/nREAAAAAAACdEQAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		},
+		{
+			"file": "reaper-imgui/src/keyboard.rs",
+			"settings":
+			{
+				"buffer_size": 21183,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+				[
+					3,
+					1,
+					"toggle_comment",
+					{
+						"block": false
+					},
+					"CAAAAGoHAAAAAAAAbQcAAAAAAAAAAAAAQgcAAAAAAABFBwAAAAAAAAAAAAA4BwAAAAAAADsHAAAAAAAAAAAAACgHAAAAAAAAKwcAAAAAAAAAAAAAxgYAAAAAAADJBgAAAAAAAAAAAACoBgAAAAAAAKsGAAAAAAAAAAAAAJYGAAAAAAAAmQYAAAAAAAAAAAAAhQYAAAAAAACIBgAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAawcAAAAAAACIBgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					6,
+					1,
+					"toggle_comment",
+					{
+						"block": false
+					},
+					"AQAAADQCAAAAAAAANwIAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAPQIAAAAAAAA9AgAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		},
+		{
+			"file": "test/src/lib.rs",
+			"settings":
+			{
+				"buffer_size": 3202,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+				[
+					10,
+					1,
+					"insert",
+					{
+						"characters": "Ct"
+					},
+					"AwAAACEHAAAAAAAAIgcAAAAAAAAAAAAAIgcAAAAAAAAiBwAAAAAAAAUAAABTdXBlciIHAAAAAAAAIwcAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAIQcAAAAAAAAmBwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					11,
+					1,
+					"insert",
+					{
+						"characters": "rl"
+					},
+					"AgAAACMHAAAAAAAAJAcAAAAAAAAAAAAAJAcAAAAAAAAlBwAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAIwcAAAAAAAAjBwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					15,
+					1,
+					"insert",
+					{
+						"characters": ","
+					},
+					"AQAAACUHAAAAAAAAJgcAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAJQcAAAAAAAAlBwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					16,
+					1,
+					"insert",
+					{
+						"characters": " "
+					},
+					"AQAAACYHAAAAAAAAJwcAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAJgcAAAAAAAAmBwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					17,
+					1,
+					"paste",
+					null,
+					"AQAAACcHAAAAAAAARgcAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAJwcAAAAAAAAnBwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					19,
+					1,
+					"insert",
+					{
+						"characters": "Shift"
+					},
+					"BgAAAEIHAAAAAAAAQwcAAAAAAAAAAAAAQwcAAAAAAABDBwAAAAAAAAQAAABDdHJsQwcAAAAAAABEBwAAAAAAAAAAAABEBwAAAAAAAEUHAAAAAAAAAAAAAEUHAAAAAAAARgcAAAAAAAAAAAAARgcAAAAAAABHBwAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAARgcAAAAAAABCBwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					29,
+					1,
+					"insert",
+					{
+						"characters": "Ctrl+S"
+					},
+					"BwAAANQHAAAAAAAA1QcAAAAAAAAAAAAA1QcAAAAAAADVBwAAAAAAAAUAAABTdXBlctUHAAAAAAAA1gcAAAAAAAAAAAAA1gcAAAAAAADXBwAAAAAAAAAAAADXBwAAAAAAANgHAAAAAAAAAAAAANgHAAAAAAAA2QcAAAAAAAAAAAAA2QcAAAAAAADaBwAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA1AcAAAAAAADZBwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					30,
+					1,
+					"insert",
+					{
+						"characters": "hift"
+					},
+					"BAAAANoHAAAAAAAA2wcAAAAAAAAAAAAA2wcAAAAAAADcBwAAAAAAAAAAAADcBwAAAAAAAN0HAAAAAAAAAAAAAN0HAAAAAAAA3gcAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA2gcAAAAAAADaBwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					32,
+					1,
+					"lsp_apply_document_edit",
+					{
+						"changes":
+						[
+							[
+								[
+									63,
+									25
+								],
+								[
+									63,
+									25
+								],
+								"\n                        ",
+								null
+							],
+							[
+								[
+									63,
+									57
+								],
+								[
+									63,
+									57
+								],
+								"\n                       ",
+								null
+							],
+							[
+								[
+									63,
+									90
+								],
+								[
+									63,
+									90
+								],
+								",\n                    ",
+								null
+							]
+						]
+					},
+					"AwAAAEcHAAAAAAAAXQcAAAAAAAAAAAAAJgcAAAAAAAA+BwAAAAAAAAAAAAAGBwAAAAAAAB8HAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA3gcAAAAAAADeBwAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		}
+	],
+	"build_system": "Packages/Rust/Cargo.sublime-build",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Anaconda Python Builder",
+					""
+				],
+				[
+					"Packages/MagicPython/settings/sublime/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/MagicPython/settings/sublime/Python.sublime-build",
+					"Syntax Check"
+				],
+				[
+					"Packages/SublimeREPL/sublimerepl_build_system_hack.sublime-build",
+					""
+				],
+				[
+					"Packages/User/python3_my.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/MagicPython/settings/sublime/Python.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Rust Enhanced/RustEnhanced.sublime-build",
+					""
+				],
+				[
+					"Packages/Rust Enhanced/RustEnhanced.sublime-build",
+					"Automatic"
+				],
+				[
+					"Packages/Rust Enhanced/RustEnhanced.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/Rust Enhanced/RustEnhanced.sublime-build",
+					"Run (with args)..."
+				],
+				[
+					"Packages/Rust Enhanced/RustEnhanced.sublime-build",
+					"Check"
+				],
+				[
+					"Packages/Rust Enhanced/RustEnhanced.sublime-build",
+					"Test"
+				],
+				[
+					"Packages/Rust Enhanced/RustEnhanced.sublime-build",
+					"Test (with args)..."
+				],
+				[
+					"Packages/Rust Enhanced/RustEnhanced.sublime-build",
+					"Bench"
+				],
+				[
+					"Packages/Rust Enhanced/RustEnhanced.sublime-build",
+					"Clean"
+				],
+				[
+					"Packages/Rust Enhanced/RustEnhanced.sublime-build",
+					"Document"
+				],
+				[
+					"Packages/Rust Enhanced/RustEnhanced.sublime-build",
+					"Clippy"
+				],
+				[
+					"Packages/Rust Enhanced/RustEnhanced.sublime-build",
+					"Script"
+				],
+				[
+					"Packages/SublimeREPL/sublimerepl_build_system_hack.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/Rust Enhanced/RustEnhanced.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Rust/Cargo.sublime-build",
+					""
+				],
+				[
+					"Packages/Rust/Cargo.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/Rust/Cargo.sublime-build",
+					"Test"
+				],
+				[
+					"Packages/Rust/Cargo.sublime-build",
+					"Bench"
+				],
+				[
+					"Packages/Rust/Cargo.sublime-build",
+					"Clean"
+				],
+				[
+					"Packages/Rust/Rust.sublime-build",
+					""
+				],
+				[
+					"Packages/Rust/Rust.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/Rust/Rust.sublime-build",
+					"Build & Run"
+				],
+				[
+					"Packages/SublimeREPL/sublimerepl_build_system_hack.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/Rust/Cargo.sublime-build",
+				"Test"
+			]
+		],
+		[
+			[
+				[
+					"Packages/Rust/Cargo.sublime-build",
+					""
+				],
+				[
+					"Packages/Rust/Cargo.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/Rust/Cargo.sublime-build",
+					"Test"
+				],
+				[
+					"Packages/Rust/Cargo.sublime-build",
+					"Bench"
+				],
+				[
+					"Packages/Rust/Cargo.sublime-build",
+					"Clean"
+				],
+				[
+					"Packages/SublimeREPL/sublimerepl_build_system_hack.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/Rust/Cargo.sublime-build",
+				"Test"
+			]
+		]
+	],
+	"build_varint": "Test",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"ter",
+				"Terminus: Toggle Panel"
+			],
+			[
+				"dis",
+				"Package Control: Disable Package"
+			],
+			[
+				"en",
+				"Package Control: Enable Package"
+			],
+			[
+				"term",
+				"Terminus: Toggle Panel"
+			],
+			[
+				"ena",
+				"Package Control: Enable Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"lsp",
+				"LSP: Enable Language Server in Project"
+			],
+			[
+				"cheme",
+				"UI: Select Color Scheme"
+			],
+			[
+				"lsp re",
+				"LSP: Rename"
+			],
+			[
+				"theme",
+				"UI: Select Theme"
+			],
+			[
+				"sche",
+				"UI: Select Color Scheme"
+			],
+			[
+				"the",
+				"UI: Select Theme"
+			],
+			[
+				"scheme",
+				"UI: Select Color Scheme"
+			],
+			[
+				"forma",
+				"LSP: Format File"
+			],
+			[
+				"disa",
+				"Package Control: Disable Package"
+			],
+			[
+				"lsp en",
+				"LSP: Enable Language Server in Project"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"isor",
+				"isort: sort imports"
+			],
+			[
+				"prewi",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"mar",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"previw",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"mark",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"Package Control: inst",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"enab",
+				"Package Control: Enable Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"jed",
+				"SublimeJedi: Show Signature"
+			],
+			[
+				"Package Control: instal",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 382.0,
+		"history":
+		[
+			"d",
+			"exit()",
+			"isort_sort_imports",
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/levitanus/gits/reaper-imgui",
+		"/home/levitanus/gits/reaper-imgui/reaper-imgui",
+		"/home/levitanus/gits/reaper-imgui/reaper-imgui/src",
+		"/home/levitanus/gits/reaper-imgui/test",
+		"/home/levitanus/gits/reaper-imgui/test/src"
+	],
+	"file_history":
+	[
+		"/home/levitanus/gits/reaper-imgui/reaper-imgui/src/context.rs",
+		"/home/levitanus/gits/reaper-imgui/test/src/lib.rs",
+		"/home/levitanus/gits/reaper-imgui/reaper-imgui/src/keyboard.rs",
+		"/home/levitanus/.config/sublime-text-3/Packages/User/Rust Enhanced.sublime-package_FILES/RustEnhanced.sublime-syntax",
+		"/home/levitanus/gits/rea-score/rea-score/src/notation/note_notations.rs",
+		"/home/levitanus/gits/rea-score/rea-score/src/notation/chord_notations.rs",
+		"/home/levitanus/gits/rea-score/rea-score/src/notation/mod.rs",
+		"/home/levitanus/gits/rea-score/plugin/src/key_bindings.rs",
+		"/home/levitanus/gits/rea-score/rea-score/tests/measure.rs",
+		"/home/levitanus/gits/rea-score/rea-score/src/primitives/measure.rs",
+		"/home/levitanus/.config/sublime-text-3/Packages/User/LevitanusPythonic.sublime-color-scheme",
+		"/home/levitanus/gits/sample_editor/test_arts.py",
+		"/home/levitanus/gits/sampler/Cargo.toml",
+		"/run/media/levitanus/RaidNew/_temp/audio/Air 2.mp3",
+		"/home/levitanus/gits/ReaScore/rea_score/keymap.py",
+		"/home/levitanus/gits/reapy-boost/reapy_boost/core/reapy_object.py",
+		"/home/levitanus/gits/reapy-boost/reapy_boost/core/map.py",
+		"/home/levitanus/gits/sample_editor/test.py",
+		"/home/levitanus/.config/REAPER/Data/Reaticulate.reabank",
+		"/home/levitanus/gits/sample_editor/sample_editor/widgets.py",
+		"/home/levitanus/gits/reapy-boost/setup.cfg",
+		"/home/levitanus/gits/reapy-boost/requirements.txt",
+		"/home/levitanus/gits/reapy-boost/reapy_boost/gui.py",
+		"/home/levitanus/.local/lib/python3.10/site-packages/IPy.py",
+		"/run/media/levitanus/RaidNew/fonogr/Владимир Булаев/Маскарад ноты/score/Маскарад.txt",
+		"/run/media/levitanus/Samples2/SteamLibrary/steamapps/common/Transformice/natives_blob.bin",
+		"/run/media/levitanus/Samples2/SteamLibrary/steamapps/common/Transformice/steam_appid.txt",
+		"/home/levitanus/gits/sample_editor/sample_editor/gui.py",
+		"/home/levitanus/gits/sample_editor/None",
+		"/home/levitanus/gits/ReaExtensions/rea_extensions/stem_render.py",
+		"/home/levitanus/gits/ReaExtensions/test.py",
+		"/home/levitanus/gits/imgui.ini",
+		"/run/media/levitanus/Files/gits/reapy-boost/reapy_boost/core/fx/fx.py",
+		"/run/media/levitanus/Files/gits/reapy-boost/reapy_boost/core/reapy_object.py",
+		"/home/levitanus/gits/reaper-rs/target/reaper/reaper_linux_x86_64/REAPER/reaper.ini",
+		"/home/levitanus/gits/reaper-rs/target/reaper/reaper_linux_x86_64/REAPER/reaper-vstplugins64.ini",
+		"/run/media/levitanus/INTENSO/Все ссылки в одном месте.docx",
+		"/run/media/levitanus/Files/gits/reapy-boost/reapy_boost/core/track/track.py",
+		"/run/media/levitanus/Files/gits/reapy-boost/reapy_boost/core/project/project.py",
+		"/run/media/levitanus/Files/gits/reapy-boost/reapy_boost/core/project/region.py",
+		"/home/levitanus/.local/lib/python3.9/site-packages/quickly/dom/lily.py",
+		"/media/levitanus/RAID/gits/ReaExtensions/rea_extensions/lilypond.py",
+		"/home/levitanus/.ssh/github.pub",
+		"/home/levitanus/.ssh/id_ed25519.pub",
+		"/home/levitanus/gits/ReaExtensions/.gitignore",
+		"/home/levitanus/gits/ReaExtensions/reaextensions.sublime-project",
+		"/media/levitanus/RAID/gits/reapy/reapy/core/item/midi_event.py",
+		"/home/levitanus/gits/reapy/reapy/core/reaper/__init__.pyi",
+		"/home/levitanus/gits/reapy/reapy/core/item/take.pyi",
+		"/home/levitanus/gits/reapy/reapy/core/item/take.py",
+		"/home/levitanus/gits/ReaExtensions/.ropeproject/config.py",
+		"/usr/lib/python3.9/contextlib.py",
+		"/home/levitanus/.local/lib/python3.9/site-packages/quickly/node.py",
+		"/home/levitanus/gits/ReaExtensions/rea_extensions/lilypond.py",
+		"/media/levitanus/RAID/gits/reapy/reapy/reascript_api.py",
+		"/media/levitanus/RAID/gits/reapy/reapy/__init__.py",
+		"/media/levitanus/RAID/gits/reapy/reapy/core/reaper/__init__.py",
+		"/media/levitanus/RAID/gits/reapy/reapy/core/__init__.py",
+		"/home/levitanus/gits/reapy/reapy/additional_api.py",
+		"/home/levitanus/.config/sublime-text-3/Packages/User/python_fiximports.sublime-settings",
+		"/home/levitanus/.config/sublime-text-3/Packages/Python Fix Imports/python_fiximports.sublime-settings",
+		"/home/levitanus/gits/ReaExtensions/rea_extensions/ly_lib/musicexp.py",
+		"/home/levitanus/gits/ReaExtensions/rea_extensions/test.py",
+		"/home/levitanus/gits/lilypond/python/musicexp.py",
+		"/home/levitanus/gits/reapy/reapy/core/item/midi_event.pyi",
+		"/media/levitanus/RAID/gits/ReaExtensions/rea_extensions/ly_lib/musicexp.py",
+		"/home/levitanus/gits/ReaExtensions/rea_extensions/lt_Notation_spread_notes_across_bounds_quantize.py",
+		"/usr/lib/python3/dist-packages/ly/music/items.py",
+		"/usr/lib/python3/dist-packages/ly/music/event.py",
+		"/home/levitanus/gits/ReaExtensions/rea_extensions/py.typed",
+		"/home/levitanus/gits/ReaExtensions/rea_extensions/ly_lib/py.typed",
+		"/home/levitanus/gits/ReaExtensions/rea_extensions/ly_lib/book_html.py",
+		"/home/levitanus/gits/ReaExtensions/rea_extensions/ly_lib/book_latex.py",
+		"/home/levitanus/gits/ReaExtensions/rea_extensions/ly_lib/book_snippets.py",
+		"/home/levitanus/gits/ReaExtensions/rea_extensions/ly_lib/book_texinfo.py",
+		"/home/levitanus/gits/ReaExtensions/rea_extensions/ly_lib/convertrules.py",
+		"/home/levitanus/gits/ReaExtensions/rea_extensions/ly_lib/musicxml.py",
+		"/home/levitanus/gits/ReaExtensions/rea_extensions/ly_lib/musicxml2ly_conversion.py",
+		"/home/levitanus/gits/ReaExtensions/rea_extensions/ly_lib/book_docbook.py",
+		"/home/levitanus/gits/ReaExtensions/rea_extensions/ly_lib/book_base_test.py",
+		"/home/levitanus/gits/ReaExtensions/rea_extensions/ly_lib/book_base.py",
+		"/home/levitanus/gits/ReaExtensions/rea_extensions/lilypond/musicexp.py",
+		"/home/levitanus/gits/lilypond/python/book_base.py",
+		"/home/levitanus/gits/ReaExtensions/rea_extensions/lilypond/auxiliar/buildlib.py",
+		"/home/levitanus/gits/lilypond-export/export-base.ly",
+		"/home/levitanus/.config/REAPER/Scripts/ReaTeam Extensions/API/imgui_python.py",
+		"/home/levitanus/.config/REAPER/reaper-score/KeyMaps/DK keymap.ReaperKeyMap",
+		"/home/levitanus/.config/REAPER/reaper-score/KeyMaps/score keymap.ReaperKeyMap",
+		"/home/levitanus/.config/REAPER/reaper-score/KeyMaps/German Keymap.ReaperKeyMap",
+		"/home/levitanus/.config/REAPER/reaper-score/reaper-kb.ini",
+		"/media/levitanus/RAID/gits/reapy/reapy/core/item/take.py",
+		"/media/levitanus/RAID/gits/reapy/reapy/core/item/item.py",
+		"/media/levitanus/RAID/gits/reapy/reapy/core/window/midi_editor.py",
+		"/home/levitanus/gits/reapy/reapy/core/item/__init__.py",
+		"/home/levitanus/gits/reapy/reapy/core/item/item.pyi",
+		"/media/levitanus/RAID/gits/reapy/reapy/core/window/__init__.py",
+		"/home/levitanus/gits/reapy/reapy/core/window/midi_editor.pyi",
+		"/home/levitanus/.local/lib/python3.9/site-packages/reapy/core/__init__.py",
+		"/home/levitanus/.local/lib/python3.9/site-packages/reapy/core/window/__init__.py",
+		"/home/levitanus/.local/lib/python3.9/site-packages/reapy/core/window/midi_editor.py",
+		"/home/levitanus/gits/reapy/reapy/core/window/window.pyi",
+		"/home/levitanus/.local/lib/python3.9/site-packages/reapy/core/window/window.py",
+		"/home/levitanus/.config/sublime-text-3/Packages/User/Anaconda.sublime-settings",
+		"/home/levitanus/gits/reapy/reapy/core/reaper/__init__.py",
+		"/home/levitanus/.local/lib/python3.9/site-packages/reapy/__init__.py",
+		"/home/levitanus/.local/lib/python3.9/site-packages/reapy/core/reaper/__init__.py",
+		"/home/levitanus/.local/lib/python3.9/site-packages/reapy/core/reaper/reaper.py",
+		"/home/levitanus/gits/reapy/reapy/core/reaper/reaper.pyi",
+		"/home/levitanus/gits/reapy/reapy/core/project/__init__.py",
+		"/home/levitanus/gits/reapy/reapy/core/project/project.pyi",
+		"/home/levitanus/gits/reapy/reapy/core/project/project.py",
+		"/home/levitanus/gits/reapy/reapy/core/reaper/audio.pyi",
+		"/home/levitanus/gits/reapy/reapy/__init__.py",
+		"/home/levitanus/gits/reapy/reapy/core/__init__.py",
+		"/home/levitanus/gits/reapy/reapy/core/window/__init__.pyi",
+		"/home/levitanus/gits/reapy/reapy/core/window/__init__.py",
+		"/home/levitanus/gits/reapy/reapy/core/track/__init__.pyi",
+		"/home/levitanus/gits/reapy/reapy/core/track/__init__.py",
+		"/home/levitanus/gits/reapy/reapy/core/item/__init__.pyi",
+		"/home/levitanus/gits/reapy/reapy/core/fx/__init__.py",
+		"/home/levitanus/gits/reapy/reapy/core/fx/__init__.pyi",
+		"/home/levitanus/gits/reapy/reapy/core/project/__init__.pyi",
+		"/media/levitanus/RAID/gits/reapy/reapy/core/fx/fx.py",
+		"/media/levitanus/RAID/gits/reapy/reapy/core/fx/fx_param.py",
+		"/media/levitanus/RAID/gits/reapy/reapy/core/fx/__init__.py",
+		"/media/levitanus/RAID/gits/reapy/reapy/core/track/track.py",
+		"/home/levitanus/gits/reapy/reapy/core/fx/fx.pyi",
+		"/home/levitanus/gits/ReaExtensions/rea_extensions/make_fx_online_only_in_bounds_selected_items.py"
+	],
+	"find":
+	{
+		"height": 48.0
+	},
+	"find_in_files":
+	{
+		"height": 136.0,
+		"where_history":
+		[
+			"D:\\gits\\reapy\\reapy"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"<",
+			"KeyModifier",
+			"x if x",
+			"Ok(",
+			"self",
+			" ",
+			"map",
+			"fade",
+			"region_states[region.index]",
+			"id",
+			"...",
+			"get_info_value",
+			"    state['vol'] = track.get_info_value('D_VOL')\n",
+			"get_info_value",
+			"stem",
+			"staff",
+			"Take",
+			"take",
+			"(Length\\(.*), ?take",
+			"(Length\\(.*)take",
+			"note",
+			"ident =",
+			"ident",
+			"music[-1]",
+			"print",
+			"append",
+			"duration",
+			"Duration",
+			"for_ly",
+			"msuic",
+			"out",
+			"voice",
+			"[voice]",
+			"lily.",
+			"lily.Duration",
+			"Group",
+			"Staff",
+			"Grand",
+			"Staff",
+			"return",
+			"'Fractured'",
+			"Fractured",
+			"bool",
+			"position",
+			"Position",
+			"position_bar",
+			"reapy.Take",
+			"\\sreapy.Take",
+			"ppq_position",
+			"limit_denominator",
+			"position",
+			"_length",
+			"ppq_position",
+			"ty.Tuple[EventsDictType, ...]",
+			"EvetsDictType",
+			"ty.Dict[float, ty.List[Note]]",
+			"_midi_pitch",
+			"pitch",
+			"s Note(",
+			"Note()",
+			"Pitch()",
+			"pitch",
+			"Pitch",
+			"pitch",
+			"Pitch",
+			"TimeScaledMusic",
+			"SequentialMusic",
+			"NoteEvent",
+			"ChordEvent",
+			"import",
+			"lilypond_py",
+			"self.elements",
+			"elements",
+			"print_bef",
+			"print_before",
+			"print_before_note",
+			"\\.parent ",
+			"\\.parent",
+			"parent",
+			"32nd",
+			"Dura",
+			"musical",
+			"note",
+			"end",
+			"note_end",
+			"note_info.",
+			"note",
+			"msg",
+			"x",
+			"print",
+			"sort_",
+			"float",
+			"MidiEventDict",
+			"midi",
+			"start",
+			"Item",
+			"-> reapy.",
+			"inside_reaper",
+			"def ",
+			"id",
+			"def ",
+			"project_tab",
+			"close_project_tab",
+			"class",
+			"some_function",
+			"def \\w+(?:\\()",
+			"def \\w+?(",
+			"def ",
+			"def",
+			"close",
+			"()\n",
+			"start",
+			"position",
+			"def param",
+			"param",
+			"'latin-1'",
+			"reaper_playback",
+			"REAPER_PLAYBACK_IP",
+			"host",
+			"ping",
+			"one",
+			"play_btn",
+			"stop_btn",
+			"play_btn",
+			"upd_btn",
+			"upd",
+			"root",
+			"on_click"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"$1",
+			"Length\\($1",
+			"ValuesFilledType"
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "reaper-imgui/src/context.rs",
+					"selected": true,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 12518,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4550,
+								4550
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "\\.",
+									"selector": "source.lua"
+								},
+								{
+									"characters": ":",
+									"selector": "source.lua"
+								},
+								{
+									"characters": ":.'(",
+									"selector": "meta.tag, source - comment - string.quoted.double.block - string.quoted.single.block - string.unquoted.heredoc",
+									"server": "rust-analyzer"
+								}
+							],
+							"lsp_active": true,
+							"lsp_hover_provider_count": 1,
+							"lsp_uri": "file:///home/levitanus/gits/reaper-imgui/reaper-imgui/src/context.rs",
+							"show_definitions": false,
+							"syntax": "Packages/Rust/Rust.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1627.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "reaper-imgui/src/keyboard.rs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 21183,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								576,
+								576
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "\\.",
+									"selector": "source.lua"
+								},
+								{
+									"characters": ":",
+									"selector": "source.lua"
+								},
+								{
+									"characters": ":.'(",
+									"selector": "meta.tag, source - comment - string.quoted.double.block - string.quoted.single.block - string.unquoted.heredoc",
+									"server": "rust-analyzer"
+								}
+							],
+							"lsp_active": true,
+							"lsp_hover_provider_count": 1,
+							"lsp_uri": "file:///home/levitanus/gits/reaper-imgui/reaper-imgui/src/keyboard.rs",
+							"show_definitions": false,
+							"syntax": "Packages/Rust/Rust.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"stack_multiselect": false,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"sheets":
+			[
+				{
+					"buffer": 2,
+					"file": "test/src/lib.rs",
+					"selected": true,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3202,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2085,
+								2085
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "\\.",
+									"selector": "source.lua"
+								},
+								{
+									"characters": ":",
+									"selector": "source.lua"
+								},
+								{
+									"characters": ":.'(",
+									"selector": "meta.tag, source - comment - string.quoted.double.block - string.quoted.single.block - string.unquoted.heredoc",
+									"server": "rust-analyzer"
+								}
+							],
+							"lsp_active": true,
+							"lsp_hover_provider_count": 1,
+							"lsp_uri": "file:///home/levitanus/gits/reaper-imgui/test/src/lib.rs",
+							"show_definitions": false,
+							"syntax": "Packages/Rust/Rust.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 781.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 51.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.5,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.LSP Log Panel":
+	{
+		"height": 0.0
+	},
+	"output.SublimeLinter":
+	{
+		"height": 129.0
+	},
+	"output.SublimeLinter Messages":
+	{
+		"height": 126.0
+	},
+	"output.Terminus":
+	{
+		"height": 104.0
+	},
+	"output.anaconda_documentation":
+	{
+		"height": 128.0
+	},
+	"output.autopep8":
+	{
+		"height": 156.0
+	},
+	"output.diagnostics":
+	{
+		"height": 110.0
+	},
+	"output.exec":
+	{
+		"height": 206.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.language servers":
+	{
+		"height": 0.0
+	},
+	"output.mdpopups":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "reaper-imgui.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 516.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/gits/rea-score/rea-score.sublime-project"
+			]
+		],
+		"width": 392.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 214.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -1,0 +1,21 @@
+[package]
+edition = "2021"
+name = "reaper-test-extension-plugin"
+publish = false
+version = "0.1.0"
+
+[dependencies]
+bitvec = "1.0"
+c_str_macro = "1.0.2"
+float_eq = "1.0"
+log = "0.4"
+rea-rs = {version = "0.1.3", path = "../../rea-rs-workspace/rea-rs"}
+rea-rs-low = {version = "0.1.3", path = "../../rea-rs-workspace/low"}
+rea-rs-macros = {version = "0.1.2"}
+rea-rs-test = {version = "0.1.3", path = "../../rea-rs-workspace/rea-rs-test"}
+# rea-score = {path = "../../rea-score-rs/rea-score/"}
+reaper-imgui = {version = "0.1.3", path = "../reaper-imgui"}
+
+[lib]
+crate-type = ["cdylib"]
+name = "reaper_test_extension_plugin"

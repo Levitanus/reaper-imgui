@@ -782,7 +782,7 @@ dependencies = [
 
 [[package]]
 name = "reaper-imgui"
-version = "0.1.0"
+version = "0.1.2"
 dependencies = [
  "c_str_macro",
  "once_cell",

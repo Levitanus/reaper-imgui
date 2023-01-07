@@ -2,9 +2,8 @@ use std::{
     collections::HashMap,
     fmt::Display,
     fs::File,
-    io::{BufRead, BufReader, Read, Write},
+    io::{BufRead, BufReader},
     path::PathBuf,
-    process::Command,
 };
 
 use once_cell::sync::Lazy;
@@ -269,6 +268,7 @@ pub fn build_bindings(headers: Headers) -> String {
         let name = "ImGui_".to_string() + name;
         name
     });
+    let const_init_names1 = const_init_names.clone();
     let const_names = headers
         .constants
         .iter()
@@ -330,7 +330,13 @@ pub fn build_bindings(headers: Headers) -> String {
                     #(
                         #const_names: unsafe{
                             match plugin_context.GetFunc(c_str_macro::c_str!(#const_init_names).as_ptr()).is_null(){
-                                true => None,
+                                true => {
+                                        eprintln!(
+                                            "Can not load constant: {}",
+                                            #const_init_names1
+                                        );
+                                        None
+                                    },
                                 false => Some((ConstLoader{f: std::mem::transmute(plugin_context.GetFunc(c_str_macro::c_str!(#const_init_names).as_ptr()))}.f)())
                             }
                         },
@@ -371,31 +377,40 @@ pub fn build_bindings(headers: Headers) -> String {
     bindings.to_token_stream().to_string()
 }
 
+#[cfg(generate)]
+use std::{
+    io::{Read, Write},
+    process::Command,
+};
+
 fn main() {
-    let mut res = reqwest::blocking::get(
+    #[cfg(generate)]
+    {
+        let mut res = reqwest::blocking::get(
         "https://github.com/cfillion/reaimgui/releases/latest/download/reaper_imgui_functions.h",
     )
     .expect("Can not get release");
-    let mut body = String::new();
-    res.read_to_string(&mut body)
-        .expect("Can not read to string");
-    let h_path = PathBuf::from("./src/reaper_imgui_functions.h");
-    File::create(&h_path)
-        .expect("Can not create headers file")
-        .write_all(body.as_bytes())
-        .expect("Can not write header to file.");
-    let headers = walk_header(h_path).expect("Can not walk header");
-    let bindings = build_bindings(headers);
-    let path = PathBuf::from("./src/bindings.rs");
-    let mut f = File::create(path.clone()).expect("Can not create file");
-    f.write_all(bindings.as_bytes())
-        .expect("Can not write bindings");
+        let mut body = String::new();
+        res.read_to_string(&mut body)
+            .expect("Can not read to string");
+        let h_path = PathBuf::from("./src/reaper_imgui_functions.h");
+        File::create(&h_path)
+            .expect("Can not create headers file")
+            .write_all(body.as_bytes())
+            .expect("Can not write header to file.");
+        let headers = walk_header(h_path).expect("Can not walk header");
+        let bindings = build_bindings(headers);
+        let path = PathBuf::from("./src/bindings.rs");
+        let mut f = File::create(path.clone()).expect("Can not create file");
+        f.write_all(bindings.as_bytes())
+            .expect("Can not write bindings");
 
-    Command::new("rustfmt")
-        .arg(format!(
-            "{}",
-            path.to_str().expect("Can not convert out path to string")
-        ))
-        .output()
-        .expect("Error while formatting");
+        Command::new("rustfmt")
+            .arg(format!(
+                "{}",
+                path.to_str().expect("Can not convert out path to string")
+            ))
+            .output()
+            .expect("Error while formatting");
+    }
 }
